@@ -13,7 +13,7 @@ import {
 	sendPasswordResetEmail,
 	sendEmailVerification
 } from 'firebase/auth';
-import app from '@/Firebase/Firebase.config';
+import { app } from '@/Firebase/Firebase.config';
 
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
