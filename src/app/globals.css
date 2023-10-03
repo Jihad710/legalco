@@ -7,6 +7,6 @@
   scroll-behavior: smooth;
 }
 
-.navbar-bg {
-  background: rgba(0, 0, 0, 0.9);
+.nav-bg {
+  @apply bg-[#BAE6FD] shadow-sm;
 }
