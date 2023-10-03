@@ -1,9 +1,10 @@
+import LawyerSection from '@/Home/LawyerSection';
 import React from 'react';
 
 const HomePage = () => {
   return (
     <div>
-      This is the home page
+      <LawyerSection></LawyerSection>
     </div>
   );
 };

@@ -1,8 +1,6 @@
 import { AuthProvider } from '@/Providers/AuthProvider'
 import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { poppins } from '@/Utils/Font'
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,11 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <AuthProvider>
-        <body className={inter.className}>
+      {/* <AuthProvider> */}
+        <body className={poppins.className}>
           {children}
         </body>
-      </AuthProvider>
+      {/* </AuthProvider> */}
     </html>
   )
 }
