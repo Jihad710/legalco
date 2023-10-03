@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*======= Navbar Styles =======*/
+* {
+  scroll-behavior: smooth;
+}
+
+.navbar-bg {
+  background: rgba(0, 0, 0, 0.9);
+}
