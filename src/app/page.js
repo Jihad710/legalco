@@ -1,10 +1,11 @@
-import React from 'react';
+import Navbar from '@/shareComponents/Navbar';
 
 const HomePage = () => {
   return (
-    <div>
-      This is the home page
-    </div>
+     <div className="h-[150vh]">
+        <Navbar />
+        <p className='mt-10'>This is the home page</p>
+     </div>
   );
 };
 
