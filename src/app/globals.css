@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/*================ Common CSS =================*/
+.lc_btn{
+    @apply px-8 py-3 bg-[#a51890] rounded-md text-white
+}
+
+
 .text_shadow{
     color: #fff;
     text-shadow: -2px 0 #a51890, 0 2px #a51890, 2px 0 #a51890, 0 -2px #a51890;

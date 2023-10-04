@@ -12,7 +12,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       {/* <AuthProvider> */}
         <body className={poppins.className}>
-          {children}
+          <main className='min-h-[100vh]'>
+            {children}
+          </main>
         </body>
       {/* </AuthProvider> */}
     </html>

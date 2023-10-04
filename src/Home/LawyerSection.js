@@ -10,6 +10,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { merriweather } from '@/Utils/Font';
+import Link from 'next/link';
 const LawyerSection = () => {
 	const [lawyers,setLawyers] = useState([]);
 	useEffect(()=>{
@@ -67,7 +68,7 @@ const LawyerSection = () => {
 										<div className="p-5 h-[220px] text-center flex flex-col justify-between">
 											<h2 className={`${merriweather.className} text-3xl`}>{lawyer?.name}</h2>
 											<h3 className='text-lg my-2'>{lawyer?.title}</h3>
-											<button className='px-8 py-3 bg-[#a51890] rounded-md text-white mt-5 items-end'>Learn more</button>
+											<Link href={`/lawyerdetails/${lawyer?._id}`} className='mt-5 lc_btn'>Learn more</Link>
 										</div>
 									</div>
 								</SwiperSlide>
