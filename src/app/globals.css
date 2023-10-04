@@ -36,3 +36,11 @@
     border-radius: 5px;
     z-index: 20;
 }
+/*======= Navbar Styles =======*/
+* {
+  scroll-behavior: smooth;
+}
+
+.nav-bg {
+  @apply bg-[#BAE6FD] shadow-sm;
+}
