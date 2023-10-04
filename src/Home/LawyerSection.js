@@ -21,9 +21,9 @@ const LawyerSection = () => {
 	},[])
 	console.log(lawyers);
     return (
-        <section>
+        <section className='py-16 bg-[#a51890]'>
             <Container>
-                <div className="">
+                <div className="text_shadow-white">
                     <SectionTitle title={"Our Lawyer Team"}></SectionTitle>
                 </div>
                 <div className="">
@@ -54,7 +54,7 @@ const LawyerSection = () => {
 						>
 							{lawyers.map((lawyer) => (
 								<SwiperSlide key={lawyer?._id}>
-									<div className="card w-full my-10 mt-20 border shadow-xl">
+									<div className="card bg-white w-full my-10 mt-20 border shadow-xl">
 										<figure className="">
 											<Image
 												src={lawyer?.image}
