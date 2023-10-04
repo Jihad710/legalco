@@ -42,5 +42,5 @@
 }
 
 .nav-bg {
-  @apply bg-[#BAE6FD] shadow-sm;
+  @apply bg-[#fff] shadow-sm;
 }
