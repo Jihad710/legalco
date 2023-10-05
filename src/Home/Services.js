@@ -13,8 +13,8 @@ const ServicesPage = () => {
             const res = await axios('/api/services')
             setServices(res?.data);
         })()
-    },[])
-    console.log(services);
+    }, [])
+  
     return (
         <section className='py-20 bg_imgae'>
             <Container>

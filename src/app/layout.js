@@ -1,5 +1,7 @@
+import "./globals.css";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 import { AuthProvider } from '@/Providers/AuthProvider'
-import './globals.css'
 import { poppins } from '@/Utils/Font'
 import Navbar from '@/shareComponents/Navbar';
 import Footer from '@/shareComponents/Footer';
