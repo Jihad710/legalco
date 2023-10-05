@@ -19,8 +19,8 @@ const HappyClient = () => {
 			const response = await axios('/api/reviews')
 			setReviews(response?.data)
 		})()
-	},[])
-	console.log(reviews);
+  }, [])
+  
     return (
         <section className='my-20'>
             <Container>

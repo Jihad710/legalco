@@ -18,8 +18,8 @@ const LawyerSection = () => {
 			const response = await axios('/api/lawyer');
 			setLawyers(response.data)
 		})()
-	},[])
-	console.log(lawyers);
+  }, [])
+  
     return (
         <section className='py-16 bg-[#a51890]'>
             <Container>
