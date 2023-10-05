@@ -1,5 +1,5 @@
 "use client";
-import Container from "@/components/Container";
+import Container from "@/Common/Container";
 import Link from "next/link";
 import { useState } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
@@ -8,7 +8,7 @@ const Navbar = () => {
    // Change navbar color when scrolling
    const [color, setColor] = useState(false);
    const changeColor = () => {
-      if (window.scrollY >= 90) {
+      if (window?.scrollY >= 90) {
          setColor(true);
       } else {
          setColor(false);
@@ -22,7 +22,7 @@ const Navbar = () => {
          className={
             color
                ? "sticky top-0 z-50 duration-700 nav-bg"
-               : "sticky top-0 z-50 duration-700"
+               : "sticky top-0 z-50 duration-700 text-white"
          }
       >
          <Container>
@@ -35,13 +35,17 @@ const Navbar = () => {
                <div className="drawer-content flex flex-col">
                   {/* Navbar */}
                   <div className="navbar md:py-4 w-full py-1">
-                     <div className="flex-1 text-2xl md:text-3xl font-bold text-[#35868b]">
+                     <div
+                        className={`flex-1 text-2xl md:text-3xl font-bold ${
+                           color ? "text-white" : "text-[#35868b]"
+                        }`}
+                     >
                         <Link href="/">LegalCo</Link>
                      </div>
                      <div className="lg:hidden flex-none">
                         <label
                            htmlFor="my-drawer-3"
-                           className="btn btn-square btn-ghost text-teal-600"
+                           className="btn btn-square btn-ghost  "
                         >
                            <FaBarsStaggered size={18} />
                         </label>
