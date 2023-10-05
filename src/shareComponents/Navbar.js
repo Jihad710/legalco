@@ -1,10 +1,11 @@
 "use client";
 import Container from "@/Common/Container";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 
 const Navbar = () => {
+  
    // Change navbar color when scrolling
    const [color, setColor] = useState(false);
    if (typeof window !== 'undefined') {
@@ -15,7 +16,6 @@ const Navbar = () => {
             setColor(false);
          }
       };
-   
       window.addEventListener("scroll", changeColor);
     }
 
@@ -23,8 +23,8 @@ const Navbar = () => {
       <div
          className={
             color
-               ? "sticky top-0 z-50 duration-700 nav-bg text-[rgba(40,45,64,0.9)]"
-               : "sticky top-0 z-50 duration-700 bg-[rgba(40,45,64,0.9)] text-white"
+               ? "sticky top-0 z-50 duration-700 nav-bg"
+               : " top-0 z-50 duration-700 text-white"
          }
       >
          <Container>

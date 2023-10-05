@@ -7,7 +7,6 @@ import ServicesPage from '@/Home/Services';
 const HomePage = () => {
   return (
      <div>
-      <Navbar />
       <Banner />
       <ServicesPage></ServicesPage>
       <LawyerSection></LawyerSection>
