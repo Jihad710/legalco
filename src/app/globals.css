@@ -2,11 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+/*================ Common CSS =================*/
+.lc_btn{
+    @apply px-8 py-3 bg-[#a51890] rounded-md text-white
+}
+
+.text_shadow-color{
+    color: #fff;
+    text-shadow: -2px 0 #a51890, 0 2px #a51890, 2px 0 #a51890, 0 -2px #a51890;
+}
+
+.text_shadow-white{
+    color: #a51890;
+    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+}
+
+.box_shadow{
+    box-shadow: 15px 15px 5px #282424;
+}
+
 /*======= Navbar Styles =======*/
 * {
   scroll-behavior: smooth;
 }
 
 .nav-bg {
-  @apply bg-[#BAE6FD] shadow-sm;
+  @apply bg-[#225559e1] text-white shadow-sm;
 }
+
+/*======= Banner Styles =======*/
+.bg-banner-pattern {
+  background-image: url('../assets/image.jpg');
+}
+
+
+/*======= Slider css =======*/
+.swiper-button-prev{
+    top: 30px !important;
+    right: 80px !important;
+    left: auto !important;
+    border: 2px solid #000;
+    padding: 5px !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 5px;
+    z-index: 20;
+    background: #fff !important;
+}
+.swiper-button-next{
+    top: 30px !important;
+    right: 10px !important;
+    left: auto !important;
+    border: 2px solid #000;
+    padding: 5px !important;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 5px;
+    background: #fff !important;
+    z-index: 20;
+}
+

@@ -1,11 +1,18 @@
 import Navbar from '@/shareComponents/Navbar';
+import Banner from '@/Home/Banner';
+import HappyClient from '@/Home/HappyClient';
+import LawyerSection from '@/Home/LawyerSection';
+import ServicesPage from '@/Home/Services';
 
 const HomePage = () => {
   return (
-     <div className="h-[150vh]">
-        <Navbar />
-        <p className='mt-10'>This is the home page</p>
-     </div>
+     <div>
+      <Navbar />
+      <Banner />
+      <ServicesPage></ServicesPage>
+      <LawyerSection></LawyerSection>
+      <HappyClient></HappyClient>
+    </div>
   );
 };
 
