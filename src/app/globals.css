@@ -4,23 +4,43 @@
 
 /*================ Common CSS =================*/
 .lc_btn{
-    @apply px-8 py-3 bg-[#a51890] rounded-md text-white
+    @apply px-8 py-3 bg-[#ccbd99] rounded-md 
 }
 
+.bg_imgae{
+    background: linear-gradient(rgba(35, 35, 35, 0.502),rgba(35, 35, 35, 0.8)),url('../asset/lawyer-bg.jpg') fixed;
+    background-size: cover;
+}
 .text_shadow-color{
-    color: #fff;
-    text-shadow: -2px 0 #a51890, 0 2px #a51890, 2px 0 #a51890, 0 -2px #a51890;
+    color: #fbf8f2;
+    text-shadow: -2px 0 #23232380, 0 2px #23232380, 2px 0 #23232380, 0 -2px #23232380;
 }
 
 .text_shadow-white{
-    color: #a51890;
-    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+    color: #232323;
+    text-shadow: -2px 0 #fbf8f2, 0 2px #fbf8f2, 2px 0 #fbf8f2, 0 -2px #fbf8f2;
 }
 
 .box_shadow{
     box-shadow: 15px 15px 5px #282424;
 }
-/* Slider css */
+
+/*======= Navbar Styles =======*/
+* {
+  scroll-behavior: smooth;
+}
+
+.nav-bg {
+  @apply bg-[#225559e1] text-white shadow-sm;
+}
+
+/*======= Banner Styles =======*/
+.bg-banner-pattern {
+  background-image: url('../assets/image.jpg');
+}
+
+
+/*======= Slider css =======*/
 .swiper-button-prev{
     top: 30px !important;
     right: 80px !important;
@@ -45,11 +65,4 @@
     background: #fff !important;
     z-index: 20;
 }
-/*======= Navbar Styles =======*/
-* {
-  scroll-behavior: smooth;
-}
 
-.nav-bg {
-  @apply bg-[#fff] shadow-sm;
-}

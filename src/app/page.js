@@ -1,11 +1,13 @@
+import Navbar from '@/shareComponents/Navbar';
+import Banner from '@/Home/Banner';
 import HappyClient from '@/Home/HappyClient';
 import LawyerSection from '@/Home/LawyerSection';
 import ServicesPage from '@/Home/Services';
-import React from 'react';
 
 const HomePage = () => {
   return (
-    <div>
+     <div>
+      <Banner />
       <ServicesPage></ServicesPage>
       <LawyerSection></LawyerSection>
       <HappyClient></HappyClient>
