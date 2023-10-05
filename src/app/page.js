@@ -1,5 +1,5 @@
-import Banner from '@/Banner/Banner';
 import Navbar from '@/shareComponents/Navbar';
+import Banner from '@/Home/Banner';
 import HappyClient from '@/Home/HappyClient';
 import LawyerSection from '@/Home/LawyerSection';
 import ServicesPage from '@/Home/Services';

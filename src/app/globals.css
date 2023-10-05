@@ -20,7 +20,23 @@
 .box_shadow{
     box-shadow: 15px 15px 5px #282424;
 }
-/* Slider css */
+
+/*======= Navbar Styles =======*/
+* {
+  scroll-behavior: smooth;
+}
+
+.nav-bg {
+  @apply bg-[#225559e1] text-white shadow-sm;
+}
+
+/*======= Banner Styles =======*/
+.bg-banner-pattern {
+  background-image: url('../assets/image.jpg');
+}
+
+
+/*======= Slider css =======*/
 .swiper-button-prev{
     top: 30px !important;
     right: 80px !important;
@@ -45,16 +61,4 @@
     background: #fff !important;
     z-index: 20;
 }
-/*======= Navbar Styles =======*/
-* {
-  scroll-behavior: smooth;
-}
 
-.nav-bg {
-  @apply bg-[#225559e1] text-white shadow-sm;
-}
-
-/*======= Banner Styles =======*/
-.bg-banner-pattern {
-  background-image: url('../assets/image.jpg');
-}
