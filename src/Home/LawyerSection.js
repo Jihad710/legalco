@@ -21,9 +21,9 @@ const LawyerSection = () => {
   }, [])
   
     return (
-        <section className='py-16 bg-[#a51890]'>
+        <section className='py-16'>
             <Container>
-                <div className="text_shadow-white">
+                <div className="text_shadow-color">
                     <SectionTitle title={"Our Lawyer Team"}></SectionTitle>
                 </div>
                 <div className="">
@@ -32,19 +32,20 @@ const LawyerSection = () => {
 							breakpoints={{
 								740: {
 									slidesPerView: 2,
-									spaceBetween: 20
+									spaceBetween: 0
 								},
 								790: {
 									slidesPerView: 3,
-									spaceBetween: 20
+									spaceBetween: 0
 								}
 							}}
+							// 01923599398
 							autoplay={{
 								delay: 2500,
 								disableOnInteraction: false
 							}}
 							// loop={true}
-							spaceBetween={30}
+							spaceBetween={0}
 							pagination={{
 								clickable: true
 							}}
@@ -54,7 +55,7 @@ const LawyerSection = () => {
 						>
 							{lawyers.map((lawyer) => (
 								<SwiperSlide key={lawyer?._id}>
-									<div className="card bg-white w-full my-10 mt-20 border shadow-xl">
+									<div className="card rounded-none bg-white hover:bg-[#ccbd9977] transition-all w-full my-10 mt-20 border shadow-md border-[#2323237e]">
 										<figure className="">
 											<Image
 												src={lawyer?.image}
