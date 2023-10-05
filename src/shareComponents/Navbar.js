@@ -35,7 +35,7 @@ const Navbar = () => {
                <div className="drawer-content flex flex-col">
                   {/* Navbar */}
                   <div className="navbar md:py-4 w-full py-1">
-                     <div className="flex-1 text-2xl md:text-3xl font-bold text-teal-600">
+                     <div className="flex-1 text-2xl md:text-3xl font-bold text-[#35868b]">
                         <Link href="/">LegalCo</Link>
                      </div>
                      <div className="lg:hidden flex-none">
@@ -50,12 +50,12 @@ const Navbar = () => {
                      <div className="lg:block flex-none hidden">
                         <ul className="menu-horizontal flex items-center gap-6 text-[15px] duration-200">
                            {/* Navbar menu contents */}
-                           <div className="text-2xl md:text-3xl font-bold text-teal-600 lg:hidden">
+                           <div className="text-2xl md:text-3xl font-bold text-[#28676b] lg:hidden">
                               <Link href="/">LegalCo</Link>
                            </div>
                            <li>
                               <Link
-                                 className="text-teal-600 hover:text-teal-700 duration-200 uppercase"
+                                 className="text-[#dff9fc] hover:text-[#a5ebf3] duration-200 uppercase"
                                  href="/"
                               >
                                  Home
@@ -63,7 +63,7 @@ const Navbar = () => {
                            </li>
                            <li>
                               <Link
-                                 className="text-teal-600 hover:text-teal-700 duration-200 uppercase"
+                                 className="text-[#dff9fc] hover:text-[#a5ebf3] duration-200 uppercase"
                                  href="/"
                               >
                                  Services
@@ -71,7 +71,7 @@ const Navbar = () => {
                            </li>
                            <li>
                               <Link
-                                 className="text-teal-600 hover:text-teal-700 duration-200 uppercase"
+                                 className="text-[#dff9fc] hover:text-[#a5ebf3] duration-200 uppercase"
                                  href="/"
                               >
                                  Appointment
@@ -79,7 +79,7 @@ const Navbar = () => {
                            </li>
                            <li>
                               <Link
-                                 className="text-teal-600 hover:text-teal-700 duration-200 uppercase"
+                                 className="text-[#dff9fc] hover:text-[#a5ebf3] duration-200 uppercase"
                                  href="/"
                               >
                                  Blog

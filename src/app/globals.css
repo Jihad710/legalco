@@ -8,5 +8,10 @@
 }
 
 .nav-bg {
-  @apply bg-[#BAE6FD] shadow-sm;
+  @apply bg-[#225559e1] shadow-sm;
+}
+
+/*======= Banner Styles =======*/
+.bg-banner-pattern {
+  background-image: url('../assets/image.jpg');
 }
