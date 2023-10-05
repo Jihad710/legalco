@@ -1,8 +1,7 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
-import { AuthProvider } from "@/Providers/AuthProvider";
-
-const inter = Inter({ subsets: ["latin"] });
+import { AuthProvider } from '@/Providers/AuthProvider'
+import './globals.css'
+import { poppins } from '@/Utils/Font'
+import Navbar from '@/shareComponents/Navbar';
 
 export const metadata = {
    title: "LegalCo",
@@ -10,11 +9,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-   return (
-      <html lang="en">
-         <AuthProvider>
-            <body className={inter.className}>{children}</body>
-         </AuthProvider>
-      </html>
-   );
+  return (
+    <html lang="en">
+      <AuthProvider>
+        <body className={poppins.className}>
+          <Navbar></Navbar>
+          <main className='min-h-[100vh]'>
+            {children}
+          </main>
+        </body>
+      </AuthProvider>
+    </html>
+  )
 }
