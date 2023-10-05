@@ -3,10 +3,10 @@ import Container from "@/components/Container";
 
 const Banner = () => {
    return (
-      <div className="bg-[url('../assets/image.jpg')] bg-cover h-screen flex items-center -mt-20">
+      <div className="bg-[url('../assets/image.jpg')] bg-cover min-h-screen flex items-center -mt-20">
          <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:mt-10">
-               <div className="text-white md:mt-16">
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-20 md:mt-10">
+               <div className="text-white mt:mt-5 lg:mt-16">
                   <h1 className="text-2xl md:text-4xl font-bold">
                      Really Unbelievable Solutions for all Legal Cases.
                   </h1>
@@ -22,9 +22,9 @@ const Banner = () => {
                </div>
 
                {/* Add video embed here */}
-               <div className="md:order-1">
+               <div className="order-first lg:order-last mt-24 sm:mt-28 md:mt-24 lg:mt-0">
                   <video
-                     className="md:w-[1500px] h-full lg:h-[350px] object-cover"
+                     className="md:w-[1500px] h-full lg:h-[350px] object-cover rounded-xl"
                      muted
                      autoPlay
                      loop

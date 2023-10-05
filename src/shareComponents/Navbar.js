@@ -55,7 +55,7 @@ const Navbar = () => {
                            </div>
                            <li>
                               <Link
-                                 className="text-[#dff9fc] hover:text-[#a5ebf3] duration-200 uppercase"
+                                 className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
                                  href="/"
                               >
                                  Home
@@ -63,7 +63,7 @@ const Navbar = () => {
                            </li>
                            <li>
                               <Link
-                                 className="text-[#dff9fc] hover:text-[#a5ebf3] duration-200 uppercase"
+                                 className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
                                  href="/"
                               >
                                  Services
@@ -71,7 +71,7 @@ const Navbar = () => {
                            </li>
                            <li>
                               <Link
-                                 className="text-[#dff9fc] hover:text-[#a5ebf3] duration-200 uppercase"
+                                 className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
                                  href="/"
                               >
                                  Appointment
@@ -79,7 +79,7 @@ const Navbar = () => {
                            </li>
                            <li>
                               <Link
-                                 className="text-[#dff9fc] hover:text-[#a5ebf3] duration-200 uppercase"
+                                 className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
                                  href="/"
                               >
                                  Blog
@@ -98,22 +98,22 @@ const Navbar = () => {
                   ></label>
                   <ul className="w-72 min-h-full py-4 space-y-3 text-[16px] font-semibold text-center duration-200 bg-white">
                      {/* Sidebar content here */}
-                     <div className="text-3xl font-bold text-teal-600 lg:hidden pb-3 border-b">
+                     <div className="text-3xl font-bold text-[#35868b] lg:hidden pb-3 border-b">
                         <Link className="block" href="/">
                            LegalCo
                         </Link>
                      </div>
 
-                     <li>
+                     <li className="text-[#46b2b8] hover:text-[#348286] duration-200">
                         <Link href="/">Home</Link>
                      </li>
-                     <li>
+                     <li className="text-[#46b2b8] hover:text-[#348286] duration-200">
                         <Link href="/">Service</Link>
                      </li>
-                     <li>
+                     <li className="text-[#46b2b8] hover:text-[#348286] duration-200">
                         <Link href="/">Appointment</Link>
                      </li>
-                     <li>
+                     <li className="text-[#46b2b8] hover:text-[#348286] duration-200">
                         <Link href="/">Blog</Link>
                      </li>
                   </ul>
