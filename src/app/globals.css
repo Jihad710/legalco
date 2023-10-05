@@ -11,6 +11,10 @@
     background: linear-gradient(rgba(35, 35, 35, 0.502),rgba(35, 35, 35, 0.8)),url('../asset/lawyer-bg.jpg') fixed;
     background-size: cover;
 }
+.footer_bg_imgae{
+    background: linear-gradient(#225559e1,#225559e1),url('../asset/foooter_bg.jpg') fixed top;
+    background-size: cover;
+}
 .text_shadow-color{
     color: #fbf8f2;
     text-shadow: -2px 0 #23232380, 0 2px #23232380, 2px 0 #23232380, 0 -2px #23232380;

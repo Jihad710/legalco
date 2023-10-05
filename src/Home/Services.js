@@ -22,7 +22,7 @@ const ServicesPage = () => {
                     <SectionTitle title={"Our Services"}></SectionTitle>
                 </div>
                 {/* */}
-                <div className="mt-10 grid grid-cols-3 gap-5">
+                <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {
                         services?.map((service,idx) => <div key={idx} className='border-2 bg-white shadow-lg p-5 flex items-center gap-5 rounded-2xl rounded-tr-none rounded-bl-none '>
                             <Image width={50} height={50} src={service?.icon} alt='icon' className=''/>
