@@ -19,10 +19,10 @@ const HappyClient = () => {
 			const response = await axios('/api/reviews')
 			setReviews(response?.data)
 		})()
-	},[])
-	console.log(reviews);
+  }, [])
+  
     return (
-        <section className='my-20'>
+        <section className='pb-20'>
             <Container>
                 <div className="text_shadow-color">
                     <SectionTitle title={"Our Happy Client Says"}></SectionTitle>
@@ -53,7 +53,7 @@ const HappyClient = () => {
 					>
 						{reviews?.map((review) => (
 							<SwiperSlide key={review?._id}>
-								<div className="card min-h-[300px] md:min-h-[425px] my-10 border shadow-xl">
+								<div className="card bg-white min-h-[300px] md:min-h-[425px] my-10 border shadow-xl">
 									<figure className="">
 										<Image
 											src={review?.photoUrl}
