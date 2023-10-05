@@ -1,21 +1,32 @@
 "use client";
 import Container from "@/Common/Container";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 
 const Navbar = () => {
    // Change navbar color when scrolling
    const [color, setColor] = useState(false);
-   const changeColor = () => {
-      if (window?.scrollY >= 90) {
-         setColor(true);
-      } else {
-         setColor(false);
-      }
-   };
+   useEffect(() => {
+      const changeColor = () => {
+         if (typeof window !== "undefined") {
+            // Check if window is defined
+            if (window.scrollY >= 90) {
+               setColor(true);
+            } else {
+               setColor(false);
+            }
+         }
+      };
 
-   window.addEventListener("scroll", changeColor);
+      // Add event listener on mount
+     window.addEventListener("scroll", changeColor);
+     
+      // Cleanup the event listener on component unmount
+      return () => {
+         window.removeEventListener("scroll", changeColor);
+      };
+   }, []);
 
    return (
       <div
