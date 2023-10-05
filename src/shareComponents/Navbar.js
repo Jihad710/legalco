@@ -7,15 +7,17 @@ import { FaBarsStaggered } from "react-icons/fa6";
 const Navbar = () => {
    // Change navbar color when scrolling
    const [color, setColor] = useState(false);
-   const changeColor = () => {
-      if (window?.scrollY >= 90) {
-         setColor(true);
-      } else {
-         setColor(false);
-      }
-   };
-
-   window.addEventListener("scroll", changeColor);
+   if (typeof window !== 'undefined') {
+      const changeColor = () => {
+         if (window?.scrollY >= 90) {
+            setColor(true);
+         } else {
+            setColor(false);
+         }
+      };
+   
+      window.addEventListener("scroll", changeColor);
+    }
 
    return (
       <div
