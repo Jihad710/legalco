@@ -2,6 +2,7 @@ import { AuthProvider } from '@/Providers/AuthProvider'
 import './globals.css'
 import { poppins } from '@/Utils/Font'
 import Navbar from '@/shareComponents/Navbar';
+import Footer from '@/shareComponents/Footer';
 
 export const metadata = {
    title: "LegalCo",
@@ -12,11 +13,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AuthProvider>
-        <body className={poppins.className}>
+        <body className={`${poppins.className} bg-[#fbf8f2]`}>
           <Navbar></Navbar>
           <main className='min-h-[100vh]'>
             {children}
           </main>
+          <Footer></Footer>
         </body>
       </AuthProvider>
     </html>
