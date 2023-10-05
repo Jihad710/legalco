@@ -16,6 +16,7 @@
     "mongodb": "^6.1.0",
     "next": "latest",
     "react": "latest",
+    "react-awesome-stars-rating": "^0.14.0",
     "react-dom": "latest",
     "react-hook-form": "^7.46.2",
     "react-hot-toast": "^2.4.1",
