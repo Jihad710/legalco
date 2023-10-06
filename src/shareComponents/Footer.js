@@ -1,9 +1,10 @@
 import Container from "@/Common/Container";
 import { merriweather } from "@/Utils/Font";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaGoogle,FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-
+import logo from '@/assets/logo.jpg'
 const Footer = () => {
     return (
         <footer className="footer_bg_imgae pt-16 text-white overflow-hidden">
@@ -11,7 +12,7 @@ const Footer = () => {
                 <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-10 py-5 border-b-2 border-amber-500 jm_container">
                     <div className="">
                         <Link href="/">
-                            <h2 className="text-4xl">Legalco</h2>
+                        <Image src={logo} alt="Logo" width={150}/>
                         </Link>
                         <p className="my-5">Edwin Diaz is a software and web technologies engineer, a life coach trainer who is also a serial .</p>
                         <ul className="flex gap-2">
@@ -112,7 +113,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <p className="text-center my-5">
-                    © 2023. JM_Resipes . All rights reserved.{" "}
+                    © 2023. Legalco . All rights reserved.{" "}
                 </p>
             </Container>
         </footer>
