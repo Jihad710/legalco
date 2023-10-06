@@ -23,8 +23,8 @@ const Navbar = () => {
       <div
          className={
             color
-               ? "sticky top-0 z-50 duration-700 nav-bg text-[rgba(40,45,64,0.9)] "
-               : "duration-700 text-white "
+               ? "sticky top-0 z-50 duration-300 nav-bg text-[rgba(40,45,64,0.9)] "
+               : "duration-300 text-white "
          }
       >
          <Container>
