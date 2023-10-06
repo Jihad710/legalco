@@ -1,10 +1,9 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
 import { AuthProvider } from '@/Providers/AuthProvider'
 import { poppins } from '@/Utils/Font'
 import Navbar from '@/shareComponents/Navbar';
 import Footer from '@/shareComponents/Footer';
+import Messenger from "@/Home/Messenger";
 
 export const metadata = {
    title: "LegalCo",
@@ -20,6 +19,7 @@ export default function RootLayout({ children }) {
           <main className='min-h-[100vh]'>
             {children}
           </main>
+          <Messenger/>
           <Footer></Footer>
         </body>
       </AuthProvider>

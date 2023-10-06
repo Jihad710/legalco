@@ -66,13 +66,17 @@ const HappyClient = () => {
 									<div className="card-body items-center text-center">
 										<p>{review?.reviewText.slice(0, 150)}</p>
 
+										{
+										review?.rating &&	
 										<ReactStarsRating
 											isEdit={false}
 											starGap={10}
 											size={26}
 											className="flex"
+											isHalf={true}
 											value={review?.rating}
 										/>
+										}
 
 										<h2 className="card-title text-[#23A6F0]">{review?.name}</h2>
 										<h2 className="">{moment(review?.timestamp).startOf('hour').fromNow()}</h2>
