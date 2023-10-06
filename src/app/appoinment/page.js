@@ -12,7 +12,7 @@ const ContactForm = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-
+    // Handle form submission here
     console.log(data);
   };
 
