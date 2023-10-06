@@ -19,7 +19,12 @@
     "react": "latest",
     "react-awesome-stars-rating": "^0.14.0",
     "react-dom": "latest",
+<<<<<<< HEAD
     "react-hook-form": "^7.47.0",
+=======
+    "react-facebook": "^9.0.12",
+    "react-hook-form": "^7.46.2",
+>>>>>>> 5931486bce635cc53932f243f6835aa51b655f1c
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.11.0",
     "sweetalert2": "^11.7.31",
