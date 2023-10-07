@@ -28,7 +28,7 @@ const Banner = () => {
                      muted
                      autoPlay
                      loop
-                     src="https://res.cloudinary.com/dfveaxvlk/video/upload/v1696454429/xpvswqtv3nt6qfxs5t0t.mp4"
+                    src="https://res.cloudinary.com/dfveaxvlk/video/upload/v1696454429/xpvswqtv3nt6qfxs5t0t.mp4"
                   ></video>
                </div>
             </div>
