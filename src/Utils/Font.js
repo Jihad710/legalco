@@ -1,5 +1,5 @@
 
-import { Poppins, Bebas_Neue, Merriweather } from 'next/font/google'
+import { Poppins, Lora } from 'next/font/google'
  
 export const poppins = Poppins({
   subsets: ['latin'],
@@ -7,8 +7,8 @@ export const poppins = Poppins({
   weight: ['400','500','600','700']
 })
  
-export const merriweather =  Merriweather({
+export const merriweather = Lora({
   subsets: ['latin'],
   display: 'swap',
-  weight: ['300','400','700','900']
+  weight: ['400','500','600','700']
 })
