@@ -1,8 +1,8 @@
 "use client"
 import Container from '@/Common/Container';
 import { merriweather } from '@/Utils/Font';
+import LoadingPage from '@/shared/Loading';
 import axios from 'axios';
-import { Merriweather } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
@@ -10,12 +10,16 @@ import React, { useEffect, useState } from 'react';
 const ServiceDetailsPage = ({params}) => {
     const [details,setDetails] = useState({});
     const [lawyers,setLawyers] = useState([]);
+    const [loading,setLoading] = useState(true);
     useEffect(()=> {
         (async()=> {
             const res = await axios('/api/lawyer');
             const response = await axios(`/api/services/${params?.id}`);
             setDetails(response?.data);
             setLawyers(res?.data);
+            if(response?.data && res?.data){
+                setLoading(false);
+            }
         })()
     },[params])
     console.log(details);
@@ -28,6 +32,7 @@ const ServiceDetailsPage = ({params}) => {
                 </div>
             </div>
             <Container>
+        {   loading ? <LoadingPage></LoadingPage> :
                 <div className="my-20 bg-[#225559cc] p-10 rounded-lg ">
                     <div className="gap-6 grid grid-cols-2">
                         <div className="text-white border-r-2 border-white pr-5">
@@ -49,6 +54,7 @@ const ServiceDetailsPage = ({params}) => {
                     </div>
                     <Link className='lc_btn w-fit mx-auto block mt-8' href={'/appointment'}>Appointment Now</Link>
                 </div>
+        }
             </Container>
         </div>
     );
