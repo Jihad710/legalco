@@ -12,9 +12,13 @@
     background-size: cover;
 }
 .footer_bg_imgae{
-    background: linear-gradient(#225559e1,#225559e1),url('../assets/foooter_bg.jpg') fixed top;
+    background: linear-gradient(#225559cc,#225559e1),url('../assets/foooter_bg.jpg') fixed top;
     background-size: cover;
 }
+/* .footer_bg_imgae{
+    background: linear-gradient(#225559e1,#225559e1),url('../assets/foooter_bg.jpg') fixed top;
+    background-size: cover;
+} */
 .lawyer_card_bg_imgae{
     background: linear-gradient(#225559e1,#225559e1),url('../assets/lawyer_card_bg.jpg') left;
     background-size: cover;

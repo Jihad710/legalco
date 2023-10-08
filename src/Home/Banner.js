@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "@/Common/Container";
+import Link from "next/link";
 
 const Banner = () => {
    return (
@@ -16,9 +17,9 @@ const Banner = () => {
                      dolores quasi consequatur nihil obcaecati pariatur ea nemo
                      iste sed.
                   </p>
-                  <button className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-4 rounded-full duration-300">
+                  <Link href="" className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-4 rounded-full duration-300">
                      Appointment
-                  </button>
+                  </Link>
                </div>
 
                {/* Add video embed here */}
@@ -28,7 +29,7 @@ const Banner = () => {
                      muted
                      autoPlay
                      loop
-                     src="https://res.cloudinary.com/dfveaxvlk/video/upload/v1696454429/xpvswqtv3nt6qfxs5t0t.mp4"
+                    src="https://res.cloudinary.com/dfveaxvlk/video/upload/v1696454429/xpvswqtv3nt6qfxs5t0t.mp4"
                   ></video>
                </div>
             </div>
