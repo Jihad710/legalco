@@ -11,16 +11,18 @@ import SectionTitle from '@/Common/SectionTitle';
 import ReactStarsRating from 'react-awesome-stars-rating';
 import axios from 'axios';
 import moment from 'moment/moment';
+import LoadingPage from '@/shared/Loading';
 
 const HappyClient = () => {
-	const [reviews, setReviews] = useState([]);
+	const [reviews, setReviews] = useState(null);
 	useEffect(()=> {
 		(async()=>{
 			const response = await axios('/api/reviews')
-			setReviews(response?.data)
+			if(response?.data){
+				setReviews(response?.data);
+			}
 		})()
   }, [])
-  
     return (
         <section className='pb-20'>
             <Container>
@@ -51,7 +53,7 @@ const HappyClient = () => {
 						modules={[Pagination, Autoplay]}
 						className="mySwiper"
 					>
-						{reviews?.map((review) => (
+						{reviews ? reviews?.map((review) => (
 							<SwiperSlide key={review?._id}>
 								<div className="card bg-white min-h-[300px] md:min-h-[425px] my-10 border shadow-xl">
 									<figure className="">
@@ -83,7 +85,8 @@ const HappyClient = () => {
 									</div>
 								</div>
 							</SwiperSlide>
-						))}
+						)) : <LoadingPage></LoadingPage>
+					}
 					</Swiper>
                 </div>
             </Container>

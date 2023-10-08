@@ -11,15 +11,18 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { merriweather } from '@/Utils/Font';
 import Link from 'next/link';
+import LoadingPage from '@/shared/Loading';
 const LawyerSection = () => {
-	const [lawyers,setLawyers] = useState([]);
+	const [lawyers,setLawyers] = useState(null);
+
 	useEffect(()=>{
 		(async()=> {
 			const response = await axios('/api/lawyer');
-			setLawyers(response.data)
+			if(response?.data){
+				setLawyers(response?.data);
+			}
 		})()
   }, [])
-  
     return (
         <section className='py-16'>
             <Container>
@@ -53,7 +56,7 @@ const LawyerSection = () => {
 							navigation={true}
 							className="mySwiper"
 						>
-							{lawyers.map((lawyer) => (
+							{lawyers ? lawyers.map((lawyer) => (
 								<SwiperSlide key={lawyer?._id}>
 									<div className="card rounded-none bg-white hover:bg-[#ccbd9977] transition-all w-full my-10 mt-20 border shadow-md border-[#2323237e]">
 										<figure className="">
@@ -73,7 +76,7 @@ const LawyerSection = () => {
 										</div>
 									</div>
 								</SwiperSlide>
-							))}
+							)) : <LoadingPage></LoadingPage>}
 					</Swiper>
                 </div>
             </Container>

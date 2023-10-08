@@ -1,8 +1,8 @@
 import "./globals.css";
 import { AuthProvider } from '@/Providers/AuthProvider'
 import { poppins } from '@/Utils/Font'
-import Navbar from '@/shareComponents/Navbar';
-import Footer from '@/shareComponents/Footer';
+import Navbar from '@/shared/Navbar';
+import Footer from '@/shared/Footer';
 import Messenger from "@/Home/Messenger";
 
 export const metadata = {
