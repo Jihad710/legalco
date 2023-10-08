@@ -5,7 +5,6 @@ import { createContext, useState } from "react";
 const AuthContext = createContext(null)
 export const AuthProvider = ({ children }) => {
 	const [loading, setLoading] = useState(true);
-
 	const authInfo = {
 		loading,
 		setLoading

@@ -4,6 +4,7 @@ import SectionTitle from '@/Common/SectionTitle';
 import { merriweather } from '@/Utils/Font';
 import axios from 'axios';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 const ServicesPage = () => {
@@ -24,10 +25,10 @@ const ServicesPage = () => {
                 {/* */}
                 <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {
-                        services?.map((service,idx) => <div key={idx} className='border-2 bg-white shadow-lg p-5 flex items-center gap-5 rounded-2xl rounded-tr-none rounded-bl-none '>
+                        services?.map((service) => <Link href={`/servicedetails/${service?._id}`} key={service?._id} className='border-2 bg-white shadow-lg p-5 flex items-center gap-5 rounded-2xl rounded-tr-none rounded-bl-none '>
                             <Image width={50} height={50} src={service?.icon} alt='icon' className='w-12 h-12'/>
                             <h3 className={`${merriweather.className} font-medium text-lg`}>{service?.service}</h3>
-                        </div>)
+                        </Link>)
                     }
                 </div>
             </Container>

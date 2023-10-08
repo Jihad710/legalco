@@ -10,7 +10,7 @@ import {
    FaLinkedin,
    FaTwitter,
 } from "react-icons/fa";
-import logo from "@/assets/logo/PNG-01.png";
+import logo from '@/assets/logo.jpg'
 
 const Footer = () => {
    return (
@@ -20,10 +20,9 @@ const Footer = () => {
                <div className="">
                   <div>
                      <Link href="/">
-                        {/* <Image src={logo} alt="" /> */}
-                        <span className="text-4xl font-semibold">Legalco</span>
+                        <Image src={logo} alt="" width={150} />
                      </Link>
-                     <p className="my-5">
+                     <p className="my-4">
                         Edwin Diaz is a software and web technologies engineer,
                         a life coach trainer who is also a serial .
                      </p>
