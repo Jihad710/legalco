@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Banner = () => {
    return (
-      <div className="bg-[url('../assets/image.jpg')] bg-cover min-h-screen flex items-center -mt-20">
+      <div className="bg-[url('../assets/image.jpg')] bg-cover min-h-screen flex items-center -mt-[88px]">
          <Container>
             <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-20 md:mt-10">
                <div className="text-white mt:mt-5 lg:mt-16">

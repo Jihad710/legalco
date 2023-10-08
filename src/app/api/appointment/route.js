@@ -1,11 +1,12 @@
-import { NextResponse } from "next/server";
-import services from '@/data/services.json'
 import DbConnect from "@/Services/DbConnect";
-export const GET = async(request) => {
+import { NextResponse } from "next/server";
+
+export const POST = async(request) => {
     try{
+        const body = await request.json();
         const db = await DbConnect();
-        const servicesCollection = db.collection('services');
-        const result = await servicesCollection.find().toArray();
+        const reviewsCollection = db.collection('appointments');
+        const result = await reviewsCollection.insertOne({...body});
         return NextResponse.json(result);
     }catch (error){
 		console.error('error for getting data', error);

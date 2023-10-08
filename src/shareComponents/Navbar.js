@@ -1,9 +1,10 @@
 "use client";
 import Container from "@/Common/Container";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
-
+import logo from '@/assets/logo.jpg'
 const Navbar = () => {
   
    // Change navbar color when scrolling
@@ -36,13 +37,15 @@ const Navbar = () => {
                />
                <div className="drawer-content flex flex-col">
                   {/* Navbar */}
-                  <div className="navbar md:py-4 w-full py-1">
+                  <div className="navbar p-0 w-full">
                      <div
                         className={`flex-1 text-2xl md:text-3xl font-bold ${
                            color ? "text-white" : "text-[#35868b]"
                         }`}
                      >
-                        <Link href="/">LegalCo</Link>
+                        <Link href="/">
+                           <Image src={logo} alt="Logo" width={150}/>
+                        </Link>
                      </div>
                      <div className="lg:hidden flex-none">
                         <label
@@ -78,7 +81,7 @@ const Navbar = () => {
                            <li>
                               <Link
                                  className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
-                                 href="/"
+                                 href="/appointment"
                               >
                                  Appointment
                               </Link>
