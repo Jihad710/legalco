@@ -37,7 +37,7 @@ const Navbar = () => {
                />
                <div className="drawer-content flex flex-col">
                   {/* Navbar */}
-                  <div className="navbar w-full">
+                  <div className="navbar p-0 w-full">
                      <div
                         className={`flex-1 text-2xl md:text-3xl font-bold ${
                            color ? "text-white" : "text-[#35868b]"
@@ -81,7 +81,7 @@ const Navbar = () => {
                            <li>
                               <Link
                                  className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
-                                 href="/"
+                                 href="/appointment"
                               >
                                  Appointment
                               </Link>

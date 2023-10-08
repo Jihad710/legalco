@@ -3,8 +3,12 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import contact from '../../assets/contactus.jpg'
 import Image from 'next/image';
+import axios from 'axios';
+import Swal from 'sweetalert2';
+import { useRouter } from 'next/navigation';
 
 const ContactForm = () => {
+  const router = useRouter();
   const {
     handleSubmit,
     register,
@@ -13,25 +17,52 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    // Handle form submission here
-    console.log(data);
+  const onSubmit = async(data) => {
+    const appointment = {
+      name: data?.firstName + ' ' + data?.lastName,
+      email: data?.email,
+      phone: data?.phoneNumber,
+      servicetype: data?.serviceInterest,
+      serviceInfo: data?.Message,
+      timestamp: new Date()
+    }
+    console.log(appointment);
+    const res = await axios.post('/api/appointment',{...appointment});
+    console.log(res?.data);
+    if(res?.data?.insertedId){
+      const mailResponse = await axios.post('/api/sendmail',{...appointment});
+      console.log(mailResponse);
+      if(mailResponse?.data?.success){
+        Swal.fire({
+          title: 'Success',
+          text: "You get all service in LEGALCO app. Please download this.",
+          icon: 'success',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Download Now'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            router.push('https://www.youtube.com/watch?v=34UMor0gQEA')
+          }
+        })
+      }
+    }
   };
 
   const serviceInterest = watch('serviceInterest');
 
   return (
-     
     <div className="banner-image">
-      <Image src={contact} alt="Banner" />
+      <Image className='h-96 object-cover -mt-[75px]' src={contact} alt="Banner" />
 
       <div className="contact-section">
-      <div className="text-center mt-20">
-        <h2 className='text-2xl mb-2'>We Love to Hear from You</h2>
-        <p>
-        Please call or fillup appoinment form and we will be happy to assist you.
-        </p>
-      </div>
+        <div className="text-center mt-20">
+          <h2 className='text-2xl mb-2'>We Love to Hear from You</h2>
+          <p>
+          Please call or fillup appoinment form and we will be happy to assist you.
+          </p>
+        </div>
 
       <div className="flex">
   {/*  Form */}
@@ -94,7 +125,7 @@ const ContactForm = () => {
           {...register('phoneNumber', {
             required: 'Phone Number is required',
             pattern: {
-              value: /^[0-9]{10}$/,
+              value: /^[0-9]{11}$/,
               message: 'Invalid phone number',
             },
           })}
