@@ -20,9 +20,9 @@ const Footer = () => {
                <div className="">
                   <div>
                      <Link href="/">
-                        <Image src={logo} alt="" />
+                        <Image src={logo} alt="" width={150} />
                      </Link>
-                     <p className="my-5">
+                     <p className="my-4">
                         Edwin Diaz is a software and web technologies engineer,
                         a life coach trainer who is also a serial .
                      </p>
