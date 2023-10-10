@@ -10,8 +10,10 @@ import { FaLocationDot } from 'react-icons/fa6';
 import banner from '@/assets/team_banner.jpg';
 import LoadingPage from '@/shared/Loading';
 
+
 const SingleLawyerPage = ({ params }) => {
   const [lawyerDetails, setLawyerDetails] = useState(null);
+  const [activeTab, setActiveTab] = useState('PROFILE');
 
   useEffect(() => {
     (async () => {
@@ -25,6 +27,10 @@ const SingleLawyerPage = ({ params }) => {
   const { name, image, description, department, socialmedia, title, languages, contacts } =
     lawyerDetails || {};
 
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+
   return (
     <div className="-mt-20">
       <div className="team_banner_bg_imgae h-[450px] text-white flex items-end justify-center">
@@ -37,12 +43,12 @@ const SingleLawyerPage = ({ params }) => {
       </div>
       <Container>
         {lawyerDetails ? (
-          <div className="grid grid-cols-3 gap-5 my-20 p-5 rounded-lg lawyer_card_bg_imgae">
+          <div className="grid grid-cols-3 gap-5 my-10 p-5 rounded-lg lawyer_card_bg_imgae">
             <div className="">
               <Image
-                className="w-full h-full object-cover"
-                width={500}
-                height={500}
+                className=" object-cover"
+                width={300}
+                height={300}
                 src={image}
                 alt="Lawyer Image"
               />
@@ -94,7 +100,72 @@ const SingleLawyerPage = ({ params }) => {
         ) : (
           <LoadingPage></LoadingPage>
         )}
+        
+       
+      <div className="max-w-2xl ">
+        <div className="flex">
+          <button
+            className={`${
+              activeTab === 'PROFILE' ? 'bg-[#225559] text-white' : 'bg-gray-200 text-gray-700'
+            } px-4 py-2 w-1/2  border-r border-gray-300 focus:outline-none`}
+            onClick={() => handleTabClick('PROFILE')}
+          >
+            PROFILE
+          </button>
+          <button
+            className={`${
+              activeTab === 'EXPERIENCE' ? 'bg-[#225559] text-white' : 'bg-gray-200 text-gray-700'
+            } px-4 py-2 w-1/2  focus:outline-none`}
+            onClick={() => handleTabClick('EXPERIENCE')}
+          >
+            EXPERIENCE
+          </button>
+        </div>
+
+        <div className="p-4 mb-10">
+          {activeTab === 'PROFILE' && (
+           <div>
+          
+           <h1 className=" text-xl  mt-4  text-gray-800">John Doe</h1> 
+           <p className='mb-4'>Experience 6+ Years</p>
+           <p className="text-gray-700 text-justify  "> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip. On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.</p> 
+           <div className="grid grid-cols-2 gap-4 mt-4"> 
+             <div>
+               <p className="text-gray-700 mt-4 ">Practice Area </p>
+               
+                <ul>
+                 - Litigation & Appeals
+                 </ul>
+                 <ul>
+                 - Real Estate
+                 </ul>
+                 <ul>
+                - Commercial Transactions
+                </ul>
+                
+               
+             </div>
+             
+            
+           
+           </div>
+           <p className="text-gray-700 text-justify mt-5 "> Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip. On the other hand.</p> 
+         </div>
+         
+          )}
+
+          {activeTab === 'EXPERIENCE' && (
+            <div>
+              {/* Contact information */}
+              <p className="text-gray-700">Contact Information Goes Here</p>
+            </div>
+          )}
+        </div>
+      </div>
+  
       </Container>
+
+      
     </div>
   );
 };
