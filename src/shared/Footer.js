@@ -162,48 +162,10 @@ const Footer = () => {
                   >
                      Contact Us
                   </h3>
-                  <ul className="space-y-2">
-                     <li>
-                        <Link href={"/"}>
-                           <span>
-                              <FaFacebook className="inline mr-2 text-blue-600 text-[22px]" />
-                           </span>
-                           <span className="text-[14px] hover:underline">
-                              Facebook
-                           </span>
-                        </Link>
-                     </li>
-                     <li>
-                        <Link href={"/"}>
-                           <span>
-                              <FaTwitter className="inline mr-2 text-blue-400 text-[22px]" />
-                           </span>
-                           <span className="text-[14px] hover:underline">
-                              Twitter
-                           </span>
-                        </Link>
-                     </li>
-                     <li>
-                        <Link href={"/"}>
-                           <span>
-                              <FaLinkedin className="inline mr-2 text-blue-600 text-[22px]" />
-                           </span>
-                           <span className="text-[14px] hover:underline">
-                              Linkedin
-                           </span>
-                        </Link>
-                     </li>
-                     <li>
-                        <Link href={"/"}>
-                           <span>
-                              <FaInstagram className="inline mr-2 text-rose-600 text-[22px]" />
-                           </span>
-                           <span className="text-[14px] hover:underline">
-                              Instagram
-                           </span>
-                        </Link>
-                     </li>
-                  </ul>
+                  <p className="my-3"><b className="block">Office Address: </b> SEL Trident Tower, Suite # 907 (9th Floor), 57, Purana Paltan, (VIP Road), Dhaka - 1000.</p>
+                  <p className="my-3"><b>Phone: </b> +88 01773239086</p>
+                  <p className="my-3"><b>Email: </b>  Admin@legalco.com</p>
+
                </div>
             </div>
             <p className="text-center my-5">

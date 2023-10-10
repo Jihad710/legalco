@@ -1,32 +1,38 @@
 "use client"
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import contact from '../../assets/contactus.jpg'
+import contact from '@/assets/contactus.jpg'
 import Image from 'next/image';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { useRouter, useSearchParams } from 'next/navigation';
+import UseGetLawyerDetails from '@/Hooks/UseGetLawyerDetails';
+import LoadingPage from '@/shared/Loading';
 
-const ContactForm = () => {
+const ContactForm = ({params}) => {
+  const {lawyerDetails} = UseGetLawyerDetails(params?.id);
+  console.log(lawyerDetails);
+  const {address,email} = lawyerDetails?.contacts || {};
   const router = useRouter();
-  const {handleSubmit,register,setValue,watch,formState: { errors }} = useForm();
-
+  const {handleSubmit,register,formState: { errors },reset} = useForm();
   const onSubmit = async(data) => {
     const appointment = {
-      name: data?.firstName + ' ' + data?.lastName,
+      name: data?.name,
       email: data?.email,
       phone: data?.phoneNumber,
-      servicetype: data?.serviceInterest,
+      lawyerName: lawyerDetails?.name,
+      lawyerContactInfo: lawyerDetails?.contacts,
+      lawyerImage: lawyerDetails?.image,
       serviceInfo: data?.Message,
       timestamp: new Date()
     }
-    console.log(appointment);
-    const res = await axios.post('/api/appointment',{...appointment});
+    const res = await axios.post('/api/lawyerappointment',{...appointment});
     console.log(res?.data);
-    if(res?.data?.insertedId){
-      const mailResponse = await axios.post('/api/sendmail',{...appointment});
+    if(res?.data?.insertedId){ 
+      const mailResponse = await axios.post('/api/lawyeremail',{...appointment});
       console.log(mailResponse);
       if(mailResponse?.data?.success){
+        reset();
         Swal.fire({
           title: 'Success',
           text: "You get all service in LEGALCO app. Please download this.",
@@ -37,14 +43,14 @@ const ContactForm = () => {
           confirmButtonText: 'Download Now'
         }).then((result) => {
           if (result.isConfirmed) {
-            router.push('https://www.youtube.com/watch?v=34UMor0gQEA')
+            router.push('https://www.youtube.com/watch?v=34UMor0gQEA');
+          }else{
+            router.push('/');
           }
         })
       }
     }
   };
-
-  const serviceInterest = watch('serviceInterest');
 
   return (
     <div className="banner-image">
@@ -60,43 +66,28 @@ const ContactForm = () => {
 
       <div className="flex">
   {/*  Form */}
-  <div className="w-2/3  mx-auto px-4">
-  <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto mt-6">
+{ lawyerDetails ? <>
+    <div className="w-2/3  mx-auto px-4">
+    <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto mt-6">
       <div className="mb-4">
-        <label  htmlFor="firstName" className="block mb-2 text-gray-600 font-semibold">First Name</label>
+        <label  htmlFor="name" className="block mb-2 text-gray-600 font-semibold">Name</label>
         <input
-          {...register('firstName', { required: 'First Name is required' })}
+          {...register('name', { required: 'First Name is required' })}
           type="text"
-          id="firstName"
+          id="name"
           placeholder="First Name"
           className={`w-full px-4 py-2 border focus:outline-none ${
             errors.firstName ? 'border-red-500' : 'focus:border-blue-400'
           }`}
         />
-        {errors.firstName && (
+        {errors.name && (
           <p className="text-red-500 text-sm mt-1">{errors.firstName.message}</p>
-        )}
-      </div>
-      <div className="mb-4">
-        <label htmlFor="lastName" className="block mb-2 text-gray-600 font-semibold">Last Name</label>
-        <input
-          {...register('lastName', { required: 'Last Name is required' })}
-          type="text"
-          id="lastName"
-          placeholder="Last Name"
-          className={`w-full px-4 py-2 border  focus:outline-none ${
-            errors.lastName ? 'border-red-500' : 'focus:border-blue-400'
-          }`}
-        />
-        {errors.lastName && (
-          <p className="text-red-500 text-sm mt-1">{errors.lastName.message}</p>
         )}
       </div>
       <div className="mb-4">
         <label htmlFor="email" className="block mb-2 text-gray-600 font-semibold">Email</label>
         <input
           {...register('email', {
-            required: 'Email is required',
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
               message: 'Invalid email address',
@@ -135,47 +126,18 @@ const ContactForm = () => {
         )}
       </div>
       <div className="mb-4">
-        <label htmlFor="serviceInterest" className="block mb-2 text-gray-600 font-semibold">What service are you interested in?</label>
-        <select
-          {...register('serviceInterest', { required: 'Service Interest is required' })}
-          id="serviceInterest"
-          className={`w-full px-4 py-2 border  focus:outline-none ${
-            errors.serviceInterest ? 'border-red-500' : 'focus:border-blue-400'
+        <label  htmlFor="name" className="block mb-2 text-gray-600 font-semibold">Lawyer Name</label>
+        <input
+          type="text"
+          id="name"
+          readOnly
+          value={lawyerDetails?.name}
+          placeholder="Lawyer Name"
+          className={`w-full px-4 py-2 border focus:outline-none ${
+            errors.firstName ? 'border-red-500' : 'focus:border-blue-400'
           }`}
-        >
-          <option value="">Select a service</option>
-          <option value="Business Set-up & Start-up Support (RJSC)">Business Set-up & Start-up Support (RJSC)</option>
-          <option value="VAT, Tax & Compliance">VAT, Tax & Compliance</option>
-          <option value="Legal Drafting">Legal Drafting</option>
-          <option value="Rajuk & Customs Matter">Rajuk & Customs Matter</option>
-          <option value="Land & Property (Registration & Sale)">Land & Property (Registration & Sale)</option>
-          <option value="Abroad Legal Support, Immigration & Work Permit">Abroad Legal Support</option>
-          <option value="Immigration & Work Permit">Immigration & Work Permit</option>
-          <option value="Banking & Finance">Banking & Finance</option>
-          <option value="Consult with Legal Expert">Consult with Legal Expert</option>
-          <option value="Others">Others</option>
-        </select>
-        {errors.serviceInterest && (
-          <p className="text-red-500 text-sm mt-1">{errors.serviceInterest.message}</p>
-        )}
+        />
       </div>
-      {serviceInterest === 'Others' && (
-        <div className="mb-4">
-          <label htmlFor="serviceDetails" className="block mb-2 text-gray-600 font-semibold">Service Details</label>
-          <textarea
-            {...register('serviceDetails', { required: 'Service Details are required' })}
-            id="serviceDetails"
-            placeholder="Enter Service Details"
-            className={`w-full px-4 py-2 border  focus:outline-none ${
-              errors.serviceDetails ? 'border-red-500' : 'focus:border-blue-400'
-            }`}
-          ></textarea>
-          {errors.serviceDetails && (
-            <p className="text-red-500 text-sm mt-1">{errors.serviceDetails.message}</p>
-          )}
-        </div>
-      )}
-
       
       <div className="mb-4">
         <label htmlFor="Message" className="block mb-2 text-gray-600 font-semibold">Message</label>
@@ -196,19 +158,17 @@ const ContactForm = () => {
         <button type="submit" className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-4 rounded-full duration-300">Request Appoinment</button>
       </div>
     </form>
-  </div>
+    </div>
 
   {/*  Contact information */}
   <div className="w-1/3 mx-auto px-4 mt-10 mr-7">
     <div className="p-4 border rounded-lg bg-gray-100">
       <h2 className="text-lg font-semibold mb-4">Contact Information</h2>
-      <p className="text-gray-600"><span className='font-bold'>Email:</span> Admin@legalco.com</p>
-      <p className="text-gray-600"><span className='font-bold'>Phone:</span> +88 01773239086</p>
-      <p className="text-gray-600"><span className='font-bold'>Address:</span> SEL Trident Tower, Suite # 907 (9th Floor), 57, Purana <br></br> Paltan, (VIP Road), Dhaka - 1000.</p>
-      
-      
+      <p className="text-gray-600"><span className='font-bold'>Email: </span> {email}</p>
+      <p className="text-gray-600"><span className='font-bold'>Address: </span> {address}</p>
     </div>
   </div>
+  </> : <LoadingPage></LoadingPage>}
 </div>
     </div>
     </div>

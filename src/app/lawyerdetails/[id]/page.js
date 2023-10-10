@@ -9,20 +9,11 @@ import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 import { FaLocationDot, FaLocationPin } from 'react-icons/fa6';
 import banner from '@/assets/team_banner.jpg'
 import LoadingPage from '@/shared/Loading';
+import UseGetLawyerDetails from '@/Hooks/UseGetLawyerDetails';
 const SingleLawyerPage = ({params}) => {
-    const [lawyerDetails,setLawyerDetails] = useState(null);
-    useEffect(()=>{
-        (
-            async() => {
-                const res = await axios(`/api/lawyer/${params?.id}`);
-                if(res?.data){
-                    setLawyerDetails(res?.data);
-                }
-            }
-        )()
-    },[params])
+    const {lawyerDetails,refetch} = UseGetLawyerDetails(params?.id)
     console.log(lawyerDetails);
-    const {name,image,description,department,socialmedia,title,languages,contacts} = lawyerDetails || {};
+    const {name,image,description,department,socialmedia,title,languages,contacts,_id} = lawyerDetails || {};
     return (
         <div className='-mt-20'>
             <div className="team_banner_bg_imgae h-[450px] text-white flex items-end justify-center ">
@@ -61,7 +52,7 @@ const SingleLawyerPage = ({params}) => {
                             </li>)
                         }
                     </ul>
-                    <Link href={'/apinmentform'} className='bg-white px-5 py-3 text-[#a51890] rounded-md mt-5 block w-fit uppercase font-medium'>Appointment now</Link>
+                    <Link href={`/lawyerappointment/${_id}`} className='bg-white px-5 py-3 text-[#a51890] rounded-md mt-5 block w-fit uppercase font-medium'>Appointment now</Link>
                 </div>
             </div>
             : <LoadingPage></LoadingPage>
