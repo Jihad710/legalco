@@ -78,17 +78,26 @@ const Footer = () => {
                         </Link>
                      </li>
                      <li>
-                        <Link href="/" className="text-[14px] hover:underline">
+                        <Link
+                           href="/services"
+                           className="text-[14px] hover:underline"
+                        >
                            Services
                         </Link>
                      </li>
                      <li>
-                        <Link href="/" className="text-[14px] hover:underline">
+                        <Link
+                           href="/appointment"
+                           className="text-[14px] hover:underline"
+                        >
                            Appointment
                         </Link>
                      </li>
                      <li>
-                        <Link href="/" className="text-[14px] hover:underline">
+                        <Link
+                           href="/blogs"
+                           className="text-[14px] hover:underline"
+                        >
                            Blog
                         </Link>
                      </li>
@@ -162,10 +171,17 @@ const Footer = () => {
                   >
                      Contact Us
                   </h3>
-                  <p className="my-3"><b className="block">Office Address: </b> SEL Trident Tower, Suite # 907 (9th Floor), 57, Purana Paltan, (VIP Road), Dhaka - 1000.</p>
-                  <p className="my-3"><b>Phone: </b> +88 01773239086</p>
-                  <p className="my-3"><b>Email: </b>  Admin@legalco.com</p>
-
+                  <p className="my-3">
+                     <b className="block">Office Address: </b> SEL Trident
+                     Tower, Suite # 907 (9th Floor), 57, Purana Paltan, (VIP
+                     Road), Dhaka - 1000.
+                  </p>
+                  <p className="my-3">
+                     <b>Phone: </b> +88 01773239086
+                  </p>
+                  <p className="my-3">
+                     <b>Email: </b> Admin@legalco.com
+                  </p>
                </div>
             </div>
             <p className="text-center my-5">

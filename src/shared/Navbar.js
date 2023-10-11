@@ -12,7 +12,7 @@ const Navbar = () => {
    const [color, setColor] = useState(false);
    if (typeof window !== 'undefined') {
       const changeColor = () => {
-         if (window?.scrollY >= 90) {
+         if (window?.scrollY >= 110) {
             setColor(true);
          } else {
             setColor(false);
@@ -25,8 +25,8 @@ const Navbar = () => {
       <div
          className={
             color
-               ? "sticky top-0 z-50 duration-300 nav-bg"
-               : "duration-300 text-white"
+               ? "sticky top-0 z-50 duration-300 nav-bg pt-0"
+               : "duration-300 text-white pt-5"
          }
       >
          <Container>
@@ -40,12 +40,12 @@ const Navbar = () => {
                   {/* Navbar */}
                   <div className="navbar p-0 w-full">
                      <div
-                        className={`flex-1 text-2xl md:text-3xl font-bold ${
+                        className={`flex-1 text-2xl md:text-3xl font-bold py-1 ${
                            color ? "text-white" : "text-[#35868b]"
                         }`}
                      >
                         <Link href="/">
-                           <Image src={logo} alt="Logo" width={150}/>
+                           <Image src={logo} alt="Logo" width={140} />
                         </Link>
                      </div>
                      <div className="lg:hidden flex-none">
@@ -90,7 +90,7 @@ const Navbar = () => {
                            <li>
                               <Link
                                  className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
-                                 href="/"
+                                 href="/blogs"
                               >
                                  Blog
                               </Link>
@@ -124,7 +124,7 @@ const Navbar = () => {
                         <Link href="/appointment">Appointment</Link>
                      </li>
                      <li className="text-[#46b2b8] hover:text-[#348286] duration-200">
-                        <Link href="/">Blog</Link>
+                        <Link href="/blogs">Blog</Link>
                      </li>
                   </ul>
                </div>
