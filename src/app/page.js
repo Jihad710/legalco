@@ -222,7 +222,7 @@ Additional Clauses
 Your utilization of our app/website hinges on your acceptance of all other terms and conditions.
 Beyond the scope outlined in this notice, LegalCO will not employ your information for any
 purposes without your explicit consent. Should you have inquiries concerning this notice, feel
-free to reach out to us at info@legalco.com.bd</p>
+free to reach out to us at info@legalco.com.bd </p>
           </div>
           <div className="border-t py-3 text-center">
               <button onClick={handleSaveTerms} className='btn btn-primary rounded-3xl px-20'>Accept</button>
