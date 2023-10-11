@@ -1,15 +1,13 @@
-"use client";
-import Lottie from "lottie-react";
-import loadingAnimation from "../assets/loading.json";
+"use client"
+import LoadingPage from '@/shared/Loading';
+import React from 'react';
 
-const Loading = () => {
-   return (
-      <div className="w-full h-[100vh] mx-auto overflow-hidden flex justify-center items-center">
-         <div className="max-w-sm">
-            <Lottie animationData={loadingAnimation} />
-         </div>
-      </div>
-   );
+const loading = () => {
+    return (
+        <div>
+            <LoadingPage/>
+        </div>
+    );
 };
 
-export default Loading;
+export default loading;

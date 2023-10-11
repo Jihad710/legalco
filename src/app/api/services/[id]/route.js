@@ -5,7 +5,6 @@ import DbConnect from "@/Services/DbConnect";
 export const GET = async(request,{params}) => {
     try{
         const id = params?.id
-        console.log(id);
         const db = await DbConnect();
         const servicesCollection = db.collection('services');
         const query = {_id: new ObjectId(id)}

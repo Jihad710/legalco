@@ -5,7 +5,7 @@ import contact from "../../assets/contactus.jpg";
 import Image from "next/image";
 import axios from "axios";
 import Swal from "sweetalert2";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 
 const ContactForm = () => {
    const router = useRouter();

@@ -4,12 +4,32 @@
 
 /*================ Common CSS =================*/
 .lc_btn {
-  @apply px-8 py-3 bg-[#ccbd99] rounded-md
+    @apply bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white text-[16px] hover:text-[#225559] font-semibold py-2 px-6 rounded-full duration-300 uppercase
 }
 
-.bg_imgae {
-  background: linear-gradient(rgba(35, 35, 35, 0.502), rgba(35, 35, 35, 0.8)), url('../assets/lawyer-bg.jpg') fixed;
-  background-size: cover;
+.bg_imgae{
+    background: linear-gradient(rgba(35, 35, 35, 0.502), rgba(35, 35, 35, 0.8)), url('../assets/lawyer-bg.jpg') fixed;
+    background-size: cover;
+}
+
+.footer_bg_imgae{
+    background: linear-gradient(#225559cc,#225559e1),url('../assets/foooter_bg.jpg') fixed top;
+    background-size: cover;
+}
+
+.lawyer_card_bg_imgae{
+    background: linear-gradient(#225559e1,#225559e1),url('../assets/lawyer_card_bg.jpg') left;
+    background-size: cover;
+}
+
+.team_banner_bg_imgae{
+    background: linear-gradient(#22555998,#22555998),url('../assets/team_banner.jpg') top;
+    background-size: cover;
+}
+
+.service_banner_bg_imgae{
+    background: linear-gradient(#225559c1,#225559c1),url('../assets/service_banner.jpg') top;
+    background-size: cover;
 }
 
 .footer_bg_imgae {

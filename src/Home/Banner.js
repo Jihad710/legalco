@@ -18,7 +18,7 @@ const Banner = () => {
                      iste sed.
                   </p>
                   <Link
-                     href=""
+                     href="/appointment"
                      className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-4 rounded-full duration-300"
                   >
                      Appointment
