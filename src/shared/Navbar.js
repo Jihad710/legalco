@@ -74,7 +74,7 @@ const Navbar = () => {
                            <li>
                               <Link
                                  className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
-                                 href="#services"
+                                 href="/services"
                               >
                                  Services
                               </Link>
