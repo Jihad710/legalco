@@ -20,7 +20,7 @@ const ServicesPage = () => {
     }, [])
 
     return (
-        <section className='py-20 bg_imgae'>
+        <section className='py-20 bg_imgae' id='services'>
             <Container>
                 <div className="text-white">
                     <SectionTitle title={"Areas Of Service"}></SectionTitle>
