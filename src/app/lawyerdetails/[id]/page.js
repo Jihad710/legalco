@@ -155,10 +155,23 @@ const SingleLawyerPage = ({ params }) => {
           )}
 
           {activeTab === 'EXPERIENCE' && (
-            <div>
-              {/* Contact information */}
-              <p className="text-gray-700">Contact Information Goes Here</p>
-            </div>
+             <div className="flex justify-between items-center">
+             <div>
+               {/* Left Content */}
+               <h1 className='text-xl mb-4'>Akij Group Of industries</h1>
+               <p className="text-gray-700 font-light mb-1">Designation</p>
+               <p className="text-gray-700 mb-4">Chief Consultant</p>
+               <p className="text-gray-700 font-thin mb-1">Employement Status</p>
+               <p className="text-gray-700  ">Dec 31, 2013 - Jan 1, 2022</p>
+             </div>
+             <div>
+               {/* Right Content */}
+               <p className="text-gray-700 mt-5 mb-1  font-thin">Department</p>
+               <p className="text-gray-700 mb-4 ">George Court</p>
+               <p className="text-gray-700 font-thin mb-1 ">Period</p>
+               <p className="text-gray-700  ">1 Years 7 Month</p>
+             </div>
+           </div>
           )}
         </div>
       </div>

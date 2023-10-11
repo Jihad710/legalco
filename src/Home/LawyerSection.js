@@ -26,8 +26,9 @@ const LawyerSection = () => {
     return (
         <section className='py-16'>
             <Container>
-                <div className="text_shadow-color">
-                    <SectionTitle title={"Our Lawyer Team"}></SectionTitle>
+                <div className="">
+                    <SectionTitle title={"Qualified Attorneys"}></SectionTitle>
+					<p className='text-center mt-3'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br></br> veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
                 </div>
                 <div className="">
 					<Swiper
