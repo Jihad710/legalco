@@ -5,13 +5,14 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import logo from '@/assets/logo.jpg'
+import grelogo from '@/assets/graylogo.png'
 const Navbar = () => {
   
    // Change navbar color when scrolling
    const [color, setColor] = useState(false);
    if (typeof window !== 'undefined') {
       const changeColor = () => {
-         if (window?.scrollY >= 90) {
+         if (window?.scrollY >= 110) {
             setColor(true);
          } else {
             setColor(false);
@@ -24,8 +25,8 @@ const Navbar = () => {
       <div
          className={
             color
-               ? "sticky top-0 z-50 duration-300 nav-bg"
-               : "duration-300 text-white"
+               ? "sticky top-0 z-50 duration-300 nav-bg pt-0"
+               : "duration-300 text-white pt-5"
          }
       >
          <Container>
@@ -39,12 +40,12 @@ const Navbar = () => {
                   {/* Navbar */}
                   <div className="navbar p-0 w-full">
                      <div
-                        className={`flex-1 text-2xl md:text-3xl font-bold ${
+                        className={`flex-1 text-2xl md:text-3xl font-bold py-1 ${
                            color ? "text-white" : "text-[#35868b]"
                         }`}
                      >
                         <Link href="/">
-                           <Image src={logo} alt="Logo" width={150}/>
+                           <Image src={logo} alt="Logo" width={140} />
                         </Link>
                      </div>
                      <div className="lg:hidden flex-none">
@@ -59,7 +60,7 @@ const Navbar = () => {
                      <div className="lg:block flex-none hidden">
                         <ul className="menu-horizontal flex items-center gap-6 text-[15px] duration-200">
                            {/* Navbar menu contents */}
-                           <div className="text-2xl md:text-3xl font-bold text-[#28676b] lg:hidden">
+                           <div className="text-3xl md:text-3xl font-bold text-[#28676b] lg:hidden">
                               <Link href="/">LegalCo</Link>
                            </div>
                            <li>
@@ -73,7 +74,7 @@ const Navbar = () => {
                            <li>
                               <Link
                                  className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
-                                 href="/"
+                                 href="/services"
                               >
                                  Services
                               </Link>
@@ -89,7 +90,7 @@ const Navbar = () => {
                            <li>
                               <Link
                                  className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
-                                 href="/"
+                                 href="/blogs"
                               >
                                  Blog
                               </Link>
@@ -109,7 +110,7 @@ const Navbar = () => {
                      {/* Sidebar content here */}
                      <div className="text-3xl font-bold text-[#35868b] lg:hidden pb-3 border-b">
                         <Link className="block" href="/">
-                           LegalCo
+                           <Image className="mx-5" src={grelogo} alt="Logo" width={150}/>
                         </Link>
                      </div>
 
@@ -117,13 +118,13 @@ const Navbar = () => {
                         <Link href="/">Home</Link>
                      </li>
                      <li className="text-[#46b2b8] hover:text-[#348286] duration-200">
-                        <Link href="/">Service</Link>
+                        <Link href="#services">Service</Link>
                      </li>
                      <li className="text-[#46b2b8] hover:text-[#348286] duration-200">
-                        <Link href="/">Appointment</Link>
+                        <Link href="/appointment">Appointment</Link>
                      </li>
                      <li className="text-[#46b2b8] hover:text-[#348286] duration-200">
-                        <Link href="/">Blog</Link>
+                        <Link href="/blogs">Blog</Link>
                      </li>
                   </ul>
                </div>
