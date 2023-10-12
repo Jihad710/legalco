@@ -5,9 +5,9 @@ import contact from '@/assets/contactus.jpg'
 import Image from 'next/image';
 import axios from 'axios';
 import Swal from 'sweetalert2';
-import { useRouter, useSearchParams } from 'next/navigation';
-import UseGetLawyerDetails from '@/Hooks/UseGetLawyerDetails';
+import { useRouter } from 'next/navigation';
 import LoadingPage from '@/shared/Loading';
+import UseGetLawyerDetails from '@/hooks/UseGetLawyerDetails';
 
 const ContactForm = ({params}) => {
   const {lawyerDetails} = UseGetLawyerDetails(params?.id);
