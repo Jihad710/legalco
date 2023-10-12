@@ -190,13 +190,7 @@ as encompassing approval for the transfer of your personally identifiable inform
 jurisdictions that may possess varying levels of privacy safeguards compared to those afforded
 to you under your local laws.
 Cookies
-Our app/website may employ cookies to monitor information and usage patterns, facilitating a
-deeper comprehension of our user community. This endeavor enables us to furnish superior
-information and services, elevate the management and content of our app/website, and elevate
-your overall online encounter while navigating our site. Additionally, cookies assist us in
-diagnosing server issues. Our utilization of cookie technology is strictly oriented towards
-aggregating data pertaining to your app/website visits, refraining from the collection of personal
-information.
+
 Opt-Out or Unsubscribe
 Should you be receiving regular communications, such as our online newsletter subscription, via
 our app/website or application, you have the option to cease receiving them. Each
