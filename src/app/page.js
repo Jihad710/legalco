@@ -33,7 +33,7 @@ const HomePage = () => {
       <div className="w-2/3 bg-white h-[90vh] rounded-lg p-5">
               <h3 className='text-4xl font-bold mb-3'>Privacy Policy:</h3>
           <div className="h-[65vh] overflow-auto">
-              <p className='text-justify'>This policy is designed to provide you with insights into how we utilize and safeguard your data.
+              {/* <p className='text-justify'>This policy is designed to provide you with insights into how we utilize and safeguard your data.
 Should you have any inquiries, please don't hesitate to reach out to us at info@legalco.com.bd.
 We sincerely appreciate your selection of LegalCO. Thank you.
 Date of Effectiveness: [ ]
@@ -216,7 +216,7 @@ Additional Clauses
 Your utilization of our app/website hinges on your acceptance of all other terms and conditions.
 Beyond the scope outlined in this notice, LegalCO will not employ your information for any
 purposes without your explicit consent. Should you have inquiries concerning this notice, feel
-free to reach out to us at info@legalco.com.bd </p>
+free to reach out to us at info@legalco.com.bd </p> */}
           </div>
           <div className="border-t py-3 text-center">
               <button onClick={handleSaveTerms} className='btn btn-primary rounded-3xl px-20'>Accept</button>

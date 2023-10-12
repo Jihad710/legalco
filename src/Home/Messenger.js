@@ -5,7 +5,7 @@ const Messenger = () => {
     return (
         <div>
             <FacebookProvider appId="127943877076242" chatSupport>
-                <CustomChat pageId="106590254937306" minimized={true}/>
+                <CustomChat pageId="122102789786007925" minimized={true}/>
             </FacebookProvider> 
         </div>
     );
