@@ -39,7 +39,7 @@ const SingleLawyerPage = ({ params }) => {
    };
 
    return (
-      <div className="-mt-20">
+      <div className="-mt-24">
          <div className="team_banner_bg_imgae h-[450px] text-white flex items-end justify-center">
             <Container>
                <div className="text-center mb-20">
@@ -50,16 +50,17 @@ const SingleLawyerPage = ({ params }) => {
          </div>
          <Container>
             {lawyerDetails ? (
-               <div className="grid grid-cols-3 gap-5 my-10 p-5 rounded-lg lawyer_card_bg_imgae">
-                  <div className="">
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-14 p-8 rounded-lg lawyer_card_bg_imgae">
+                  <div className="flex justify-center">
                      <Image
-                        className=" object-cover"
+                        className="object-cover"
                         width={300}
                         height={300}
                         src={image}
                         alt="Lawyer Image"
                      />
                   </div>
+
                   <div className="text-gray-50 col-span-2">
                      <h2 className={`${merriweather.className} text-4xl`}>
                         {name}
@@ -177,22 +178,36 @@ const SingleLawyerPage = ({ params }) => {
 
                   {activeTab === "EXPERIENCE" && (
                      <div className="flex justify-between items-center">
-                     <div>
-                       {/* Left Content */}
-                       <h1 className='text-xl mb-4'>Akij Group Of industries</h1>
-                       <p className="text-gray-700 font-light mb-1">Designation</p>
-                       <p className="text-gray-700 mb-4">Chief Consultant</p>
-                       <p className="text-gray-700 font-thin mb-1">Employement Status</p>
-                       <p className="text-gray-700  ">Dec 31, 2013 - Jan 1, 2022</p>
+                        <div>
+                           {/* Left Content */}
+                           <h1 className="text-xl mb-4">
+                              Akij Group Of industries
+                           </h1>
+                           <p className="text-gray-700 font-light mb-1">
+                              Designation
+                           </p>
+                           <p className="text-gray-700 mb-4">
+                              Chief Consultant
+                           </p>
+                           <p className="text-gray-700 font-thin mb-1">
+                              Employement Status
+                           </p>
+                           <p className="text-gray-700  ">
+                              Dec 31, 2013 - Jan 1, 2022
+                           </p>
+                        </div>
+                        <div>
+                           {/* Right Content */}
+                           <p className="text-gray-700 mt-5 mb-1  font-thin">
+                              Department
+                           </p>
+                           <p className="text-gray-700 mb-4 ">George Court</p>
+                           <p className="text-gray-700 font-thin mb-1 ">
+                              Period
+                           </p>
+                           <p className="text-gray-700  ">1 Years 7 Month</p>
+                        </div>
                      </div>
-                     <div>
-                       {/* Right Content */}
-                       <p className="text-gray-700 mt-5 mb-1  font-thin">Department</p>
-                       <p className="text-gray-700 mb-4 ">George Court</p>
-                       <p className="text-gray-700 font-thin mb-1 ">Period</p>
-                       <p className="text-gray-700  ">1 Years 7 Month</p>
-                     </div>
-                   </div>
                   )}
                </div>
             </div>
