@@ -26,8 +26,9 @@ const LawyerSection = () => {
     return (
        <section className="py-16">
           <Container>
-             <div className="text_shadow-color">
-                <SectionTitle title={"Our Lawyer Team"}></SectionTitle>
+             <div className="">
+                <SectionTitle title={"Qualified Attorneys"}></SectionTitle>
+				<p className='text-center mt-3'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br></br> veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
              </div>
              <div className="">
                 <Swiper
@@ -69,7 +70,7 @@ const LawyerSection = () => {
                                      className="w-full h-[350px] object-top object-cover shadow-sm"
                                   />
                                </figure>
-                               {/* <svg className='-mt-16 w-full' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="100"d="M0,192L30,176C60,160,120,128,180,112C240,96,300,96,360,112C420,128,480,160,540,160C600,160,660,128,720,133.3C780,139,840,181,900,181.3C960,181,1020,139,1080,112C1140,85,1200,75,1260,96C1320,117,1380,171,1410,197.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg> */}
+                               {/* <svg className='-mt-16 w-full' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="100"d="M0,192L30,176C60,160,120,128,180,112C240,96,300,96,360,112C420,128,480,160,540,160C600,160,660,128,720,133.3C780,139,840,181,900,181.3C960,181,1020,139,1080,112C1140,85,1200,75,1260,96C1320,117,1380,171,1410,197.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>*/}
                                <div className="p-5 h-[220px] text-center flex flex-col justify-between">
                                   <h2
                                      className={`${merriweather.className} text-3xl`}

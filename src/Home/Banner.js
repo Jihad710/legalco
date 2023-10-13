@@ -11,7 +11,7 @@ const Banner = () => {
                   <h1 className="text-2xl md:text-4xl font-bold">
                      Really Unbelievable Solutions for all Legal Cases.
                   </h1>
-                  <p className="my-6">
+                  <p className="mt-6 mb-10">
                      Officia quas assumenda incidunt necessitatibus, deserunt
                      consequuntur cumque asperiores exercitationem iusto in
                      dolores quasi consequatur nihil obcaecati pariatur ea nemo
@@ -19,7 +19,7 @@ const Banner = () => {
                   </p>
                   <Link
                      href="/appointment"
-                     className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-4 rounded-full duration-300"
+                     className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-6 rounded-full duration-300"
                   >
                      Appointment
                   </Link>

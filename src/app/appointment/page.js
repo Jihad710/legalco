@@ -22,7 +22,7 @@ const ContactForm = () => {
 
    const onSubmit = async (data) => {
       const appointment = {
-         name: data?.firstName + " " + data?.lastName,
+         name: data?.firstName,
          email: data?.email,
          phone: data?.phoneNumber,
          servicetype: data?.serviceInterest,
@@ -89,15 +89,15 @@ const ContactForm = () => {
                               htmlFor="firstName"
                               className="block mb-1 text-[14px] font-semibold"
                            >
-                              First Name*
+                              Name*
                            </label>
                            <input
                               {...register("firstName", {
-                                 required: "First Name is required",
+                                 required: "Name is required",
                               })}
                               type="text"
                               id="firstName"
-                              placeholder="Anthony"
+                              placeholder="Enter your name"
                               className={`w-full px-4 py-[10px] bg-gray-100 border border-[#35878b4d] focus:outline-none rounded-md text-[14px] placeholder:text-[14px] ${
                                  errors.firstName
                                     ? "border-red-500"
@@ -111,7 +111,7 @@ const ContactForm = () => {
                            )}
                         </div>
 
-                        <div className="mb-6">
+                        {/* <div className="mb-6">
                            <label
                               htmlFor="lastName"
                               className="block mb-1 text-[14px] font-semibold"
@@ -136,7 +136,7 @@ const ContactForm = () => {
                                  {errors.lastName.message}
                               </p>
                            )}
-                        </div>
+                        </div> */}
 
                         <div className="mb-6">
                            <label
@@ -155,7 +155,7 @@ const ContactForm = () => {
                               })}
                               type="email"
                               id="email"
-                              placeholder="anthonyhill@gmail.com"
+                              placeholder="Enter your email"
                               className={`w-full px-4 py-[10px] bg-gray-100 border border-[#35878b4d] focus:outline-none rounded-md text-[14px] placeholder:text-[14px] ${
                                  errors.email
                                     ? "border-red-500"
