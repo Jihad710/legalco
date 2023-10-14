@@ -4,6 +4,7 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/Common/Container";
+import { MdArrowBackIos } from "react-icons/md";
 
 const DetailsPage = ({ params }) => {
    const [blog, setBlog] = useState({});
@@ -42,8 +43,7 @@ const DetailsPage = ({ params }) => {
 
    return (
       <div className="min-h-screen py-2 md:py-5 -mt-[120px] mb-20">
-         <div className="h-72 bg-white blog-details-bg">
-         </div>
+         <div className="h-72 bg-white blog-details-bg"></div>
          <Container>
             <div className="flex justify-center mt-8">
                <div className="max-w-screen-xl p-6">
@@ -59,8 +59,20 @@ const DetailsPage = ({ params }) => {
                            width={1000}
                            height={400}
                         />
-                        <p className="text-gray-400 text-center">{blog?.subtitle}</p>
-                        <p className="mt-4 text-gray-800">{blog?.content}</p>
+                        <p className="text-gray-400 text-center">
+                           {blog?.subtitle}
+                        </p>
+                        <p className="mt-4 mb-10 text-gray-800">
+                           {blog?.content}
+                        </p>
+
+                        <Link
+                           href="/blogs"
+                           className="flex justify-center items-center w-1/6 bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-6 rounded-full duration-300"
+                        >
+                           <MdArrowBackIos className="text-xl" />
+                           <span>Back</span>
+                        </Link>
                      </div>
 
                      {/*============ blog suggestion section ============*/}

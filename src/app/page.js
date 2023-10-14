@@ -33,7 +33,7 @@ const HomePage = () => {
       <div className="w-2/3 bg-white h-[90vh] rounded-lg p-5">
               <h3 className='text-4xl font-bold mb-3'>Privacy Policy:</h3>
           <div className="h-[65vh] overflow-auto">
-              <p className='text-justify'>This policy is designed to provide you with insights into how we utilize and safeguard your data.
+              {/* <p className='text-justify'>This policy is designed to provide you with insights into how we utilize and safeguard your data.
 Should you have any inquiries, please don't hesitate to reach out to us at info@legalco.com.bd.
 We sincerely appreciate your selection of LegalCO. Thank you.
 Date of Effectiveness: [ ]
@@ -190,13 +190,7 @@ as encompassing approval for the transfer of your personally identifiable inform
 jurisdictions that may possess varying levels of privacy safeguards compared to those afforded
 to you under your local laws.
 Cookies
-Our app/website may employ cookies to monitor information and usage patterns, facilitating a
-deeper comprehension of our user community. This endeavor enables us to furnish superior
-information and services, elevate the management and content of our app/website, and elevate
-your overall online encounter while navigating our site. Additionally, cookies assist us in
-diagnosing server issues. Our utilization of cookie technology is strictly oriented towards
-aggregating data pertaining to your app/website visits, refraining from the collection of personal
-information.
+
 Opt-Out or Unsubscribe
 Should you be receiving regular communications, such as our online newsletter subscription, via
 our app/website or application, you have the option to cease receiving them. Each
@@ -222,7 +216,7 @@ Additional Clauses
 Your utilization of our app/website hinges on your acceptance of all other terms and conditions.
 Beyond the scope outlined in this notice, LegalCO will not employ your information for any
 purposes without your explicit consent. Should you have inquiries concerning this notice, feel
-free to reach out to us at info@legalco.com.bd </p>
+free to reach out to us at info@legalco.com.bd </p> */}
           </div>
           <div className="border-t py-3 text-center">
               <button onClick={handleSaveTerms} className='btn btn-primary rounded-3xl px-20'>Accept</button>
