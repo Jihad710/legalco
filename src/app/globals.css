@@ -112,3 +112,15 @@
   background: linear-gradient(#17244181, #17244181), url('../assets/blogs/gavel-hamer.jpg') fixed bottom;
   background-size: cover;
 }
+
+/*======= Blogs page =======*/
+
+.about-us-bg {
+  background: linear-gradient(#17244181, #17244181), url('../assets/about-us/about-banner.jpg') fixed bottom;
+  background-size: cover;
+}
+
+.about-content-bg {
+  background: linear-gradient(#2c7074da, #2c7074da), url('../assets/about-us/hand-shak.jpg') fixed top;
+  background-size: cover;
+}

@@ -11,7 +11,7 @@ import UseGetLawyerDetails from '@/hooks/UseGetLawyerDetails';
 
 const ContactForm = ({params}) => {
   const {lawyerDetails} = UseGetLawyerDetails(params?.id);
-  console.log(lawyerDetails);
+
   const {address,email} = lawyerDetails?.contacts || {};
   const router = useRouter();
   const {handleSubmit,register,formState: { errors },reset} = useForm();
@@ -27,10 +27,10 @@ const ContactForm = ({params}) => {
       timestamp: new Date()
     }
     const res = await axios.post('/api/lawyerappointment',{...appointment});
-    console.log(res?.data);
+
     if(res?.data?.insertedId){ 
       const mailResponse = await axios.post('/api/lawyeremail',{...appointment});
-      console.log(mailResponse);
+
       if(mailResponse?.data?.success){
         reset();
         Swal.fire({
