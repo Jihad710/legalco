@@ -176,7 +176,7 @@ const Navbar = () => {
                                     <Link
                                        href={`/servicedetails/${service?._id}`}
                                        key={service?._id}
-                                       className="text-[14px] text-black hover:text-slate-400 hover:bg-[#274244fa] py-[6px] px-4 rounded-md"
+                                       className="text-[14px] text-[#46b2b8] hover:text-slate-400 bg-text-[#d1e0dc] hover:bg-[#274244fa] py-[6px] px-4 rounded-md text-start"
                                     >
                                        <span>{service?.service}</span>
                                     </Link>
