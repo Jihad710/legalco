@@ -148,7 +148,7 @@ const Navbar = () => {
                      htmlFor="my-drawer-3"
                      className="drawer-overlay"
                   ></label>
-                  <ul className="w-72 min-h-full py-4 space-y-3 text-[16px] font-semibold text-center duration-200 bg-white">
+                  <ul className="w-72 min-h-full py-4 space-y-3 text-[16px] font-semibold text-center duration-200 bg-[#d1e0dc]">
                      {/* Sidebar content here */}
                      <div className="text-3xl font-bold text-[#35868b] lg:hidden pb-3 border-b">
                         <Link className="block" href="/">
@@ -176,7 +176,7 @@ const Navbar = () => {
                                     <Link
                                        href={`/servicedetails/${service?._id}`}
                                        key={service?._id}
-                                       className="text-[14px] text-[#46b2b8] hover:text-slate-400 bg-[#d1e0dc] hover:bg-[#274244fa] py-[6px] px-4 rounded-md text-start"
+                                       className="text-[14px] text-[#46b2b8] hover:text-slate-400 hover:bg-[#274244fa] py-[6px] px-4 rounded-md text-start"
                                     >
                                        <span>{service?.service}</span>
                                     </Link>
