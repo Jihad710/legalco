@@ -50,9 +50,9 @@ const ServiceDetailsPage = ({params}) => {
                             Available Lawyer
                          </h2>
                          {lawyers.slice(0, 5).map((lawyer) => (
-                            <div
+                            <div 
                                key={lawyer?._id}
-                               className="flex rounded-md my-5 items-center gap-5"
+                               className="flex rounded-md my-5 items-center gap-5 group"
                             >
                                <Image
                                   src={lawyer?.image}
@@ -62,11 +62,12 @@ const ServiceDetailsPage = ({params}) => {
                                   className="w-40 h-20 object-cover object-top rounded-lg"
                                />
                                <div className="">
-                                  <h3
-                                     className={`${merriweather.className} text-white text-xl`}
+                                  <Link
+                                       href={`/lawyerdetails/${lawyer?._id}`}
+                                     className={`${merriweather.className} text-white text-xl group-hover:underline`}
                                   >
                                      {lawyer?.name}
-                                  </h3>
+                                  </Link>
                                   <h4 className="text-[#ccbd99]">
                                      {lawyer?.title}
                                   </h4>
