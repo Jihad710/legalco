@@ -6,9 +6,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaLocationDot, FaTwitter } from "react-icons/fa6";
 import banner from "@/assets/team_banner.jpg";
 import LoadingPage from "@/shared/Loading";
+import moment from "moment";
 
 const SingleLawyerPage = ({ params }) => {
    const [lawyerDetails, setLawyerDetails] = useState(null);
@@ -23,16 +24,7 @@ const SingleLawyerPage = ({ params }) => {
       })();
    }, [params]);
 
-   const {
-      name,
-      image,
-      description,
-      department,
-      socialmedia,
-      title,
-      languages,
-      contacts,
-   } = lawyerDetails || {};
+   const {name,image,description,department,socialmedia,designation,languages,contacts,experienceyear,practiceArea,experience} = lawyerDetails || {};
 
    const handleTabClick = (tab) => {
       setActiveTab(tab);
@@ -40,20 +32,23 @@ const SingleLawyerPage = ({ params }) => {
 
    return (
       <div className="-mt-24">
+
          <div className="team_banner_bg_imgae h-[450px] text-white flex items-end justify-center">
             <Container>
                <div className="text-center mb-20">
                   <h2 className="text-5xl">{name}</h2>
-                  <h3 className="mt-3 text-2xl text-[#ccbd99]">{title}</h3>
+                  <h3 className="mt-3 text-2xl text-[#ccbd99]">{designation}</h3>
                </div>
             </Container>
          </div>
          <Container>
-            {lawyerDetails ? (
-               <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-14 p-8 rounded-lg lawyer_card_bg_imgae">
+{lawyerDetails ? (
+            <div className="">
+{/*====================== Lawyer Card ==========================*/}
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center my-14 p-8 rounded-lg lawyer_card_bg_imgae">
                   <div className="flex justify-center">
                      <Image
-                        className="object-cover"
+                        className="object-cover w-full max-h-[500px]"
                         width={300}
                         height={300}
                         src={image}
@@ -66,7 +61,7 @@ const SingleLawyerPage = ({ params }) => {
                         {name}
                      </h2>
                      <h3 className={`${merriweather.className} mt-3`}>
-                        {title}
+                        {designation}
                      </h3>
                      <h3 className="mt-5 font-medium text-lg">
                         <b>Department: </b> {department}
@@ -82,38 +77,49 @@ const SingleLawyerPage = ({ params }) => {
                         </p>
                      )}
 
-                     <ul className="flex gap-3 mt-4">
-                        {socialmedia?.map((single, idx) => (
-                           <li key={idx}>
-                              <a
-                                 target="_blank"
-                                 className="rounded-full border-2 w-10 bg-white flex items-center justify-center p-[10px] h-10"
-                                 href={single?.link}
-                              >
-                                 <Image
-                                    width={50}
-                                    height={50}
-                                    src={single?.icon}
-                                    className="object-contain w-full h-full"
-                                    alt="icon"
-                                 />
-                              </a>
-                           </li>
-                        ))}
+                     <ul className="flex gap-8 mt-4">
+                        
+{ socialmedia?.facebook &&
+                        <li>
+                           <a target="_blank" className="w-10 h-10 border-2 rounded-full flex items-center justify-center" href={socialmedia?.facebook}>
+                              <FaFacebookF/>
+                           </a>
+                        </li>
+}                        
+{ socialmedia?.linkedin &&
+                        <li>
+                           <a target="_blank" className="w-10 h-10 border-2 rounded-full flex items-center justify-center" href={socialmedia?.linkedin}>
+                              <FaLinkedinIn/>
+                           </a>
+                        </li>
+}                        
+{ socialmedia?.twitter &&
+                        <li>
+                           <a target="_blank" className="w-10 h-10 border-2 rounded-full flex items-center justify-center" href={socialmedia?.twitter}>
+                              <FaTwitter/>
+                           </a>
+                        </li>
+}                        
+{ socialmedia?.instagram &&
+                        <li>
+                           <a target="_blank" className="w-10 h-10 border-2 rounded-full flex items-center justify-center" href={socialmedia?.instagram}>
+                              <FaInstagram/>
+                           </a>
+                        </li>
+}
                      </ul>
+
+
                      <Link
-                        href={"/appointment"}
+                        href={`/lawyerappointment/${params?.id}`}
                         className="bg-white px-5 py-3 text-[#a51890] rounded-md mt-5 block w-fit uppercase font-medium"
                      >
                         Appointment now
                      </Link>
                   </div>
                </div>
-            ) : (
-               <LoadingPage></LoadingPage>
-            )}
-
-            <div className="max-w-2xl ">
+{/*====================== Lawyer Profiles and ecperience ==========================*/}
+<div className="max-w-2xl ">
                <div className="flex">
                   <button
                      className={`${
@@ -141,76 +147,85 @@ const SingleLawyerPage = ({ params }) => {
                   {activeTab === "PROFILE" && (
                      <div>
                         <h1 className=" text-xl  mt-4  text-gray-800">
-                           John Doe
+                           {name}
                         </h1>
-                        <p className="mb-4">Experience 6+ Years</p>
+                        <p className="mb-4">Experience {experienceyear}+ Years</p>
                         <p className="text-gray-700 text-justify  ">
-                           {" "}
-                           Lorem ipsum dolor sit amet consectetur adipiscing
-                           elit sed do eiusmod tempor incididunt ut labore et
-                           dolore magna aliqua. Ut enim ad minim veniam quis
-                           nostrud exercitation ullamco laboris nisi ut aliquip.
-                           On the other hand, we denounce with righteous
-                           indignation and dislike men who are so beguiled and
-                           demoralized by the charms of pleasure of the moment.
+                           {description}
                         </p>
                         <div className="grid grid-cols-2 gap-4 mt-4">
                            <div>
                               <p className="text-gray-700 mt-4 ">
-                                 Practice Area{" "}
+                                 Practice Area
                               </p>
 
-                              <ul>- Litigation & Appeals</ul>
-                              <ul>- Real Estate</ul>
-                              <ul>- Commercial Transactions</ul>
+                              <ul>
+                                 {
+                                    practiceArea?.split(",")?.map((single,idx) => <li key={idx}>
+                                       -  {single}
+                                       </li>
+                                    )
+                                 }
+                              </ul>
                            </div>
                         </div>
-                        <p className="text-gray-700 text-justify mt-5 ">
-                           {" "}
-                           Lorem ipsum dolor sit amet consectetur adipiscing
-                           elit sed do eiusmod tempor incididunt ut labore et
-                           dolore magna aliqua. Ut enim ad minim veniam quis
-                           nostrud exercitation ullamco laboris nisi ut aliquip.
-                           On the other hand.
-                        </p>
                      </div>
                   )}
 
                   {activeTab === "EXPERIENCE" && (
-                     <div className="flex justify-between items-center">
-                        <div>
-                           {/* Left Content */}
-                           <h1 className="text-xl mb-4">
-                              Akij Group Of industries
-                           </h1>
-                           <p className="text-gray-700 font-light mb-1">
-                              Designation
-                           </p>
-                           <p className="text-gray-700 mb-4">
-                              Chief Consultant
-                           </p>
-                           <p className="text-gray-700 font-thin mb-1">
-                              Employement Status
-                           </p>
-                           <p className="text-gray-700  ">
-                              Dec 31, 2013 - Jan 1, 2022
-                           </p>
-                        </div>
-                        <div>
-                           {/* Right Content */}
-                           <p className="text-gray-700 mt-5 mb-1  font-thin">
-                              Department
-                           </p>
-                           <p className="text-gray-700 mb-4 ">George Court</p>
-                           <p className="text-gray-700 font-thin mb-1 ">
-                              Period
-                           </p>
-                           <p className="text-gray-700  ">1 Years 7 Month</p>
-                        </div>
+                     <div className="">
+                        {
+                           experience?.length >= 1 ? 
+                           <div className="">
+                              {
+                                 experience?.map((ex,idx)=> <div key={idx} className="flex justify-between items-center">
+                                 <div>
+                                    {/* Left Content */}
+                                    <h1 className="text-xl mb-4">
+                                       {ex?.institutename}
+                                    </h1>
+                                    <p className="text-gray-700 font-light mb-1">
+                                       Designation
+                                    </p>
+                                    <p className="text-gray-700 mb-4">
+                                       {ex?.designation}
+                                    </p>
+                                    <p className="text-gray-700 font-thin mb-1">
+                                       Employement Status
+                                    </p>
+                                    <p className="text-gray-700  ">
+                                       {moment(ex?.startdate).format('ll')} - {moment(ex?.enddate).format('ll')}
+                                    </p>
+                                 </div>
+                                 <div>
+                                    {/* Right Content */}
+                                    <p className="text-gray-700 mt-5 mb-1  font-thin">
+                                       Department
+                                    </p>
+                                    <p className="text-gray-700 mb-4 ">{department}</p>
+                                    <p className="text-gray-700 font-thin mb-1 ">
+                                       Duration
+                                    </p>
+                                    <p className="text-gray-700  ">
+                                       { 
+                                          moment(ex?.startdate).from(ex?.enddate,true)
+                                       }
+                                    </p>
+                                 </div>
+                              </div>)
+                              }
+                           </div>
+                           : <p className="text-3xl my-8 text-center">Not Available</p>
+                        }
                      </div>
                   )}
                </div>
             </div>
+            </div>
+            ) : (
+               <LoadingPage></LoadingPage>
+            )}
+
          </Container>
       </div>
    );
