@@ -95,6 +95,7 @@ const Navbar = () => {
                                  Blog
                               </Link>
                            </li>
+                         
                         </ul>
                      </div>
                   </div>
@@ -126,6 +127,7 @@ const Navbar = () => {
                      <li className="text-[#46b2b8] hover:text-[#348286] duration-200">
                         <Link href="/blogs">Blog</Link>
                      </li>
+                     
                   </ul>
                </div>
             </div>

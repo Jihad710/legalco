@@ -177,7 +177,10 @@ const Footer = () => {
                      Road), Dhaka - 1000.
                   </p>
                   <p className="my-3">
-                     <b>Phone: </b> +88 01773239086
+                     <b>Phone: </b> +880 9697308988
+                  </p>
+                  <p className="my-3 mr-4">
+                      +8801 988 688 988
                   </p>
                   <p className="my-3">
                      <b>Email: </b> Admin@legalco.com
