@@ -12,3 +12,15 @@ export const GET = async(request) => {
 		NextResponse.json({ error: 'error for getting data' });
     }
 }
+
+export const POST = async(request) => {
+    try{
+        const db = await DbConnect();
+        const lawyerCollection = db.collection('lawyer');
+        const result = await lawyerCollection.find().toArray();
+        return NextResponse.json(result);
+    }catch (error){
+		console.error('error for getting data', error);
+		NextResponse.json({ error: 'error for getting data' });
+    }
+}
