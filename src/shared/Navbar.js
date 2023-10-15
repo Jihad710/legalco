@@ -150,7 +150,7 @@ const Navbar = () => {
                   ></label>
                   <ul className="w-72 min-h-full py-4 space-y-3 text-[16px] font-semibold text-center duration-200 bg-[#d1e0dc]">
                      {/* Sidebar content here */}
-                     <div className="text-3xl font-bold text-[#35868b] lg:hidden pb-3 border-b">
+                     <div className="text-3xl font-bold text-[#35868b] lg:hidden pb-3 border-b border-[#348286]">
                         <Link className="block" href="/">
                            <Image
                               className="mx-5"
@@ -160,6 +160,7 @@ const Navbar = () => {
                            />
                         </Link>
                      </div>
+
                      <li className="text-[#46b2b8] hover:text-[#348286] duration-200">
                         <Link href="/">Home</Link>
                      </li>
