@@ -15,14 +15,14 @@ const ContactForm = () => {
    const {
       handleSubmit,
       register,
-      setValue,
+      reset,
       watch,
       formState: { errors },
    } = useForm();
 
    const onSubmit = async (data) => {
       const appointment = {
-         name: data?.firstName,
+         name: data?.name,
          email: data?.email,
          phone: data?.phoneNumber,
          servicetype: data?.serviceInterest,
@@ -38,6 +38,7 @@ const ContactForm = () => {
          });
          
          if (mailResponse?.data?.success) {
+            reset();
             Swal.fire({
                title: "Success",
                text: "You get all service in LEGALCO app. Please download this.",
@@ -48,8 +49,10 @@ const ContactForm = () => {
                confirmButtonText: "Download Now",
             }).then((result) => {
                if (result.isConfirmed) {
-                  router.push("https://www.youtube.com/watch?v=34UMor0gQEA");
-               }
+                  router.push('https://www.youtube.com/watch?v=34UMor0gQEA');
+                }else{
+                  router.push('/');
+                }
             });
          }
       }
@@ -86,27 +89,27 @@ const ContactForm = () => {
                      >
                         <div className="mb-6">
                            <label
-                              htmlFor="firstName"
+                              htmlFor="name"
                               className="block mb-1 text-[14px] font-semibold"
                            >
                               Name*
                            </label>
                            <input
-                              {...register("firstName", {
+                              {...register("name", {
                                  required: "Name is required",
                               })}
                               type="text"
-                              id="firstName"
+                              id="name"
                               placeholder="Enter your name"
                               className={`w-full px-4 py-[10px] bg-gray-100 border border-[#35878b4d] focus:outline-none rounded-md text-[14px] placeholder:text-[14px] ${
-                                 errors.firstName
+                                 errors.name
                                     ? "border-red-500"
                                     : "focus:border-[#35878bb6]"
                               }`}
                            />
-                           {errors.firstName && (
+                           {errors.name && (
                               <p className="text-red-500 text-sm mt-1">
-                                 {errors.firstName.message}
+                                 {errors.name.message}
                               </p>
                            )}
                         </div>
@@ -385,23 +388,6 @@ const ContactForm = () => {
                                  Purana Paltan, (VIP Road), Dhaka - 1000.
                               </span>
                            </p>
-                           {/* <p className="text-gray-600">
-                           <span className="font-bold">Email:</span>
-                           <span className="text-[14px] ml-2 font-semibold">
-                              Admin@legalco.com
-                           </span>
-                        </p>
-                        <p className="text-gray-600">
-                           <span className="font-bold">Phone:</span>
-                           <span className="text-[14px] ml-2 font-semibold">
-                              +88 01773239086
-                           </span>
-                        </p>
-                        <p className="text-gray-600">
-                           <span className="font-bold">Address:</span> SEL
-                           Trident Tower, Suite # 907 (9th Floor), 57, Purana{" "}
-                           <br></br> Paltan, (VIP Road), Dhaka - 1000.
-                        </p> */}
                         </div>
                      </div>
                   </div>
