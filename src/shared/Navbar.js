@@ -171,13 +171,13 @@ const Navbar = () => {
                         </span>
                         <details className="dropdown">
                            <summary className="text-[#46b2b8] hover:text-[#348286] duration-150"></summary>
-                           <ul className="dropdown-content -left-16 border z-[1] menu p-2 shadow bg-base-100 rounded-box w-72">
+                           <ul className="dropdown-content -left-20 border z-[1] menu p-2 shadow bg-base-100 rounded-box w-72">
                               {menu ? (
                                  menu?.map((service) => (
                                     <Link
                                        href={`/servicedetails/${service?._id}`}
                                        key={service?._id}
-                                       className="text-[14px] text-[#46b2b8] hover:text-slate-400 hover:bg-[#274244fa] py-[6px] px-4 rounded-md text-start"
+                                       className="text-[14px] text-[#348286] hover:text-slate-400 hover:bg-[#274244fa] py-[6px] px-4 rounded-md text-start"
                                     >
                                        <span>{service?.service}</span>
                                     </Link>
