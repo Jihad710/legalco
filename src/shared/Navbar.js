@@ -148,7 +148,7 @@ const Navbar = () => {
                      htmlFor="my-drawer-3"
                      className="drawer-overlay"
                   ></label>
-                  <ul className="w-72 min-h-full py-4 space-y-3 text-[16px] font-semibold text-center duration-200 bg-[#d1e0dc]">
+                  <ul className="w-72 min-h-full py-4 space-y-3 text-[16px] font-semibold text-start duration-200 bg-[#d1e0dc]">
                      {/* Sidebar content here */}
                      <div className="text-3xl font-bold text-[#35868b] lg:hidden pb-3 border-b border-[#348286]">
                         <Link className="block" href="/">
@@ -171,7 +171,7 @@ const Navbar = () => {
                         </span>
                         <details className="dropdown">
                            <summary className="text-[#46b2b8] hover:text-[#348286] duration-150"></summary>
-                           <ul className="dropdown-content -left-32 border z-[1] menu p-2 shadow bg-base-100 rounded-box w-72">
+                           <ul className="dropdown-content -left-40 border z-[1] menu p-2 shadow bg-base-100 rounded-box w-72">
                               {menu ? (
                                  menu?.map((service) => (
                                     <Link
