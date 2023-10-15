@@ -7,7 +7,6 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import logo from "@/assets/logo.jpg";
 import grelogo from "@/assets/graylogo.png";
 import { IoIosArrowForward } from "react-icons/io";
-import LoadingPage from "@/shared/Loading";
 import axios from "axios";
 
 const Navbar = () => {
@@ -113,8 +112,8 @@ const Navbar = () => {
                                           </Link>
                                        ))
                                     ) : (
-                                       <div className="col-span-3">
-                                          <LoadingPage></LoadingPage>
+                                       <div className="col-span-3 flex justify-center">
+                                          <span className="loading loading-dots loading-md text-center py-8"></span>
                                        </div>
                                     )}
                                  </ul>
@@ -166,17 +165,27 @@ const Navbar = () => {
                      </li>
 
                      <li className="flex items-center justify-center gap-4">
-                        <a href="" className="text-black hover:cursor-pointer">
+                        <span className="text-[#46b2b8] hover:text-[#348286]">
                            Services
-                        </a>
+                        </span>
                         <details className="dropdown">
-                           <summary className="hover:text-[#46b2b8] duration-150"></summary>
-                           <ul className="dropdown-content -left-16 border z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                              <li>
-                                 <Link href="/solutions/marketing">
-                                    Marketing
-                                 </Link>
-                              </li>
+                           <summary className="text-[#46b2b8] hover:text-[#348286] duration-150"></summary>
+                           <ul className="dropdown-content -left-16 border z-[1] menu p-2 shadow bg-base-100 rounded-box w-72">
+                              {menu ? (
+                                 menu?.map((service) => (
+                                    <Link
+                                       href={`/servicedetails/${service?._id}`}
+                                       key={service?._id}
+                                       className="text-[14px] text-black hover:text-slate-400 hover:bg-[#274244fa] py-[6px] px-4 rounded-md"
+                                    >
+                                       <span>{service?.service}</span>
+                                    </Link>
+                                 ))
+                              ) : (
+                                 <div className="col-span-3 flex justify-center">
+                                    <span className="loading loading-dots loading-md text-center py-8"></span>
+                                 </div>
+                              )}
                            </ul>
                         </details>
                      </li>
