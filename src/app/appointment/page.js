@@ -385,23 +385,6 @@ const ContactForm = () => {
                                  Purana Paltan, (VIP Road), Dhaka - 1000.
                               </span>
                            </p>
-                           {/* <p className="text-gray-600">
-                           <span className="font-bold">Email:</span>
-                           <span className="text-[14px] ml-2 font-semibold">
-                              Admin@legalco.com
-                           </span>
-                        </p>
-                        <p className="text-gray-600">
-                           <span className="font-bold">Phone:</span>
-                           <span className="text-[14px] ml-2 font-semibold">
-                              +88 01773239086
-                           </span>
-                        </p>
-                        <p className="text-gray-600">
-                           <span className="font-bold">Address:</span> SEL
-                           Trident Tower, Suite # 907 (9th Floor), 57, Purana{" "}
-                           <br></br> Paltan, (VIP Road), Dhaka - 1000.
-                        </p> */}
                         </div>
                      </div>
                   </div>

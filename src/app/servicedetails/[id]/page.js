@@ -22,7 +22,7 @@ const ServiceDetailsPage = ({params}) => {
             }
         })()
     },[params])
-    console.log(details);
+
     const {description,service} = details || {};
     return (
        <div className="-mt-24">

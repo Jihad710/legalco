@@ -11,7 +11,6 @@ export const GET = async(request,{params}) => {
         const result = await servicesCollection.findOne(query);
         return NextResponse.json(result);
     } catch(e){
-        console.log(e.message);
         NextResponse.json({ error: e.message });
     }
 }

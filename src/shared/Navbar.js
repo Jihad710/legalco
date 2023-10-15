@@ -137,6 +137,14 @@ const Navbar = () => {
                                  Blogs
                               </Link>
                            </li>
+                           <li>
+                              <Link
+                                 className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
+                                 href="/about-us"
+                              >
+                                 About Us
+                              </Link>
+                           </li>
                         </ul>
                      </div>
                   </div>
@@ -196,6 +204,9 @@ const Navbar = () => {
                      </li>
                      <li className="text-[#46b2b8] hover:text-[#348286] duration-200 pl-5">
                         <Link href="/blogs">Blogs</Link>
+                     </li>
+                     <li className="text-[#46b2b8] hover:text-[#348286] duration-200 pl-5">
+                        <Link href="/about-us">About Us</Link>
                      </li>
                   </ul>
                </div>
