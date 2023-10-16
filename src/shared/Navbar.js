@@ -145,6 +145,7 @@ const Navbar = () => {
                                  About Us
                               </Link>
                            </li>
+                         
                         </ul>
                      </div>
                   </div>
@@ -208,6 +209,7 @@ const Navbar = () => {
                      <li className="text-[#46b2b8] hover:text-[#348286] duration-200 pl-5">
                         <Link href="/about-us">About Us</Link>
                      </li>
+                     
                   </ul>
                </div>
             </div>

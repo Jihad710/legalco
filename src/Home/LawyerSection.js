@@ -28,7 +28,7 @@ const LawyerSection = () => {
           <Container>
              <div className="">
                 <SectionTitle title={"Qualified Attorneys"}></SectionTitle>
-				<p className='text-center mt-3'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br></br> veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+				<p className='text-center mt-3'>Connect Communicate And Consult With Legal Expert</p>
              </div>
              <div className="">
                 <Swiper

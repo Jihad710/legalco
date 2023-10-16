@@ -112,35 +112,8 @@ const ContactForm = () => {
                                  {errors.name.message}
                               </p>
                            )}
-                        </div>
-
-                        {/* <div className="mb-6">
-                           <label
-                              htmlFor="lastName"
-                              className="block mb-1 text-[14px] font-semibold"
-                           >
-                              Last Name*
-                           </label>
-                           <input
-                              {...register("lastName", {
-                                 required: "Last Name is required",
-                              })}
-                              type="text"
-                              id="lastName"
-                              placeholder="Hill"
-                              className={`w-full px-4 py-[10px] bg-gray-100 border border-[#35878b4d] focus:outline-none rounded-md text-[14px] placeholder:text-[14px] ${
-                                 errors.lastName
-                                    ? "border-red-500"
-                                    : "focus:border-[#35878bb6]"
-                              }`}
-                           />
-                           {errors.lastName && (
-                              <p className="text-red-500 text-sm mt-1">
-                                 {errors.lastName.message}
-                              </p>
-                           )}
-                        </div> */}
-
+                 </div>
+                 
                         <div className="mb-6">
                            <label
                               htmlFor="email"
