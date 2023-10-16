@@ -118,7 +118,7 @@ const SingleLawyerPage = ({ params }) => {
                      </Link>
                   </div>
                </div>
-{/*====================== Lawyer Profiles and ecperience ==========================*/}
+{/*====================== Lawyer Profiles and experience ==========================*/}
 <div className="max-w-2xl ">
                <div className="flex">
                   <button
