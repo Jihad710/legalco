@@ -112,35 +112,8 @@ const ContactForm = () => {
                                  {errors.name.message}
                               </p>
                            )}
-                        </div>
-
-                        {/* <div className="mb-6">
-                           <label
-                              htmlFor="lastName"
-                              className="block mb-1 text-[14px] font-semibold"
-                           >
-                              Last Name*
-                           </label>
-                           <input
-                              {...register("lastName", {
-                                 required: "Last Name is required",
-                              })}
-                              type="text"
-                              id="lastName"
-                              placeholder="Hill"
-                              className={`w-full px-4 py-[10px] bg-gray-100 border border-[#35878b4d] focus:outline-none rounded-md text-[14px] placeholder:text-[14px] ${
-                                 errors.lastName
-                                    ? "border-red-500"
-                                    : "focus:border-[#35878bb6]"
-                              }`}
-                           />
-                           {errors.lastName && (
-                              <p className="text-red-500 text-sm mt-1">
-                                 {errors.lastName.message}
-                              </p>
-                           )}
-                        </div> */}
-
+                 </div>
+                 
                         <div className="mb-6">
                            <label
                               htmlFor="email"
@@ -388,23 +361,6 @@ const ContactForm = () => {
                                  Purana Paltan, (VIP Road), Dhaka - 1000.
                               </span>
                            </p>
-                           {/* <p className="text-gray-600">
-                           <span className="font-bold">Email:</span>
-                           <span className="text-[14px] ml-2 font-semibold">
-                              Admin@legalco.com
-                           </span>
-                        </p>
-                        <p className="text-gray-600">
-                           <span className="font-bold">Phone:</span>
-                           <span className="text-[14px] ml-2 font-semibold">
-                              +88 01773239086
-                           </span>
-                        </p>
-                        <p className="text-gray-600">
-                           <span className="font-bold">Address:</span> SEL
-                           Trident Tower, Suite # 907 (9th Floor), 57, Purana{" "}
-                           <br></br> Paltan, (VIP Road), Dhaka - 1000.
-                        </p> */}
                         </div>
                      </div>
                   </div>
