@@ -4,18 +4,16 @@ import Link from "next/link";
 
 const Banner = () => {
    return (
-      <div className="bg-[url('../assets/image.jpg')] bg-cover min-h-screen flex items-center -mt-[120px]">
+      <div className="bg-[url('../assets/image.jpg')] bg-cover min-h-[105vh] flex items-center -mt-[120px]">
          <Container>
             <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-20 md:mt-10">
                <div className="text-white md:mt-5 lg:mt-16">
                   <h1 className="text-2xl md:text-4xl font-bold">
-                  Where Law Meets Technology 
-  LegalCO Leads the Way.
-
+                     Where Law Meets Technology LegalCO Leads the Way.
                   </h1>
                   <p className="mt-6 mb-10">
-                  Really Unbelievable Solutions for all Legal Cases.  
-    Connect with legal experts.
+                     Really Unbelievable Solutions for all Legal Cases. Connect
+                     with legal experts.
                   </p>
                   <Link
                      href="/appointment"
