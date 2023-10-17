@@ -36,8 +36,8 @@ const ServiceDetailsPage = ({params}) => {
                 <LoadingPage></LoadingPage>
              ) : (
                 <div className="my-20 bg-[#225559cc] p-10 rounded-lg ">
-                   <div className="grid grid-cols-2 gap-6">
-                      <div className="text-white border-r-2 border-white pr-5">
+                   <div className="grid md:grid-cols-2 gap-6">
+                      <div className="text-white md:border-r-2 border-white pr-5">
                          <h2 className={`${merriweather.className} text-4xl`}>
                             {service}
                          </h2>
@@ -59,7 +59,7 @@ const ServiceDetailsPage = ({params}) => {
                                   alt="Lawyer image"
                                   width={150}
                                   height={50}
-                                  className="w-40 h-20 object-cover object-top rounded-lg"
+                                  className="w  rounded-lg"
                                />
                                <div className="">
                                   <Link
