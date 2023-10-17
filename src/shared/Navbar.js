@@ -73,7 +73,7 @@ const Navbar = () => {
                      </div>
 
                      <div className="lg:block flex-none hidden">
-                        <ul className="menu-horizontal flex items-center gap-6 text-[15px] duration-200">
+                        <ul className="menu-horizontal flex items-center gap-6 text-[13px] duration-200">
                            {/* Navbar menu contents */}
                            <div className="text-3xl md:text-3xl font-bold text-[#28676b] lg:hidden">
                               <Link href="/">LegalCo</Link>
@@ -145,7 +145,14 @@ const Navbar = () => {
                                  About Us
                               </Link>
                            </li>
-                         
+                           <li>
+                              <Link
+                                 className="text-[#dff9fc] hover:text-[#b1cbce] duration-200 uppercase"
+                                 href="/contact-us"
+                              >
+                                 Contact Us
+                              </Link>
+                           </li>
                         </ul>
                      </div>
                   </div>
@@ -209,7 +216,9 @@ const Navbar = () => {
                      <li className="text-[#46b2b8] hover:text-[#348286] duration-200 pl-5">
                         <Link href="/about-us">About Us</Link>
                      </li>
-                     
+                     <li className="text-[#46b2b8] hover:text-[#348286] duration-200 pl-5">
+                        <Link href="/contact-us">Contact Us</Link>
+                     </li>
                   </ul>
                </div>
             </div>

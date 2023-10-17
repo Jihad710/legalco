@@ -9,7 +9,7 @@ import aboutImg from "@/assets/about-us/about-us.jpg";
 import missionImg from "@/assets/about-us/mission.jpg";
 import visionImg from "@/assets/about-us/vision.jpg";
 
-const page = () => {
+const AboutUs = () => {
    return (
       <div>
          {/* Chamber information */}
@@ -141,4 +141,4 @@ const page = () => {
    );
 };
 
-export default page;
+export default AboutUs;
