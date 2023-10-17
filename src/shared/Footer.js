@@ -147,7 +147,7 @@ const Footer = () => {
                   <ul className="space-y-1">
                      <li>
                         <Link
-                           href={"/"}
+                           href={"/servicedetails/65224fef2ef1838c20606978"}
                            className="text-[14px] hover:underline"
                         >
                            Business Law
@@ -163,7 +163,7 @@ const Footer = () => {
                      </li>
                      <li>
                         <Link
-                           href={"/"}
+                           href={"/servicedetails/65224fef2ef1838c2060697b"}
                            className="text-[14px] hover:underline"
                         >
                            Family Law
@@ -171,7 +171,7 @@ const Footer = () => {
                      </li>
                      <li>
                         <Link
-                           href={"/"}
+                           href={"/servicedetails/65224fef2ef1838c20606979"}
                            className="text-[14px] hover:underline"
                         >
                            Real Estate Construction Law
