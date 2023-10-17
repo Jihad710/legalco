@@ -60,10 +60,10 @@ const Ads = () => {
                               className="w-8 md:w-12 h-8 md:h-12 mb-1 mr-2"
                            />
                            <p>
-                              <span className="block font-semibold -ml-7 md:-ml-12">
+                              <span className="block font-medium -ml-7 md:-ml-12">
                                  Get it on
                               </span>
-                              <span className="md:text-xl font-bold">
+                              <span className="md:text-xl font-semibold">
                                  Google Play
                               </span>
                            </p>
@@ -72,13 +72,13 @@ const Ads = () => {
                            <Image
                               src={ios}
                               alt="Google Play Icon"
-                              className="w-10 md:w-12 h-10 md:h-12 mb-1"
+                              className="w-9 md:w-14 h-9 md:h-14 mb-1 mr-2"
                            />
                            <p>
-                              <span className="block font-semibold -ml-12">
+                              <span className="block font-medium -ml-7 md:-ml-12">
                                  Get it on
                               </span>
-                              <span className="text-xl font-bold">
+                              <span className="md:text-xl font-semibold">
                                  Apple Store
                               </span>
                            </p>
