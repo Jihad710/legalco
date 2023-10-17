@@ -101,6 +101,38 @@ const Footer = () => {
                            Blog
                         </Link>
                      </li>
+                     <li>
+                        <Link
+                           href="/termsandconditions"
+                           className="text-[14px] hover:underline"
+                        >
+                           Terms And Conditions
+                        </Link>
+                     </li>
+                     <li>
+                        <Link
+                           href="/refunding"
+                           className="text-[14px] hover:underline"
+                        >
+                           Refunding Policy
+                        </Link>
+                     </li>
+                     <li>
+                        <Link
+                           href="/privacyandpolicy"
+                           className="text-[14px] hover:underline"
+                        >
+                           Privacy and Policy
+                        </Link>
+                     </li>
+                     <li>
+                        <Link
+                           href="/clientbillofrights"
+                           className="text-[14px] hover:underline"
+                        >
+                           Clients Bill Of Rights
+                        </Link>
+                     </li>
                   </ul>
                </div>
 
@@ -115,7 +147,7 @@ const Footer = () => {
                   <ul className="space-y-1">
                      <li>
                         <Link
-                           href={"/"}
+                           href={"/servicedetails/65224fef2ef1838c20606978"}
                            className="text-[14px] hover:underline"
                         >
                            Business Law
@@ -131,7 +163,7 @@ const Footer = () => {
                      </li>
                      <li>
                         <Link
-                           href={"/"}
+                           href={"/servicedetails/65224fef2ef1838c2060697b"}
                            className="text-[14px] hover:underline"
                         >
                            Family Law
@@ -139,7 +171,7 @@ const Footer = () => {
                      </li>
                      <li>
                         <Link
-                           href={"/"}
+                           href={"/servicedetails/65224fef2ef1838c20606979"}
                            className="text-[14px] hover:underline"
                         >
                            Real Estate Construction Law
