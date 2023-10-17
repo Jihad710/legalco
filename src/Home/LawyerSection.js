@@ -65,8 +65,8 @@ const LawyerSection = () => {
                                   <Image
                                      src={lawyer?.image}
                                      alt={lawyer?.name}
-                                     width={300}
-                                     height={300}
+                                     width={400}
+                                     height={400}
                                      className="w-full h-[400px] object-top object-cover  shadow-sm"
                                   />
                                </figure>
