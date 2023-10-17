@@ -67,7 +67,7 @@ const LawyerSection = () => {
                                      alt={lawyer?.name}
                                      width={300}
                                      height={300}
-                                     className="w-full h-[500px] object-top object-cover  shadow-sm"
+                                     className="w-full h-[400px] object-top object-cover  shadow-sm"
                                   />
                                </figure>
                                <div className="p-5 h-[220px] text-center flex flex-col justify-between">
