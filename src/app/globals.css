@@ -113,7 +113,7 @@
   background-size: cover;
 }
 
-/*======= Blogs page =======*/
+/*======= About Us page =======*/
 
 .about-us-bg {
   background: linear-gradient(#17244181, #17244181), url('../assets/about-us/about-banner.jpg') fixed bottom;
@@ -122,5 +122,12 @@
 
 .about-content-bg {
   background: linear-gradient(#2c7074da, #2c7074da), url('../assets/about-us/hand-shak.jpg') fixed top;
+  background-size: cover;
+}
+
+/*======= Contact Us page =======*/
+
+.contact-us-bg {
+  background: linear-gradient(#17244181, #17244181), url('../assets/contact-us/office-telephone.jpg') fixed bottom;
   background-size: cover;
 }
