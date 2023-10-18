@@ -73,7 +73,7 @@ const Navbar = () => {
                      </div>
 
                      <div className="lg:block flex-none hidden">
-                        <ul className="menu-horizontal flex items-center gap-6 text-[13px] duration-200">
+                        <ul className="menu-horizontal flex items-center gap-6 text-[15px] duration-200">
                            {/* Navbar menu contents */}
                            <div className="text-3xl md:text-3xl font-bold text-[#28676b] lg:hidden">
                               <Link href="/">LegalCo</Link>
