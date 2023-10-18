@@ -16,11 +16,6 @@ const ContactUs = () => {
       console.log(data);
    };
 
-<<<<<<< HEAD
-  return (
-    <div>
-      <div className="about-us-bg pt-[150px] -mt-[100px] text-black min-h-screen">
-=======
    return (
       <>
          <div className="contact-us-bg h-96 -mt-[100px]">
@@ -158,7 +153,6 @@ const ContactUs = () => {
          </div>
 
          {/* <div className="about-us-bg pt-[150px] -mt-[100px] text-white min-h-screen">
->>>>>>> dce7b84e6774acee52becde53e2ce34a7d302c71
         <div className="mx-auto max-w-md p-4 bg-white rounded shadow">
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
           <form onSubmit={handleSubmit(onSubmit)}>

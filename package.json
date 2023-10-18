@@ -9,12 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@cloudinary/react": "^1.11.2",
-    "@cloudinary/url-gen": "^1.11.2",
-=======
     "@emailjs/browser": "^3.11.0",
->>>>>>> dce7b84e6774acee52becde53e2ce34a7d302c71
     "@sendgrid/mail": "^7.7.0",
     "axios": "^1.5.1",
     "cloudinary": "^1.41.0",
