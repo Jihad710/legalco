@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import Container from '@/Common/Container';
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,21 +14,21 @@ import moment from 'moment/moment';
 
 const HappyClient = () => {
 	const [reviews, setReviews] = useState([]);
-	useEffect(()=> {
-		(async()=>{
-			const response = await axios('/api/reviews')
-			setReviews(response?.data)
-		})()
-  }, [])
-  
-    return (
-        <section className='pb-20'>
-            <Container>
-                <div className="text_shadow-color">
-                    <SectionTitle title={"Our Happy Client Says"}></SectionTitle>
-                </div>
-                <div className="">
-                <Swiper
+	useEffect(() => {
+		(async () => {
+			const response = await axios('/api/reviews');
+			setReviews(response?.data);
+		})();
+	}, []);
+
+	return (
+		<section className="pb-20">
+			<Container>
+				<div className="text_shadow-color">
+					<SectionTitle title={'Our Happy Client Says'}></SectionTitle>
+				</div>
+				<div className="">
+					<Swiper
 						// slidesPerView={1}
 						breakpoints={{
 							740: {
@@ -66,13 +66,7 @@ const HappyClient = () => {
 									<div className="card-body items-center text-center">
 										<p>{review?.reviewText.slice(0, 150)}</p>
 
-										<ReactStarsRating
-											isEdit={false}
-											starGap={10}
-											size={26}
-											className="flex"
-											value={review?.rating}
-										/>
+										<ReactStarsRating isEdit={false} starGap={10} size={26} className="flex" value={review?.rating} />
 
 										<h2 className="card-title text-[#23A6F0]">{review?.name}</h2>
 										<h2 className="">{moment(review?.timestamp).startOf('hour').fromNow()}</h2>
@@ -81,10 +75,10 @@ const HappyClient = () => {
 							</SwiperSlide>
 						))}
 					</Swiper>
-                </div>
-            </Container>
-        </section>
-    );
+				</div>
+			</Container>
+		</section>
+	);
 };
 
 export default HappyClient;
