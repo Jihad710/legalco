@@ -16,17 +16,17 @@ const PrivacyAndPolicyPage = () => {
           <h1 className="text-3xl text-center font-bold mt-14 mb-10">Terms And Conditions</h1>
           <p className=" font-semibold mb-4 mt-5 ">1. Welcome to LegalCO Limited!</p>
           <p className="text-justify mb-4">
-            As we won't be meeting in person, it's crucial to outline the
+            As we wont be meeting in person, its crucial to outline the
             agreement terms beforehand. If you have any questions about LegalCO,
-            please feel free to reach out.Within this agreement, we've referred
-            to our service as the 'service,' you as the 'user,'and this
-            agreement as the 'agreement.'
+            please feel free to reach out.Within this agreement, we have referred
+            to our service as the service, you as the user,and this
+            agreement as the agreement.
           </p>
           <p className="text-justify mb-4">
-            If you plan to use our 'Common Needs' feature, you confirm that
-            you're over 18 years old, fully capable of abiding by the terms,
+            If you plan to use our Common Needs feature, you confirm that
+            you are over 18 years old, fully capable of abiding by the terms,
             obligations, and warranties related to document creation, and are
-            well-informed about these. Don't hesitate to call us for further
+            well-informed about these. Dont hesitate to call us for further
             assistance.
           </p>
           <p className="text-justify font-semibold mb-4">
@@ -38,13 +38,13 @@ const PrivacyAndPolicyPage = () => {
             (via video, audio, and text) between legal professionals and
             potential users seeking legal services. It acts as a medium for
             information exchange, with the ultimate aim of establishing
-            professional relationships. However, it's important to note that
+            professional relationships. However, its important to note that
             LegalCO does not guarantee the successful matching of users with
             lawyers, and it does not take a stance on whether a lawyer-client
             relationship is formed.
           </p>
           <p className="text-justify mb-4">
-            It's worth emphasizing that LegalCO operates as a bridge for
+            Its worth emphasizing that LegalCO operates as a bridge for
             interaction and does not accept responsibility for any losses
             experienced by users. Users are encouraged to take action against
             any individuals they believe have caused harm, rather than directing
@@ -85,15 +85,15 @@ const PrivacyAndPolicyPage = () => {
           <p className="text-justify mb-4">
             Its purpose is to assist individuals in need of legal representation
             in finding lawyers who are most suitable for their specific
-            requirements. LegalCO's intention is not to serve as a platform for
+            requirements. LegalCOs intention is not to serve as a platform for
             advertising or solicitation, and the content provided on the
             app/website should not be interpreted as legal advice.LegalCO may
-            suggest subscribing lawyers only if they align with a user's needs,
+            suggest subscribing lawyers only if they align with a users needs,
             and not otherwise. The use of LegalCO, whether through transmission
             or receipt, does not establish a lawyer-client relationship.
             Individuals who receive content from this app/website should not
             make decisions to act or refrain from acting solely based on its
-            contents. We encourage users to independently review lawyers'
+            contents. We encourage users to independently review lawyers
             profiles and make well-informed choices.
           </p>
           <p className="text-justify font-semibold ">
@@ -111,8 +111,8 @@ const PrivacyAndPolicyPage = () => {
             D. LegalCo does not offer legal advice.
           </p>
           <p className="text-justify mb-4">
-            The 'Common Needs' feature of LegalCo uses only user-provided
-            content to generate basic documents. The information in the 'FAQs'
+            The Common Needs feature of LegalCo uses only user-provided
+            content to generate basic documents. The information in the FAQs
             section is not considered legal advice; it simply addresses commonly
             asked questions about creating wills, drafting lease agreements,
             issuing cheque dishonor notices, sending money recovery notices,
@@ -122,11 +122,11 @@ const PrivacyAndPolicyPage = () => {
             with any of these documents.
           </p>
           <p className="text-justify font-semibold">
-            E. Restrictions on 'Common Needs' Feature Usage:
+            E. Restrictions on Common Needs Feature Usage:
           </p>
           <p className="text-justify mb-4">
             LegalCO provides you with a limited, personal, non-exclusive, and
-            non-transferable license to utilize our 'Common Needs' feature
+            non-transferable license to utilize our Common Needs feature
             strictly for your own personal use. If you are an attorney or
             professional, you may also use it for your clients. Except as
             explicitly permitted, you acknowledge and agree that you are not
@@ -140,11 +140,11 @@ const PrivacyAndPolicyPage = () => {
             a professional. You are prohibited from selling or redistributing
             the purchased document without the explicit written consent of
             LegalCO. Engaging in unauthorized reselling or distribution
-            constitutes a violation of LegalCO's exclusive copyright and may
+            constitutes a violation of LegalCOs exclusive copyright and may
             result in legal action.
           </p>
           <p className="text-justify font-semibold ">
-            F. Users' Representation Disclaimer
+            F. Users Representation Disclaimer
           </p>
           <p className="text-justify mb-4">
             LegalCO does not make any representations, guarantees, or warranties
@@ -163,9 +163,9 @@ const PrivacyAndPolicyPage = () => {
             accountants, or company secretaries. Please note that these
             professionals are not affiliated with us as representatives, agents,
             or employees. Our website and services serve as just one information
-            source among the various options at your disposal. It's advisable to
+            source among the various options at your disposal. Its advisable to
             consult multiple sources for making well-informed decisions. The
-            choice to engage any of these professionals is significant, and it's
+            choice to engage any of these professionals is significant, and its
             one that you should consider thoughtfully, relying solely on your
             own judgment. By agreeing to utilize the services offered on our
             App/website, you grant us the authorization to assist in this
@@ -181,7 +181,7 @@ const PrivacyAndPolicyPage = () => {
             rules, and regulations are sometimes bound by specific geographic
             locations, leading to variations from place to place. The general
             information and other materials we offer may not be universally
-            applicable to all scenarios. It's important to note that our
+            applicable to all scenarios. Its important to note that our
             websites and services are not intended to establish an
             attorney-client relationship. Your utilization of our websites and
             services does not, and under no circumstances will it, create any
@@ -191,9 +191,9 @@ const PrivacyAndPolicyPage = () => {
           <p className="text-justify mb-4">
             Users of LegalCO are granted a non-exclusive, limited right to
             access and utilize the service in accordance with the stipulations
-            outlined in this agreement. In order to maintain the system's appeal
+            outlined in this agreement. In order to maintain the systems appeal
             and utility for all users, it is imperative that users adhere to the
-            system's regulations. LegalCO retains the authority to discontinue
+            systems regulations. LegalCO retains the authority to discontinue
             access to its service for any user who contravenes these
             regulations, becomes the subject of grievances from other LegalCO
             users, or for any other valid grounds.
@@ -205,7 +205,7 @@ const PrivacyAndPolicyPage = () => {
           <p className="text-justify">
             1. Utilize the service to exhibit material that is harassing,
             abusive, threatening, harmful, vulgar, obscene, or invasive of
-            others' privacy.
+            others privacy.
           </p>
           <p className="text-justify">
             2. Disrupt or interfere with the service, its servers, or connected
@@ -260,7 +260,7 @@ const PrivacyAndPolicyPage = () => {
             that LegalCO is intended for informational purposes and while
             efforts are made, it cannot guarantee the accuracy, completeness, or
             current status of the information provided. The accuracy,
-            completeness, or adequacy of LegalCO's content is not assured.It's
+            completeness, or adequacy of LegalCOs content is not assured.Its
             important to understand that LegalCO assumes no responsibility for
             how the information on this App/website is interpreted or used. Any
             links from this site to other apps/websites are not meant as
@@ -269,7 +269,7 @@ const PrivacyAndPolicyPage = () => {
             this platform. LegalCO diligently strives to remove promotional
             content where users attempt to self-promote on the App/website.
             However, the opinions expressed by individual users of the service
-            are their own and do not represent LegalCO's views. Information
+            are their own and do not represent LegalCOs views. Information
             submitted by non-legal professionals is not verified before
             appearing on the LegalCO App/website. Caution should be exercised
             when using this platform. While LegalCO makes efforts to verify the
@@ -303,7 +303,7 @@ const PrivacyAndPolicyPage = () => {
           <p className="text-justify mb-4">
             At various sections of the Site, LegalCO might allow visitors to
             contribute reviews, comments, and other forms of content (referred
-            to as "user content"). It's important to note that LegalCO is not
+            to as user content). Its important to note that LegalCO is not
             the creator or originator of this user content. Rather, it serves as
             a platform for storing and sharing the ideas and viewpoints that
             members of LegalCO choose to express through user content.LegalCO
@@ -329,7 +329,7 @@ const PrivacyAndPolicyPage = () => {
             reproducing, publishing, distributing, displaying, or transmitting
             any part of LegalCO for commercial, non-profit, or public purposes
             is restricted, except as mentioned above. Using or exporting LegalCO
-            or any portion from LegalCO in contravention of Bangladesh's export
+            or any portion from LegalCO in contravention of Bangladeshs export
             control laws and regulations is prohibited. Unauthorized usage of
             LegalCO or its content is strictly forbidden.
           </p>
@@ -367,7 +367,7 @@ const PrivacyAndPolicyPage = () => {
             also encompasses LegalCO, its founders, officers, and employees.
             LegalCO retains the right, at its expense, to exclusively control
             the defense of any issue subject to user indemnification, and the
-            user cannot settle any matter without LegalCO's written consent.
+            user cannot settle any matter without LegalCOs written consent.
           </p>
           <p className="text-justify font-semibold mb-4">
             8. COMMUNICATIONS AND OTHER
@@ -390,7 +390,7 @@ const PrivacyAndPolicyPage = () => {
             medium, or technology, both current and future.
           </p>
           <p className="text-justify font-semibold mb-4">
-            10. LEGALCO'S EXCLUSIVE PROPRIETARY RIGHTS
+            10. LEGALCOS EXCLUSIVE PROPRIETARY RIGHTS
           </p>
           <p className="text-justify mb-4">
             Except as explicitly stated in these terms and conditions, nothing
@@ -408,7 +408,7 @@ const PrivacyAndPolicyPage = () => {
             throughout the Service. Users are restricted from extracting and
             publishing any information from the system, in either electronic or
             print format, without the consent of LegalCO and all other relevant
-            parties. This list is not exhaustive – additional elements within
+            parties. This list is not exhaustive  additional elements within
             the system are also the property of LegalCO. Prior to duplicating
             any content from the system with intentions of reproduction or
             distribution, please reach out to LegalCO.
@@ -429,9 +429,9 @@ const PrivacyAndPolicyPage = () => {
             LegalCO. It is your duty to update LegalCO about any changes to this
             information. Each registration is strictly for individual use,
             unless otherwise indicated on the registration page. LegalCO does
-            not allow a) sharing of registered sections with others under your
-            identity, or b) granting access to multiple users on a network under
-            a single name. It's your responsibility to prevent such unauthorized
+            not allow a. sharing of registered sections with others under your
+            identity, or b. granting access to multiple users on a network under
+            a single name. Its your responsibility to prevent such unauthorized
             usage.If you suspect unauthorized access, please promptly inform
             LegalCO by reaching out to us. In case we discover unauthorized
             usage on LegalCO and its services, we reserve the right to terminate
@@ -456,9 +456,9 @@ const PrivacyAndPolicyPage = () => {
             bears no liability for any inaccuracies, legal errors, defamatory
             statements, misinformation, omissions, untruths, explicit content,
             or offensive language present in third-party content on the
-            platform. It's important to understand that the information and
+            platform. Its important to understand that the information and
             viewpoints presented in third-party content are not endorsed by
-            LegalCO and do not necessarily align with LegalCO's beliefs.
+            LegalCO and do not necessarily align with LegalCOs beliefs.
           </p>
           <p className="text-justify font-semibold mb-4">
             15. UNAUTHORIZED ACTIONS
@@ -500,7 +500,7 @@ const PrivacyAndPolicyPage = () => {
           </p>
           <p className="text-justify mb-4">
             The Agreement and Privacy Policy collectively form the comprehensive
-            understanding governing the utilization of LegalCO's services. In
+            understanding governing the utilization of LegalCOs services. In
             the event that any provision within these terms and conditions is
             determined to be unlawful, void, or unenforceable, said provision
             will be treated as separate from the remaining provisions, having no
@@ -511,7 +511,7 @@ const PrivacyAndPolicyPage = () => {
           </p>
           <p className="text-justify mb-4">
             The Agreement and Privacy Policy collectively form the comprehensive
-            understanding governing the utilization of LegalCO's services. In
+            understanding governing the utilization of LegalCOs services. In
             the event that any provision within these terms and conditions is
             determined to be unlawful, void, or unenforceable, said provision
             will be treated as separate from the remaining provisions, having no
@@ -529,7 +529,7 @@ const PrivacyAndPolicyPage = () => {
             accepts that service termination, as outlined in this agreement,
             could occur without advance notice.Additionally, the user recognizes
             and agrees that LegalCO holds the right to promptly remove data and
-            files from the user's account and prevent further access to both the
+            files from the users account and prevent further access to both the
             files and the Service.
           </p>
           <p className="text-justify font-semibold mb-4">
@@ -542,15 +542,15 @@ const PrivacyAndPolicyPage = () => {
             users. If a user defames another user, the aggrieved party might
             hold us accountable, despite the actual culpability lying with the
             first user. Similarly, in cases where a user uploads a
-            virus-infected program leading to damage on other users' computers,
+            virus-infected program leading to damage on other users computers,
             we could face blame, even though the virus originated from a
             user.Additionally, if a user transmits unlawful or inappropriate
             content to another user, we might be unjustly implicated, despite
             our role merely as intermediaries in transmitting messages between
-            users. Consequently, it's vital for every user to assume
+            users. Consequently, its vital for every user to assume
             responsibility for their own actions and recognize that harm caused
             by another user should be attributed solely to that user, not us.
-            While LegalCO's objective is to furnish users with dependable and
+            While LegalCOs objective is to furnish users with dependable and
             high-quality systems, occasional errors or system failures may
             occur.Given the scale of operating a system of this magnitude,
             encountering such issues is unavoidable. Were we to be held liable
@@ -564,12 +564,12 @@ const PrivacyAndPolicyPage = () => {
           </p>
           <p className="text-justify mb-4">
             Warranty Disclaimer: The user explicitly agrees that utilizing the
-            service is entirely at the user's own risk. The service is presented
-            on an "as is" and "as available" basis. LegalCO explicitly disclaims
+            service is entirely at the users own risk. The service is presented
+            on an as is and as available basis. LegalCO explicitly disclaims
             all forms of warranties, whether express or implied, encompassing,
             but not confined to, implied warranties of merchantability, fitness
             for a specific purpose, and non-infringement. LegalCO does not
-            assure that the service will align with a user's requisites, that
+            assure that the service will align with a users requisites, that
             the service will remain uninterrupted, punctual, secure, or devoid
             of errors. Furthermore, LegalCO does not guarantee outcomes that may
             arise from service utilization, and does not vouch for the precision
@@ -591,7 +591,7 @@ const PrivacyAndPolicyPage = () => {
             services, receipt of messages, or engagement in transactions
             facilitated through or originating from the service, as well as
             damages arising from unauthorized access to or alteration of the
-            user's data or transmissions. Such damages encompass, but are not
+            users data or transmissions. Such damages encompass, but are not
             restricted to, loss of profits, utilization, data, or other
             intangible assets. This applies even if LegalCO has been forewarned
             about the potential for such damages. The user also affirms that
@@ -610,7 +610,7 @@ const PrivacyAndPolicyPage = () => {
             disputes or claims will be arbitrated on an individual basis and
             will not be combined with any claims or disputes of other parties.
             Any other legal disagreements or conflicts will also be determined
-            in accordance with Bangladesh's laws, with the Courts of Dhaka
+            in accordance with Bangladeshs laws, with the Courts of Dhaka
             holding jurisdiction over all such matters.
           </p>
           <p className="text-justify font-semibold mb-4">23. OWNERSHIP</p>
@@ -619,14 +619,14 @@ const PrivacyAndPolicyPage = () => {
             titles, and interests related to the materials presented on this
             app/website, including but not limited to information, documents,
             logos, graphics, sounds, and images (referred to as the
-            'Materials'), are the sole property of LegalCO. Unless explicitly
+            Materials), are the sole property of LegalCO. Unless explicitly
             authorized by LegalCO, none of these materials may be copied,
             reproduced, republished, downloaded, uploaded, posted, displayed,
-            transmitted, or distributed in any manner.It's important to note
+            transmitted, or distributed in any manner.Its important to note
             that nothing on this site should be interpreted as granting any
-            license under LegalCO's intellectual property rights, whether by
+            license under LegalCOs intellectual property rights, whether by
             implication, estoppel, or any other means. Should you have inquiries
-            about obtaining such licenses, please feel free to contact us. It's
+            about obtaining such licenses, please feel free to contact us. Its
             essential to understand that LegalCO does not sell, license, lease,
             or otherwise provide any materials beyond those explicitly
             designated as being offered by LegalCO. Any rights not expressly
@@ -638,7 +638,7 @@ const PrivacyAndPolicyPage = () => {
           <p className="text-justify mb-4">
             This agreement represents the comprehensive and entirety of the
             understanding between the user and LegalCO. It stands as an
-            exhaustive and exclusive expression of the agreement's terms. This
+            exhaustive and exclusive expression of the agreements terms. This
             agreement holds precedence over all other communications between
             LegalCO and its users, relating to the subject matter herein. It
             surpasses and replaces all prior or concurrent agreements, whether
@@ -648,7 +648,7 @@ const PrivacyAndPolicyPage = () => {
             this Site.We retain the right to modify these Terms and Conditions
             at our discretion, without prior notice. It is your responsibility
             to periodically review these Terms and Conditions. By making use of
-            LegalCO's services or accessing the LegalCO App/web, you acknowledge
+            LegalCOs services or accessing the LegalCO App/web, you acknowledge
             that you have thoroughly read and consent to abide by these terms
             and conditions
           </p>
@@ -667,16 +667,16 @@ const PrivacyAndPolicyPage = () => {
             We are dedicated to ensuring that the services you acquire via our
             App/website not only meet but exceed your expectations, all while
             being competitively priced within the industry. Yet, there might be
-            instances when you seek a refund. Firstly, if you've paid for
+            instances when you seek a refund. Firstly, if youve paid for
             services but later decide not to proceed with them. Secondly, if we
             fail to deliver services within the communicated time frame due to
             our own oversight or errors. Thirdly, although we have reservations,
             you might deem our services unsatisfactory.In any of these
             scenarios, kindly email the assigned Ticket in your name, copying
-            info@legalco.com.bd. It's important to clarify that only the
+            info@legalco.com.bd. Its important to clarify that only the
             professional fees portion of the charges is eligible for refund
-            consideration. Upon receiving your email, LegalCO's Senior
-            Management will assess the refund request based on its merits. It's
+            consideration. Upon receiving your email, LegalCOs Senior
+            Management will assess the refund request based on its merits. Its
             crucial to note that the final decision regarding refund requests
             rests with us. Furthermore, we want to emphasize that circumstances
             beyond our control, such as national holidays, government delays,
@@ -691,7 +691,7 @@ const PrivacyAndPolicyPage = () => {
             all required information, to complete the refund process and
             initiate the transfer. We want to emphasize once more that only the
             professional fees associated with our services are eligible for a
-            refund, pending the decision of LegalCO Limited's Senior Management.
+            refund, pending the decision of LegalCO Limiteds Senior Management.
           </p>
           <p className="text-justify mb-4">
             We want you to know that we are continuously enhancing our services

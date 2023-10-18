@@ -15,7 +15,7 @@ const PrivacyAndPolicyPage = () => {
         <div className=" ">
           <h1 className="text-3xl text-center font-bold mt-14 mb-10">Our Website Privacty And Policy</h1>
           <p className="  mb-4 mt-5 ">This policy is designed to provide you with insights into how we utilize and safeguard your data.
-Should you have any inquiries, please don't hesitate to reach out to us at <span className="text-sky-600">info@legalco.com.bd</span>.
+Should you have any inquiries, please dont hesitate to reach out to us at <span className="text-sky-600">info@legalco.com.bd</span>.
 We sincerely appreciate your selection of LegalCO. Thank you.
 </p>
           <p className="text-justify mb-4">
@@ -24,7 +24,7 @@ serves to provide information about LegalCO, its services, and general legal mat
 privacy notice pertains to this App/website and is under the ownership and operation of
 LegalCO Limited. This notice outlines how LegalCO gathers and utilizes personal information
 from App/website visitors. Additionally, it informs users and visitors about the choices they have
-regarding LegalCO's handling of their personal data.
+regarding LegalCOs handling of their personal data.
 
           </p>
           <p className="text-justify mb-4">
@@ -51,7 +51,7 @@ the terms and conditions outlined in this privacy notice.
           
           
           <p className="text-justify font-semibold">
-          LegalCO's Policy
+          LegalCos Policy
           </p>
           <p className="text-justify mb-4">
           Your privacy holds immense importance to us, and we echo your apprehensions regarding any
@@ -59,7 +59,7 @@ data you furnish us while engaging with our online presence. We advise you to pe
 comprehensive privacy notice as you traverse our app/website
           </p>
           <p className="text-justify font-semibold">
-          Personal Information"
+          Personal Information
 
           </p>
           <p className="text-justify mb-4">
@@ -74,7 +74,7 @@ address as well as any other identifying particulars you willingly furnish to us
 integrated into the app/website, essential financial details will be gathered by a third-party
 service provider. The utilization and safekeeping of such data by these partners are regulated
 by their relevant terms of service and privacy disclosures. Among the information retained in our
-records are the payment card's category and the concluding four digits of the card. Recognizing
+records are the payment cards category and the concluding four digits of the card. Recognizing
 the sensitive nature of financial information, our approach is meticulously designed to ensure its
 utmost confidentiality.
 
@@ -87,7 +87,7 @@ Regarding account details for third-party services: In case you engage with thir
 while using our platform, like using services such as Facebook or Google to log into our
 platform, or if you share our content via social media platforms, certain information about you
 may be sent to us by these third-party services, based on their policies and your account
-settings. It's important to note that the information shared with us falls under the scope of our
+settings. Its important to note that the information shared with us falls under the scope of our
 privacy policy, including the fundamental details we receive from Facebook about you.
           </p>
           <p className="text-justify font-semibold">
@@ -101,7 +101,7 @@ with our Services. This includes: (1) IP address and mobile app details; (2) dom
 device type(s) employed for accessing the Services; (4) app/web browser(s) utilized to reach the
 Services; (5) originating app/web page or other origins that led you to the Services; (6)
 geolocation data; and (7) further statistics and details associated with the interaction between
-your device or browser and the Services (collectively referred to as 'Traffic Data'). Depending on
+your device or browser and the Services (collectively referred to as Traffic Data). Depending on
 relevant laws, certain Traffic Data may be classified as Personal Information.
 
           </p>
@@ -110,16 +110,16 @@ relevant laws, certain Traffic Data may be classified as Personal Information.
           Feel free to explore our app/ without divulging any personal information. Nonetheless, when
 making a service request on our app/website, your authentication details will be necessary.
 For online payments, they will be managed by a third-party service provider. Prior to using any
-non-LegalCO apps/websites, we recommend perusing the section below labeled 'Links and
-Third-Party Apps/Websites' to acquaint yourself with their privacy terms."
+non-LegalCO apps/websites, we recommend perusing the section below labeled Links and
+Third-Party Apps/Websites to acquaint yourself with their privacy terms.
           </p>
           <p className="text-justify font-semibold">How We Collect Information</p>
           <p className="text-justify mb-4">
           We gather information (including Personal Information and Traffic Data) while you engage with
 and utilize the Services. This data may also originate from third-party sources. The methods of
 collection include:
-When you interact with the Services' interactive tools and features, such as searching for
-lawyers or legal service providers ('Service Providers'), looking for available appointments with
+When you interact with the Services interactive tools and features, such as searching for
+lawyers or legal service providers (Service Providers), looking for available appointments with
 Service Providers, engaging in live chats, or submitting queries and requests.
 When you willingly provide information within open-text boxes via the Services or in response to
 surveys, questionnaires, and similar mechanisms.
@@ -128,12 +128,12 @@ surveys, questionnaires, and similar mechanisms.
          
           <p className="text-justify">
           Through technologies like cookies, app/web beacons, analytics services, and other tracking
-tools.When you utilize the 'Contact Us' feature on the app/website, send us emails, or initiate
+tools.When you utilize the Contact Us feature on the app/website, send us emails, or initiate
 contact in other ways.Information is collected during account registration and digital profile creation in the app.
 
           </p>
           <p className="text-justify">
-          We may utilize non-Personal Information to gain a deeper understanding of LegalCO's user
+          We may utilize non-Personal Information to gain a deeper understanding of LegalCOs user
 base and enhance the client-lawyer experience, all at our discretion. Our use of information,
 both Personal and non-Personal, is geared towards delivering, enhancing, and expanding the
 Services. This encompasses activities such as:
@@ -155,7 +155,7 @@ Leveraging legally permissible statistical information for various purposes, inc
 commercial and marketing endeavors.
 Meeting legal obligations, such as preventing, detecting, and investigating security breaches
 and potentially unlawful activities.Resolving disputes and deterring fraudulent, illegal, or harmful
-actions.Enforcing our Terms of Use and other agreements."
+actions.Enforcing our Terms of Use and other agreements.
 Please note that this is a revised version of the text provided in English, aimed at enhancing its
 clarity and readability.
 
@@ -184,7 +184,7 @@ usage spanning devices.
           </p>
           <p className="text-justify">Transitions in Ownership: In the event of a merger, sale, acquisition, or change of
 ownership/control involving LegalCO, your Personal Information may be transferred to another
-entity. We'll make reasonable efforts to alert you before your information becomes subject to
+entity. We will make reasonable efforts to alert you before your information becomes subject to
 altered privacy and security policies.
 </p>
           <p className="text-justify mb-4">
@@ -204,7 +204,7 @@ rights violation.
           </p>
           <p className="text-justify mb-4">
           Additional Data: Information that does not identify individuals (including de-identified or
-aggregated data) might be disclosed at our discretion."This revision aims to enhance the clarity
+aggregated data) might be disclosed at our discretion.This revision aims to enhance the clarity
 and readability of the provided text while maintaining its content and intent.
           </p>
           <p className="text-justify font-semibold mb-4">
@@ -212,7 +212,7 @@ and readability of the provided text while maintaining its content and intent.
 
           </p>
           <p className="text-justify mb-4">
-          This policy exclusively pertains to information collection by LegalCO. LegalCO's app/website
+          This policy exclusively pertains to information collection by LegalCO. LegalCOs app/website
 features hyperlinks or connections to external app/websites, granting access to content,
 products, and services from both affiliated and non-affiliated applications/websites. We strongly
 recommend acquainting yourself with the specific privacy policy and terms of use for each
@@ -265,7 +265,7 @@ information.
           <p className="text-justify mb-4">
           Should you be receiving regular communications, such as our online newsletter subscription, via
 our app/website or application, you have the option to cease receiving them. Each
-communication dispatched to you will feature an opt-out or unsubscribe alternative. It's
+communication dispatched to you will feature an opt-out or unsubscribe alternative. Its
 important to note that certain messages, such as notifications about secure messages from
 lawyers or legal documents in response to your LegalCO request, cannot be opted out of or
 unsubscribed from.

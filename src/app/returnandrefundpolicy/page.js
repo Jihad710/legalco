@@ -36,7 +36,7 @@ out, and you can discuss any issues you may have with our services.
           </p>
           <p className="text-justify mb-4">
           We express our gratitude for your purchase of services or products via our app/ website,
-www.legalco.com.bd, hereinafter referred to as "LegalCO." Please carefully review this policy
+www.legalco.com.bd, hereinafter referred to as LegalCO. Please carefully review this policy
 and the LegalCO terms and conditions, as they offer crucial insights into your rights and
 responsibilities as our customer concerning any purchase or service we extend to you.
           </p>
@@ -44,7 +44,7 @@ responsibilities as our customer concerning any purchase or service we extend to
           <p className="text-justify mb-4">
           We exert our best efforts to deliver services according to the specifications and timelines
 specified for each purchased service or product from LegalCO. However, if, due to unforeseen
-circumstances, we're unable to provide the service or product you acquired, you shall be eligible
+circumstances, we are unable to provide the service or product you acquired, you shall be eligible
 for a refund, subject to the following conditions:
           </p>
          
@@ -52,9 +52,9 @@ for a refund, subject to the following conditions:
           - A refund will only be considered if there is a clear, evident deficiency in the purchased service
 or product from LegalCO.
 - Should a customer pay for a service and subsequently request a refund solely due to a change
-of mind, the refund won't be processed, as no fault or defect lies with LegalCO.
-- Refund requests won't be accommodated after the work has been shared with you in cases of
-a change of mind. However, you'll have the option to apply the paid amount towards an
+of mind, the refund wont be processed, as no fault or defect lies with LegalCO.
+- Refund requests wont be accommodated after the work has been shared with you in cases of
+a change of mind. However, you will have the option to apply the paid amount towards an
 alternative LegalCO service of equal value, partially or wholly.
 - Refund requests raised 30 days after the completion of a service or product purchase, and
 after communication indicating completion, will be considered invalid.
@@ -62,7 +62,7 @@ after communication indicating completion, will be considered invalid.
           </p>
           
           <p className="text-justify mb-4">
-          Once LegalCO approves a refund request, you'll receive an email notification. The refund
+          Once LegalCO approves a refund request, you will receive an email notification. The refund
 process might take a minimum of 7 business days and will be credited to your bank account. We
 handle this process meticulously, ensuring your money is returned promptly.
           </p>
