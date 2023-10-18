@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { merriweather } from '@/Utils/Font';
 import Link from 'next/link';
+import LoadingPage from '@/shared/Loading';
 const LawyerSection = () => {
 	const [lawyers, setLawyers] = useState([]);
 	useEffect(() => {

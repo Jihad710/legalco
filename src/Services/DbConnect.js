@@ -17,6 +17,7 @@ const DbConnect = async () => {
 				deprecationErrors: true
 			}
 		});
+
 		db = client.db('Legalco');
 		await client.db('admin').command({ ping: 1 });
 		console.log('Pinged your deployment. You successfully connected to MongoDB!');

@@ -11,6 +11,7 @@ import SectionTitle from '@/Common/SectionTitle';
 import ReactStarsRating from 'react-awesome-stars-rating';
 import axios from 'axios';
 import moment from 'moment/moment';
+import LoadingPage from '@/shared/Loading';
 
 const HappyClient = () => {
 	const [reviews, setReviews] = useState([]);
@@ -51,7 +52,7 @@ const HappyClient = () => {
 						modules={[Pagination, Autoplay]}
 						className="mySwiper"
 					>
-						{reviews?.map((review) => (
+						{reviews ? reviews?.map((review) => (
 							<SwiperSlide key={review?._id}>
 								<div className="card bg-white min-h-[300px] md:min-h-[425px] my-10 border shadow-xl">
 									<figure className="">
@@ -66,14 +67,25 @@ const HappyClient = () => {
 									<div className="card-body items-center text-center">
 										<p>{review?.reviewText.slice(0, 150)}</p>
 
-										<ReactStarsRating isEdit={false} starGap={10} size={26} className="flex" value={review?.rating} />
+										{
+										review?.rating &&	
+										<ReactStarsRating
+											isEdit={false}
+											starGap={10}
+											size={26}
+											className="flex"
+											isHalf={true}
+											value={review?.rating}
+										/>
+										}
 
 										<h2 className="card-title text-[#23A6F0]">{review?.name}</h2>
 										<h2 className="">{moment(review?.timestamp).startOf('hour').fromNow()}</h2>
 									</div>
 								</div>
 							</SwiperSlide>
-						))}
+						)) : <LoadingPage></LoadingPage>
+					}
 					</Swiper>
 				</div>
 			</Container>
