@@ -1,240 +1,120 @@
-"use client";
-import React from "react";
-import Image from "next/image";
-import Container from "@/Common/Container";
-import { useForm, Controller } from "react-hook-form";
-import emailIcon from "@/assets/contact-us/open-mail.png";
+'use client';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import Image from 'next/image';
+import Container from '@/Common/Container';
+import emailIcon from '@/assets/contact-us/open-mail.png';
+import toast from 'react-hot-toast';
 
 const ContactUs = () => {
-   const {
-      control,
-      handleSubmit,
-      formState: { errors },
-   } = useForm();
+	const form = useRef();
+	const [isSending, setIsSending] = useState(false);
 
-   const onSubmit = (data) => {
-      console.log(data);
-   };
+	const sendEmail = (e) => {
+		setIsSending(true);
+		e.preventDefault();
 
-<<<<<<< HEAD
-  return (
-    <div>
-      <div className="about-us-bg pt-[150px] -mt-[100px] text-black min-h-screen">
-=======
-   return (
-      <>
-         <div className="contact-us-bg h-96 -mt-[100px]">
-            <div className="flex items-center justify-center">
-               <h2 className="text-3xl md:text-4xl text-white font-serif font-bold absolute top-[35%]">
-                  Get in touch
-               </h2>
-            </div>
-         </div>
+		emailjs
+			.sendForm(
+				process.env.NEXT_PUBLIC_emailJs_service_id,
+				process.env.NEXT_PUBLIC_emailJs_template_key,
+				form.current,
+				process.env.NEXT_PUBLIC_emailJs_public_key
+			)
+			.then(
+				() => {
+					toast.success('Message send successfully!');
+					setIsSending(false);
+					form.current.reset();
+				},
+				() => {
+					toast.error('Something went wrong! Please try again!');
+					setIsSending(false);
+				}
+			);
+	};
 
-         <div className="bg-[#E2EAE5] py-32">
-            <Container>
-               <div className="flex justify-center">
-                  <div className="bg-[#39676a75] w-1/3 flex items-center">
-                     <div className="">
-                        <Image
-                           src={emailIcon}
-                           alt="Email icon"
-                           className="w-36 mx-auto"
-                        />
-                        <p className="text-lg font-serif text-center px-10 leading-8 mt-8">
-                           If you have questions or just want to get in touch,
-                           use th from below. We look forward to hearing from
-                           you!
-                        </p>
-                     </div>
-                  </div>
+	return (
+		<>
+			<div className="contact-us-bg h-96 -mt-[100px]">
+				<div className="flex items-center justify-center">
+					<h2 className="text-3xl md:text-4xl text-white font-serif font-bold absolute top-[35%]">Get in touch</h2>
+				</div>
+			</div>
 
-                  {/* Contact From */}
-                  <div className="bg-white w-1/2 px-10 py-10">
-                     <h2 className="text-3xl text-[#495C6A] text-center font-serif font-semibold mb-4">
-                        Contact Us
-                     </h2>
-                     <form onSubmit={handleSubmit(onSubmit)}>
-                        <div className="mb-4">
-                           <label
-                              htmlFor="name"
-                              className="block text-sm font-semibold text-gray-700"
-                           >
-                              Name*
-                           </label>
-                           <Controller
-                              name="name"
-                              control={control}
-                              rules={{ required: "Name is required" }}
-                              render={({ field }) => (
-                                 <input
-                                    {...field}
-                                    type="text"
-                                    id="name"
-                                    className="w-full p-2 border rounded"
-                                 />
-                              )}
-                           />
-                           {errors.name && (
-                              <p className="text-red-500 text-sm">
-                                 {errors.name.message}
-                              </p>
-                           )}
-                        </div>
+			<div className="bg-[#E2EAE5] py-32">
+				<Container>
+					<div className="grid justify-center grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto">
+						<div className="bg-[#39676a75] min-w-[300px] flex items-center p-8">
+							<div className="">
+								<Image src={emailIcon} alt="Email icon" className="w-36 mx-auto" />
+								<p className="text-lg font-serif text-center leading-8 mt-8">
+									If you have questions or just want to get in touch, use th from below. We look forward to hearing from
+									you!
+								</p>
+							</div>
+						</div>
 
-                        <div className="mb-4">
-                           <label
-                              htmlFor="email"
-                              className="block text-sm font-semibold text-gray-700"
-                           >
-                              Email*
-                           </label>
-                           <Controller
-                              name="email"
-                              control={control}
-                              rules={{
-                                 required: "Email is required",
-                                 pattern: {
-                                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                                    message: "Invalid email address",
-                                 },
-                              }}
-                              render={({ field }) => (
-                                 <input
-                                    {...field}
-                                    type="text"
-                                    id="email"
-                                    className="w-full p-2 border rounded"
-                                 />
-                              )}
-                           />
-                           {errors.email && (
-                              <p className="text-red-500 text-sm">
-                                 {errors.email.message}
-                              </p>
-                           )}
-                        </div>
+						{/* Contact From */}
+						<div className="bg-white min-w-[300px px-10 py-10">
+							<h2 className="text-3xl text-[#495C6A] text-center font-serif font-semibold mb-4">Contact Us</h2>
+							<form ref={form} onSubmit={sendEmail}>
+								{/* name */}
+								<div className="form-control w-full">
+									<label className="label">
+										<span className="label-text">What is your name? *</span>
+									</label>
+									<input
+										type="text"
+										required
+										placeholder="Name"
+										name="name"
+										className="`w-full px-4 py-[10px] border border-[#35878b4d] focus:border-[#225559] focus:outline-none focus:shadow-md rounded-md text-[14px] placeholder:text-[14px] "
+									/>
+								</div>
+								{/* email */}
+								<div className="form-control w-full">
+									<label className="label">
+										<span className="label-text">What is your email? *</span>
+									</label>
+									<input
+										type="email"
+										required
+										placeholder="example@gmail.com"
+										name="email"
+										className="`w-full px-4 py-[10px] border border-[#35878b4d] focus:border-[#225559] focus:outline-none focus:shadow-md rounded-md text-[14px] placeholder:text-[14px] "
+									/>
+								</div>
+								{/* message */}
+								<div className="form-control w-full">
+									<label className="label">
+										<span className="label-text">Your message *</span>
+									</label>
+									<textarea
+										type="text"
+										required
+										placeholder="message"
+										name="message"
+										className="`w-full px-4 py-[10px] border border-[#35878b4d] focus:border-[#225559] focus:outline-none focus:shadow-md rounded-md text-[14px] placeholder:text-[14px] min-h-[100px]"
+									/>
+								</div>
 
-                        <div className="mb-4">
-                           <label
-                              htmlFor="message"
-                              className="block text-sm font-semibold text-gray-700"
-                           >
-                              Message*
-                           </label>
-                           <Controller
-                              rows={4}
-                              name="message"
-                              placeholder="Write your message"
-                              control={control}
-                              rules={{ required: "Message is required" }}
-                              render={({ field }) => (
-                                 <textarea
-                                    {...field}
-                                    id="message"
-                                    className="w-full p-2 border rounded"
-                                 />
-                              )}
-                           />
-                           {errors.message && (
-                              <p className="text-red-500 text-sm">
-                                 {errors.message.message}
-                              </p>
-                           )}
-                        </div>
-
-                        <div className="flex justify-center">
-                           <button
-                              type="submit"
-                              className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-[17px] text-white font-semibold hover:text-[#35868b] py-2 px-7 rounded-full duration-300"
-                           >
-                              Send Message
-                           </button>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-            </Container>
-         </div>
-
-         {/* <div className="about-us-bg pt-[150px] -mt-[100px] text-white min-h-screen">
->>>>>>> dce7b84e6774acee52becde53e2ce34a7d302c71
-        <div className="mx-auto max-w-md p-4 bg-white rounded shadow">
-          <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="mb-4">
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                Name
-              </label>
-              <Controller
-                name="name"
-                control={control}
-                rules={{ required: 'Name is required' }}
-                render={({ field }) => (
-                  <input
-                    {...field}
-                    type="text"
-                    id="name"
-                    className="w-full p-2 border rounded"
-                  />
-                )}
-              />
-              {errors.name && <p className="text-black text-sm">{errors.name.message}</p>}
-            </div>
-
-            <div className="mb-4">
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Email
-              </label>
-              <Controller
-                name="email"
-                control={control}
-                rules={{
-                  required: 'Email is required',
-                  pattern: {
-                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                    message: 'Invalid email address',
-                  },
-                }}
-                render={({ field }) => (
-                  <input
-                    {...field}
-                    type="text"
-                    id="email"
-                    className="w-full p-2 border rounded"
-                  />
-                )}
-              />
-              {errors.email && <p className="text-black text-sm">{errors.email.message}</p>}
-            </div>
-
-            <div className="mb-4">
-              <label htmlFor="message" className="block text-sm font-medium text-black">
-                Message
-              </label>
-              <Controller
-                name="message"
-                control={control}
-                rules={{ required: 'Message is required' }}
-                render={({ field }) => (
-                  <textarea
-                    {...field}
-                    id="message"
-                    className="w-full p-2 border rounded"
-                  />
-                )}
-              />
-              {errors.message && <p className="text-black text-sm">{errors.message.message}</p>}
-            </div>
-
-            <button type="submit" className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-6 rounded-full duration-300">
-              Submit
-            </button>
-          </form>
-        </div>
-      </div> */}
-      </>
-   );
+								<div className="flex justify-center mt-3">
+									<button
+										type={'submit'}
+										disabled={isSending}
+										className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-[17px] text-white font-semibold hover:text-[#35868b] py-2 px-7 rounded-full duration-300"
+									>
+										{isSending ? 'Sending' : 'Send Message'}
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</Container>
+			</div>
+		</>
+	);
 };
 
 export default ContactUs;
