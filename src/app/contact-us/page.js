@@ -12,7 +12,7 @@ const ContactUs = () => {
 
   return (
     <div>
-      <div className="about-us-bg pt-[150px] -mt-[100px] text-white min-h-screen">
+      <div className="about-us-bg pt-[150px] -mt-[100px] text-black min-h-screen">
         <div className="mx-auto max-w-md p-4 bg-white rounded shadow">
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -33,7 +33,7 @@ const ContactUs = () => {
                   />
                 )}
               />
-              {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
+              {errors.name && <p className="text-black text-sm">{errors.name.message}</p>}
             </div>
 
             <div className="mb-4">
@@ -59,11 +59,11 @@ const ContactUs = () => {
                   />
                 )}
               />
-              {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
+              {errors.email && <p className="text-black text-sm">{errors.email.message}</p>}
             </div>
 
             <div className="mb-4">
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="message" className="block text-sm font-medium text-black">
                 Message
               </label>
               <Controller
@@ -78,7 +78,7 @@ const ContactUs = () => {
                   />
                 )}
               />
-              {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
+              {errors.message && <p className="text-black text-sm">{errors.message.message}</p>}
             </div>
 
             <button type="submit" className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-6 rounded-full duration-300">
