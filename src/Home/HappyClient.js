@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import Container from '@/Common/Container';
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,24 +14,22 @@ import moment from 'moment/moment';
 import LoadingPage from '@/shared/Loading';
 
 const HappyClient = () => {
-	const [reviews, setReviews] = useState(null);
-	useEffect(()=> {
-		(async()=>{
-			const response = await axios('/api/reviews')
-			if(response?.data){
-				setReviews(response?.data);
-			}
-		})()
-  }, [])
-    return (
-        <section className='pb-20'>
-            <Container>
-                <div className="">
-                    <SectionTitle title={"What Our Clients Say"}></SectionTitle>
-					<p className='text-center mt-3'>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br></br> veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                </div>
-                <div className="">
-                <Swiper
+	const [reviews, setReviews] = useState([]);
+	useEffect(() => {
+		(async () => {
+			const response = await axios('/api/reviews');
+			setReviews(response?.data);
+		})();
+	}, []);
+
+	return (
+		<section className="pb-20">
+			<Container>
+				<div className="text_shadow-color">
+					<SectionTitle title={'Our Happy Client Says'}></SectionTitle>
+				</div>
+				<div className="">
+					<Swiper
 						// slidesPerView={1}
 						breakpoints={{
 							740: {
@@ -89,10 +87,10 @@ const HappyClient = () => {
 						)) : <LoadingPage></LoadingPage>
 					}
 					</Swiper>
-                </div>
-            </Container>
-        </section>
-    );
+				</div>
+			</Container>
+		</section>
+	);
 };
 
 export default HappyClient;

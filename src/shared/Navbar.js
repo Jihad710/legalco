@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { FaBarsStaggered } from 'react-icons/fa6';
 import logo from '@/assets/logo.jpg';
-import grelogo from '@/assets/graylogo.png';
+import grayLogo from '@/assets/graylogo.png';
 import { IoIosArrowForward } from 'react-icons/io';
 import axios from 'axios';
 
@@ -45,7 +45,7 @@ const Navbar = () => {
 						<div className="navbar p-0 w-full">
 							<div className={`flex-1 text-2xl md:text-3xl font-bold py-1 ${color ? 'text-white' : 'text-[#35868b]'}`}>
 								<Link href="/">
-									<Image src={logo} alt="Logo" width={color ? 120 : 140} />
+									<Image src={logo} alt="Logo" width={color ? 110 : 140} />
 								</Link>
 							</div>
 
@@ -133,7 +133,7 @@ const Navbar = () => {
 							{/* Sidebar content here */}
 							<div className="text-3xl font-bold text-[#35868b] lg:hidden pb-3 border-b border-[#348286]">
 								<Link className="block" href="/">
-									<Image className="mx-5" src={grelogo} alt="Logo" width={150} />
+									<Image className="mx-5" src={grayLogo} alt="Logo" width={150} />
 								</Link>
 							</div>
 

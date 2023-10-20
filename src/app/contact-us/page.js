@@ -36,19 +36,21 @@ const ContactUs = () => {
 
 	return (
 		<>
-			<div className="contact-us-bg h-96 -mt-[100px]">
+			<div className="contact-us-bg h-60 md:h-96 -mt-[100px]">
 				<div className="flex items-center justify-center">
-					<h2 className="text-3xl md:text-4xl text-white font-serif font-bold absolute top-[35%]">Get in touch</h2>
+					<h2 className="text-3xl md:text-4xl text-white font-serif font-bold absolute top-[20%] md:top-[35%]">
+						Get in touch
+					</h2>
 				</div>
 			</div>
 
-			<div className="bg-[#E2EAE5] py-32">
+			<div className="bg-[#E2EAE5] py-16 md:py-32">
 				<Container>
 					<div className="grid justify-center grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto">
 						<div className="bg-[#39676a75] min-w-[300px] flex items-center p-8">
 							<div className="">
 								<Image src={emailIcon} alt="Email icon" className="w-36 mx-auto" />
-								<p className="text-lg font-serif text-center leading-8 mt-8">
+								<p className="text-lg text-center leading-8 mt-8">
 									If you have questions or just want to get in touch, use th from below. We look forward to hearing from
 									you!
 								</p>
@@ -56,8 +58,8 @@ const ContactUs = () => {
 						</div>
 
 						{/* Contact From */}
-						<div className="bg-white min-w-[300px px-10 py-10">
-							<h2 className="text-3xl text-[#495C6A] text-center font-serif font-semibold mb-4">Contact Us</h2>
+						<div className="bg-white min-w-[300px p-5">
+							<h2 className="text-3xl text-[#495C6A] text-center` font-semibold mb-4">Contact Us</h2>
 							<form ref={form} onSubmit={sendEmail}>
 								{/* name */}
 								<div className="form-control w-full">
