@@ -82,18 +82,18 @@ const Footer = () => {
 								</Link>
 							</li>
 							<li>
-								<Link href="/termsandconditions" className="text-[14px] hover:underline">
-									Terms And Conditions
-								</Link>
-							</li>
-							<li>
-								<Link href="/refunding" className="text-[14px] hover:underline">
-									Refunding Policy
-								</Link>
-							</li>
-							<li>
 								<Link href="/privacyandpolicy" className="text-[14px] hover:underline">
 									Privacy and Policy
+								</Link>
+							</li>
+							<li>
+								<Link href="/returnandrefundpolicy" className="text-[14px] hover:underline">
+									Return And Refund Policy
+								</Link>
+							</li>
+							<li>
+								<Link href="/termsandcondition" className="text-[14px] hover:underline">
+									Terms and Conditions
 								</Link>
 							</li>
 							<li>
