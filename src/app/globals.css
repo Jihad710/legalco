@@ -80,7 +80,7 @@
 	top: 30px !important;
 	right: 80px !important;
 	left: auto !important;
-	border: 2px solid #000;
+	border: none;
 	padding: 5px !important;
 	width: 60px !important;
 	height: 60px !important;
@@ -93,7 +93,7 @@
 	top: 30px !important;
 	right: 10px !important;
 	left: auto !important;
-	border: 2px solid #000;
+	border: none;
 	padding: 5px !important;
 	width: 60px !important;
 	height: 60px !important;

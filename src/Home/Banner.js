@@ -25,9 +25,6 @@ const Banner = () => {
 							muted
 							autoPlay
 							loop
-							// src="https://res.cloudinary.com/dfya8cjsh/video/upload/v1696948187/bbjkb9kjizaxkqmvei8y.mp4"
-
-							// Old video URL
 							src="https://res.cloudinary.com/dts36zkpn/video/upload/v1697824541/2_wmgul0.mp4"
 						></video>
 					</div>
