@@ -45,7 +45,7 @@ const Navbar = () => {
 						<div className="navbar p-0 w-full">
 							<div className={`flex-1 text-2xl md:text-3xl font-bold py-1 ${color ? 'text-white' : 'text-[#35868b]'}`}>
 								<Link href="/">
-									<Image src={logo} alt="Logo" width={color ? 120 : 140} />
+									<Image src={logo} alt="Logo" width={color ? 110 : 140} />
 								</Link>
 							</div>
 
