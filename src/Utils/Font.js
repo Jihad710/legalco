@@ -1,4 +1,4 @@
-import { Poppins, Merriweather } from 'next/font/google';
+import { Poppins, Lora } from 'next/font/google';
 
 export const poppins = Poppins({
 	subsets: ['latin'],
