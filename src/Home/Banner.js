@@ -21,13 +21,11 @@ const Banner = () => {
 					{/* Add video embed here */}
 					<div className="order-first lg:order-last mt-32 sm:mt-32 md:mt-28 lg:mt-0">
 						<video
-							className="md:w-[1500px] h-full lg:h-[350px] object-cover rounded-xl"
+							className="md:w-[1500px] h-full lg:max-h-[350px] object-cover rounded-xl"
 							muted
 							autoPlay
 							loop
-							// src=''
-							// Old video URL
-							src="https://res.cloudinary.com/dfveaxvlk/video/upload/v1696454429/xpvswqtv3nt6qfxs5t0t.mp4"
+							src="https://res.cloudinary.com/dts36zkpn/video/upload/v1697824541/2_wmgul0.mp4"
 						></video>
 					</div>
 				</div>
