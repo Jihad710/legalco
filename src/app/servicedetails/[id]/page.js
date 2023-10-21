@@ -35,13 +35,13 @@ const ServiceDetailsPage = ({params}) => {
              {loading ? (
                 <LoadingPage></LoadingPage>
              ) : (
-                <div className="my-20 bg-[#225559cc] p-10 rounded-lg ">
+                <div className="my-20 bg-[#225559cc] p-5 md:p-10 rounded-lg ">
                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="text-white md:border-r-2 border-white pr-5">
+                      <div className="text-white md:border-r-2 border-white md:pr-5">
                          <h2 className={`${merriweather.className} text-4xl`}>
                             {service}
                          </h2>
-                         <p className="text-lg mt-8">{description}</p>
+                         <p className="text-lg mt-8 text-justify md:text-left">{description}</p>
                       </div>
                       <div className="">
                          <h2
