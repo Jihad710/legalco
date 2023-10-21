@@ -7,14 +7,14 @@ const BlogCard = ({ blog, truncateContent }) => {
    const truncatedContent = truncateContent(content);
 
    return (
-      <div className="card min-w-[310px] max-w-sm bg-white shadow-sm hover:bg-[#35878b2a] duration-200 mx-auto groupImg">
+      <div className="card min-w-[310px] max-w-sm bg-white shadow-sm hover:bg-[#35878b2a] duration-200 mx-auto group">
          <figure className="max-h-[200px] overflow-hidden">
             <Image
                width={500}
                height={200}
                src={image ? image : "https://i.ibb.co/Ytbhzg4/blank.jpg"}
-               alt="blogs image"
-               className="groupImg-hover:scale-105 duration-200"
+               alt="blogs image "
+               className="group-hover:scale-110 duration-200"
             />
          </figure>
          <div className="card-body">

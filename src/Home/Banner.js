@@ -12,7 +12,7 @@ const Banner = () => {
 						<p className="mt-6 mb-10">Really Unbelievable Solutions for all Legal Cases. Connect with legal experts.</p>
 						<Link
 							href="/appointment"
-							className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-6 rounded-full duration-300"
+							className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-6 rounded-full duration-300 my-5 block w-fit"
 						>
 							Appointment
 						</Link>
