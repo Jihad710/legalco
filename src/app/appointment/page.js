@@ -348,8 +348,14 @@ const ContactForm = () => {
                               <span className="text-2xl font-extrabold">
                                  <BsTelephone />
                               </span>
-                              <span className="text-[15px] ml-3">
-                                 +88 01773239086
+                              <span className="text-[15px] ">
+                              +880 9697308988
+                              </span>
+                              <span className="text-2xl font-extrabold ml-3">
+                                 <BsTelephone />
+                              </span>
+                              <span className="text-[15px] ">
+                              +8801 988 688 988
                               </span>
                            </p>
                            <p className="text-gray-600 flex items-start">

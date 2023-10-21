@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@sendgrid/mail": "^7.7.0",
     "axios": "^1.5.1",
+    "cloudinary": "^1.41.0",
     "date-fns": "^2.30.0",
     "firebase": "^10.4.0",
     "lottie-react": "^2.4.0",
