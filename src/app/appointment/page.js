@@ -23,7 +23,7 @@ const ContactForm = () => {
    const onSubmit = async (data) => {
       const appointment = {
          name: data?.name,
-         email: data?.email,
+         // email: data?.email,
          phone: data?.phoneNumber,
          servicetype: data?.serviceInterest,
          serviceInfo: data?.Message,
@@ -114,7 +114,7 @@ const ContactForm = () => {
                            )}
                  </div>
                  
-                        <div className="mb-6">
+                        {/* <div className="mb-6">
                            <label
                               htmlFor="email"
                               className="block mb-1 text-[14px] font-semibold"
@@ -143,7 +143,7 @@ const ContactForm = () => {
                                  {errors.email.message}
                               </p>
                            )}
-                        </div>
+                        </div> */}
 
                         <div className="mb-6">
                            <label
