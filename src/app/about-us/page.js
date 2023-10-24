@@ -65,7 +65,7 @@ const AboutUs = () => {
                      />
                   </div>
 
-                  <div className="md:mt-[5%] lg:mt-[12%]">
+                  <div className="md:mt-[5%] lg:mt-[12%] ">
                      <h3 className="text-2xl md:text-2xl font-bold mb-2 uppercase">
                      Anjuman Ara Lima 
                      </h3>
@@ -99,7 +99,7 @@ const AboutUs = () => {
                     
                     
                      <p className="text-[15px] mb-3">
-                     Mehedi Hasan is the founder and managing director of LegalCO Limited, earned his Bachelors degree in Computer Science and Engineering. Following this, he pursued advanced studies in networking, completing a CCNA certification from BUET, showcasing his dedication to excellence in the field. 
+                     Mehedi Hasan is the founder and CEO of LegalCO Limited, earned his Bachelors degree in Computer Science and Engineering. Following this, he pursued advanced studies in networking, completing a CCNA certification from BUET, showcasing his dedication to excellence in the field. 
                      </p>
                      <p className="text-[15px] mb-3">
                      Subsequently, he accumulated substantial expertise through employment at prestigious organizations in Bangladesh for an extended period.
