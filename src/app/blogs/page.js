@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import BlogCard from "@/components/BlogCard";
 import UseBlogs from "@/hooks/UseBlogs";
 import Loading from "@/app/loading";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import Container from "@/Common/Container";
+import BlogCard from "@/Components/BlogCard";
 
 const BlogsPage = () => {
    const [allBlogs] = UseBlogs();

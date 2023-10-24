@@ -12,7 +12,7 @@ const Banner = () => {
 						<p className="mt-6 mb-10">Really Unbelievable Solutions for all Legal Cases. Connect with legal experts.</p>
 						<Link
 							href="/appointment"
-							className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-6 rounded-full duration-300"
+							className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-[#35868b] py-2 px-6 rounded-full duration-300 my-5 block w-fit"
 						>
 							Appointment
 						</Link>
@@ -22,9 +22,7 @@ const Banner = () => {
 					<div className="order-first lg:order-last mt-32 sm:mt-32 md:mt-28 lg:mt-0">
 						<video
 							className="md:w-[1500px] h-full lg:max-h-[350px] object-cover rounded-xl"
-							muted
-							autoPlay
-							loop
+							controls
 							src="https://res.cloudinary.com/dts36zkpn/video/upload/v1697824541/2_wmgul0.mp4"
 						></video>
 					</div>

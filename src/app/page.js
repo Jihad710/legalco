@@ -33,11 +33,7 @@ const HomePage = () => {
 
       {confirm && (
         <div className="w-full h-screen bg-[#23232380] bg-opacity-50 z-50 fixed top-0 left-0 flex items-center justify-center">
-          <div className="w-2/3 bg-white h-[90vh] rounded-lg p-5">
-            <h3 className="text-4xl font-bold mb-5">Terms And Conditions</h3>
-            <div className="h-[65vh] overflow-auto">
-              <div className="w-full h-screen bg-[#23232380] bg-opacity-50 z-50 fixed top-0 left-0 flex items-center justify-center">
-                <div className="w-2/3 bg-white h-[90vh] rounded-lg p-5">
+                <div className="w-[95%] md:w-2/3 bg-white h-[90vh] rounded-lg p-5">
                   <h3 className="text-4xl font-bold mb-3">Terms And Conditions</h3>
                   <div className="h-[65vh] overflow-auto">
                     <p className=" font-semibold mb-4 ">
@@ -836,24 +832,13 @@ const HomePage = () => {
                   </div>
                   <div className="border-t py-3 text-center">
                     <button
-                      onClick={() => setConfirm(false)}
+                      onClick={handleSaveTerms}
                       className="btn btn-primary rounded-3xl px-20"
                     >
                       Accept
                     </button>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="border-t py-3 text-center">
-              <button
-                onClick={handleSaveTerms}
-                className="btn btn-primary rounded-3xl px-20"
-              >
-                Accept
-              </button>
-            </div>
-          </div>
         </div>
       )}
     </div>
