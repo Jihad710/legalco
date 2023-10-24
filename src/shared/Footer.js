@@ -152,7 +152,7 @@ const Footer = () => {
 					<div>
 						<h3 className={`${merriweather.className} text-2xl font-bold mb-4`}>Contact Us</h3>
 						<p className="my-3">
-							<b className="block">Office Address: </b> SEL Trident Tower, Suite # 907 (9th Floor), 57, Purana Paltan,
+							<b className="block mb-2">Office Address: </b> SEL Trident Tower, Suite # 907 (9th Floor), 57, Purana Paltan,
 							(VIP Road), Dhaka - 1000.
 						</p>
 						<p className="my-3">
