@@ -5,7 +5,8 @@ import { BsTelephone } from "react-icons/bs";
 import { FaBuilding } from "react-icons/fa";
 import { ImMobile } from "react-icons/im";
 import Container from "@/Common/Container";
-import aboutImg from "@/assets/about-us/about-us.jpg";
+import aboutImg from "../../assets/about-us/Chairman (1).jpg";
+import ceo from "../../assets/about-us/Founder CEO.jpg";
 import missionImg from "@/assets/about-us/mission.jpg";
 import visionImg from "@/assets/about-us/vision.jpg";
 
@@ -56,7 +57,7 @@ const AboutUs = () => {
             <Container>
                {/* About us details */}
                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white px-8 md:px-10 lg:px-20">
-                  <div className="mb-8 md:mb-0">
+                  <div className="mb-8 md:mb-12">
                      <Image
                         src={aboutImg}
                         alt="About Image"
@@ -64,25 +65,93 @@ const AboutUs = () => {
                      />
                   </div>
 
-                  <div className="md:mt-[5%] lg:mt-[12%]">
-                     <h3 className="text-2xl md:text-4xl font-bold mb-5 uppercase">
-                        About Us
+                  <div className="md:mt-[5%] lg:mt-[12%] ">
+                     <h3 className="text-2xl md:text-2xl font-bold mb-2 uppercase">
+                        Anjuman Ara Lima
                      </h3>
-                     <p className="text-[19px] font-bold mb-2">
-                        We understand your problem and are here to solve it
-                        digitally
+
+                     <p className="text-sm font mb-6">
+                        Advocate Supreme Court Of Bangladesh
                      </p>
-                     <p className="text-[17px]">
-                        LegalCO is a complete solution app for all your legal
-                        complexities.This platform is created to simplify legal
-                        procedures for lawyers and enrich the litigant&apos;s
-                        journey.
+
+                     <p className="text-[15px] mb-3 text-justify">
+                        Adv. Anjuman Ara Lima is the Chairman of LegalCO
+                        Limited. She is a practicing Advocate of the Hon’ble
+                        High Court Division of the Supreme Court of Bangladesh.
+                        She obtained LL.B (Hon’s) and LL.M degrees from the
+                        Southeast University in 2011 and 2012 respectively. She
+                        started her career as an Advocate in Chittagong Judge
+                        Court and then moved to Dhaka to practice law in the
+                        Hon’ble High Court Division of the Supreme Court of
+                        Bangladesh. She is specialized in civil, criminal and
+                        writ litigation as well as in banking, corporate
+                        finance, income tax, custom matters and family law
+                        issues.
+                     </p>
+                     <p className="text-[15px] mb-3 text-justify">
+                        Ain o Adalat’ at Radio Dhoni and ‘Prosongo Aine’ at
+                        Bangle Vision channel.
+                     </p>
+
+                     <p className="text-[15px] text-justify">
+                        She is associated with numerous financial institutions
+                        including BRAC Bank Limited, Social Islami bank Limited,
+                        Al-Arafah Islami Bank Limited, Bangladesh Commerce Bank
+                        Limited, NRB Commercial Bank Limited, First Security
+                        Islami Bank Limited and Mercantile Bank as a panel
+                        lawyer.
+                     </p>
+                  </div>
+
+                  <div className="mb-8 md:mb-0 md:order-last">
+                     <Image
+                        src={ceo}
+                        alt="About Image"
+                        className="rounded-ss-3xl rounded-br-3xl"
+                     />
+                  </div>
+                  <div className="md:mt-[5%] lg:mt-[12%]">
+                     <h3 className="text-2xl md:text-2xl font-bold mb-6 uppercase">
+                        Md. Mehedi Hasan
+                     </h3>
+
+                     <p className="text-[15px] mb-3 text-justify">
+                        Mehedi Hasan is the founder and CEO of LegalCO Limited,
+                        earned his Bachelors degree in Computer Science and
+                        Engineering. Following this, he pursued advanced studies
+                        in networking, completing a CCNA certification from
+                        BUET, showcasing his dedication to excellence in the
+                        field.
+                     </p>
+                     <p className="text-[15px] mb-3 text-justify">
+                        Subsequently, he accumulated substantial expertise
+                        through employment at prestigious organizations in
+                        Bangladesh for an extended period.
+                     </p>
+
+                     <p className="text-[15px] text-justify">
+                        He has a knack for devising innovative business ideas
+                        and problem-solving, which is a true passion for him.
+                        His journey began with contemplating the legal
+                        challenges faced by common people in Bangladesh. His aim
+                        is to address these issues digitally, and he diligently
+                        works towards implementing Legalcos plans for this
+                        purpose. He has even more elaborate plans in store for
+                        working on digital products in the near future.
                      </p>
                   </div>
                </div>
 
                {/* Mission */}
                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white px-8 md:px-10 lg:px-20 mt-24">
+                  <div className="mb-8 md:mb-0">
+                     <Image
+                        src={missionImg}
+                        alt="Mission Image"
+                        className="rounded-se-3xl rounded-bl-3xl"
+                     />
+                  </div>
+
                   <div className="md:mt-[5%] lg:mt-[12%]">
                      <h3 className="text-2xl md:text-4xl font-bold mb-5 uppercase">
                         Mission
@@ -105,26 +174,10 @@ const AboutUs = () => {
                         </span>
                      </p>
                   </div>
-
-                  <div className="mb-8 md:mb-0 order-first md:order-last">
-                     <Image
-                        src={missionImg}
-                        alt="Mission Image"
-                        className="rounded-se-3xl rounded-bl-3xl"
-                     />
-                  </div>
                </div>
 
                {/* Vision */}
                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-white px-8 md:px-10 lg:px-20 mt-24">
-                  <div className="mb-8 md:mb-0">
-                     <Image
-                        src={visionImg}
-                        alt="Vision Image"
-                        className="rounded-ss-3xl rounded-br-3xl"
-                     />
-                  </div>
-
                   <div className="md:mt-[5%] lg:mt-[12%]">
                      <h3 className="text-2xl md:text-4xl font-bold mb-5 uppercase">
                         Vision
@@ -133,6 +186,14 @@ const AboutUs = () => {
                         To deliver ingenious solutions for the daily hurdles
                         confronted by lawyers, law firms, and litigants
                      </p>
+                  </div>
+
+                  <div className="mb-8 md:mb-0 order-first md:order-last">
+                     <Image
+                        src={visionImg}
+                        alt="Vision Image"
+                        className="rounded-ss-3xl rounded-br-3xl"
+                     />
                   </div>
                </div>
             </Container>

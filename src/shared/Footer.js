@@ -16,8 +16,14 @@ const Footer = () => {
 							<Link href="/">
 								<Image src={logo} alt="" width={150} />
 							</Link>
-							<p className="my-4">
-								Edwin Diaz is a software and web technologies engineer, a life coach trainer who is also a serial .
+							<p className="mt-3">
+								<span className='text-[#F59E0B]'>CO</span>nnect
+							</p>
+							<p className="">
+								<span className='text-[#F59E0B]'>CO</span>mmunicate and 
+							</p>
+							<p className="mb-3">
+								<span className='text-[#F59E0B]'>CO</span>nsult with legal experts
 							</p>
 						</div>
 
@@ -150,11 +156,14 @@ const Footer = () => {
 							(VIP Road), Dhaka - 1000.
 						</p>
 						<p className="my-3">
-							<b>Phone: </b> +880 9697308988
+							<b></b> +880 9697308988
 						</p>
-						<p className="my-3 mr-4">+8801 988 688 988</p>
+						<p className="my-3 ">
+							<b></b> +88 01988 688988
+						</p>
+						
 						<p className="my-3">
-							<b>Email: </b> Admin@legalco.com
+							<b>Email: </b> info@legalco.com.bd
 						</p>
 					</div>
 				</div>

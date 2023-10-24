@@ -6,7 +6,8 @@ import Loading from "@/app/loading";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { useEffect, useState } from "react";
 import Container from "@/Common/Container";
-import BlogCard from "@/Components/BlogCard";
+import BlogCard from "@/components/BlogCard";
+
 
 const BlogsPage = () => {
    const [allBlogs] = UseBlogs();

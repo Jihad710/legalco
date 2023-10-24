@@ -25,11 +25,7 @@ const Ads = () => {
                         Get <span className="text-[#2B565A] font-extrabold">LegalCO</span> App
                      </h2>
                      <p className="text-[18px] text-gray-500 mb-4">
-                        Officia quas assumenda incidunt necessitatibus, deserunt
-                        consequuntur cumque asperiores exercitationem iusto in
-                        dolores quasi consequatur nihil obcaecati pariatur ea
-                        nemo iste sed iusto in dolores quasi consequatur nihil
-                        obcaecati pariatur ea nemo iste sed.
+                     Download the app for direct video or audio calls with lawyers, enabling seamless communication for legal consultations.
                      </p>
 
                      {/* QR Saner code */}

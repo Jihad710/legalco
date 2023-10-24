@@ -82,7 +82,7 @@ const ContactUs = () => {
 									<input
 										type="email"
 										required
-										placeholder="example@gmail.com"
+										placeholder="Enter your mail "
 										name="email"
 										className="`w-full px-4 py-[10px] border border-[#35878b4d] focus:border-[#225559] focus:outline-none focus:shadow-md rounded-md text-[14px] placeholder:text-[14px] "
 									/>

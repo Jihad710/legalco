@@ -32,7 +32,7 @@ const HomePage = () => {
       {/* Terms and Condition  */}
 
       {confirm && (
-        <div className="w-full h-screen bg-[#23232380] bg-opacity-50 z-50 fixed top-0 left-0 flex items-center justify-center">
+        <div className="w-full h-screen bg-[#23232380] bg-opacity-50 z-40 fixed top-0 left-0 flex items-center justify-center">
                 <div className="w-[95%] md:w-2/3 bg-white h-[90vh] rounded-lg p-5">
                   <h3 className="text-4xl font-bold mb-3">Terms And Conditions</h3>
                   <div className="h-[65vh] overflow-auto">
