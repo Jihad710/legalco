@@ -42,7 +42,7 @@ const Navbar = () => {
 
 					<div className="drawer-content flex flex-col">
 						{/* Navbar */}
-						<div className="navbar p-0 w-full">
+						<div className="navbar p-0 w-full z-10">
 							<div className={`flex-1 text-2xl md:text-3xl font-bold py-1 ${color ? 'text-white' : 'text-[#35868b]'}`}>
 								<Link href="/">
 									<Image src={logo} alt="Logo" width={color ? 110 : 140} />
@@ -127,7 +127,7 @@ const Navbar = () => {
 					</div>
 
 					{/* Drawer side menu */}
-					<div className="drawer-side">
+					<div className="drawer-side z-50">
 						<label htmlFor="my-drawer-3" className="drawer-overlay"></label>
 						<ul className="w-72 min-h-full py-4 space-y-3 text-[16px] font-semibold text-start duration-200 bg-[#d1e0dc]">
 							{/* Sidebar content here */}
