@@ -5,8 +5,8 @@ import { BsTelephone } from "react-icons/bs";
 import { FaBuilding } from "react-icons/fa";
 import { ImMobile } from "react-icons/im";
 import Container from "@/Common/Container";
-import aboutImg from "../../assets/about-us/Lima.jpg";
-import ceo from "../../assets/about-us/Mehedi.jpg";
+import aboutImg from "../../assets/about-us/lima.jpg";
+import ceo from "../../assets/about-us/mehedi.jpg";
 import missionImg from "@/assets/about-us/mission.jpg";
 import visionImg from "@/assets/about-us/vision.jpg";
 
@@ -72,9 +72,9 @@ const AboutUs = () => {
     Advocate Supreme Court Of Bangladesh
   </p>
 
-  <p className="text-[15px] mb-3 text-justify">
-    Adv. Anjuman Ara Lima is the Chairman of LegalCO Limited. She is a practicing Advocate of the Hon’ble High Court Division of the Supreme Court of Bangladesh. She obtained LL.B (Hon’s) and LL.M degrees from the Southeast University in 2011 and 2012 respectively. She started her career as an Advocate in Chittagong Judge Court and then moved to Dhaka to practice law in the Hon’ble High Court Division of the Supreme Court of Bangladesh. She is specialized in civil, criminal and writ litigation as well as in banking, corporate finance, income tax, custom matters, and family law issues.
-  </p>
+<p className="text-[15px] mb-3 text-justify">
+  Adv. Anjuman Ara Lima is the Chairman of LegalCo Limited. She is a practicing Advocate of the Hon’ble High Court Divition of the Supreme Court of Bangladesh.She obtained LL.B (Hon’s) and LL.M degrees from the Southeast University in 2011 and 2012 respectively. She started her career as an Advocate in Chittagong Judge Court and then moved to Dhaka to practice law in the Hon’ble High Court Division of the supreme Court of Bangladesh. She is specialized in civil, criminal, and writ litigation as well as in banking, corporate finance, income tax, custom matters, and family law issues.
+</p>
   <p className="text-[15px] mb-3 text-justify">
     Despite her responsibilities as a lawyer, she is also at present working on social causes like child labor and child prostitution. She is a legal adviser of a nonprofit charitable organization named Ekmattra and a member of Bangladesh National Women Lawyers Association. Ms. Lima has established herself as a popular attendee of different.
   </p>
