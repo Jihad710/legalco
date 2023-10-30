@@ -23,6 +23,7 @@ const Banner = () => {
 						<video
 							className="md:w-[1500px] h-full lg:max-h-[350px] object-cover rounded-xl"
 							controls
+							controlsList="nodownload"
 							src="https://res.cloudinary.com/dts36zkpn/video/upload/v1697824541/2_wmgul0.mp4"
 						></video>
 					</div>

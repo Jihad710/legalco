@@ -88,7 +88,7 @@ const AboutUs = () => {
   </h3>
 
   <p className="text-sm font mb-6">
-    Advocate Supreme Court Of Bangladesh
+  Advocate, Appellate division Supreme Court Of Bangladesh
   </p>
 
 <p className="text-[15px] mb-3 ">
