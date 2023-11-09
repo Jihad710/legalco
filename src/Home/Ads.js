@@ -49,7 +49,9 @@ const Ads = () => {
 
                      {/* App download buttons */}
                      <div className="flex mt-3">
+                     <a href="https://play.google.com/store/apps/details?id=com.legalco.consultation" target="_blank" rel="noopener noreferrer">
                         <button className="hover:bg-[#3C686B] hover:text-white flex items-center justify-center pl-2 pr-4 py-2 mr-3 md:mr-5 font-thin text-black-500 border border-[#225559] rounded duration-300">
+                           
                            <Image
                               src={playstore}
                               alt="Google Play Icon"
@@ -64,7 +66,8 @@ const Ads = () => {
                               </span>
                            </p>
                         </button>
-                        <button className="hover:bg-[#3C686B] hover:text-white flex items-center justify-center pr-4 md:pr-9 py-2 font-thin text-black-500 border border-[#225559] rounded duration-300">
+                        </a>
+                        {/* <button className="hover:bg-[#3C686B] hover:text-white flex items-center justify-center pr-4 md:pr-9 py-2 font-thin text-black-500 border border-[#225559] rounded duration-300">
                            <Image
                               src={ios}
                               alt="Google Play Icon"
@@ -78,7 +81,7 @@ const Ads = () => {
                                  Apple Store
                               </span>
                            </p>
-                        </button>
+                        </button> */}
                      </div>
                   </div>
                </div>
