@@ -8,7 +8,7 @@ const Banner = () => {
 			<Container>
 				<div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 md:gap-20 md:mt-10">
 					<div className="text-white md:mt-5 lg:mt-16">
-						<h1 className="text-2xl md:text-4xl font-bold ">Bangladesh’s <span className='text-[#F59E0B]'>No.1</span> app for legal solution tailored to your legal needs.</h1>
+						<h1 className="text-2xl md:text-4xl font-bold ">Bangladesh’s <span className='text-[#F59E0B]'>No.1</span> app for legal solutions tailored to your legal needs.</h1>
 						<p className="mt-6 mb-10">Really Unbelievable Solutions for all Legal Cases. Connect with legal experts.</p>
 						<Link
 							href="/appointment"
