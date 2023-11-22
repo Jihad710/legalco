@@ -129,7 +129,7 @@ const AboutUs = () => {
   <p className="text-[15px]">
     He has a knack for devising innovative business ideas and problem-solving, which is a true passion for him. His journey began with contemplating the legal challenges faced by common people in Bangladesh. His aim is to address these issues digitally, and he diligently works towards implementing Legalcos plans for this purpose. He has even more elaborate plans in store for working on digital products in the near future.
   </p>
-  <a href="mailto:mhasan@legalco.com" className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-white py-2 px-6 rounded-full duration-300 my-5 inline-block">
+  <a href="mailto:ceolegalco@gmail.com" className="bg-[#225559] hover:bg-transparent border-2 border-transparent hover:border-[#225559] text-white hover:text-white py-2 px-6 rounded-full duration-300 my-5 inline-block">
     Send Email
   </a>
 </div>
