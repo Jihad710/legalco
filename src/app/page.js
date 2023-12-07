@@ -37,21 +37,13 @@ const HomePage = () => {
                   <h3 className="text-4xl font-bold mb-3">**শর্তাবলী**</h3>
                   <div className="h-[65vh] overflow-auto">
                     <p className=" font-semibold mb-4 ">
-                      1. Welcome to LegalCO Limited!
+                    LegalCO লিমিটেডে স্বাগতম!
                     </p>
                     <p className="text-justify mb-4">
-                      As we won't be meeting in person, it's crucial to outline
-                      the agreement terms beforehand. If you have any questions
-                      about LegalCO, please feel free to reach out.Within this
-                      agreement, we've referred to our service as the 'service,'
-                      you as the 'user,'and this agreement as the 'agreement.'
+                    যেহেতু আমরা ব্যক্তিগতভাবে মিলিত হব না, তাই চুক্তির শর্তাদি আগেই রূপরেখা করা অত্যন্ত গুরুত্বপূর্ণ৷ আপনার যদি LegalCO সম্পর্কে কোন প্রশ্ন থাকে, অনুগ্রহ করে নির্দ্বিধায় যোগাযোগ করুন। এই চুক্তির মধ্যে, আমরা আমাদের পরিষেবাটিকে পরিষেবা হিসাবে উল্লেখ করেছি, আপনি ব্যবহারকারী হিসাবে এবং এই চুক্তিটিকে চুক্তি হিসাবে উল্লেখ করেছি ৷
                     </p>
                     <p className="text-justify mb-4">
-                      If you plan to use our 'Common Needs' feature, you confirm
-                      that you're over 18 years old, fully capable of abiding by
-                      the terms, obligations, and warranties related to document
-                      creation, and are well-informed about these. Don't
-                      hesitate to call us for further assistance.
+                      
                     </p>
                     <p className="text-justify font-semibold mb-4">
                       2. LEGALCO ONLY PROVIDES A MEDIUM FOR INTERACTION
