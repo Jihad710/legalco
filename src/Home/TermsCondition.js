@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client"
 import React, { useState } from 'react';
+import '../CSS/style.css';
 
 const TermsCondition = () => {
     const [confirm, setConfirm] = useState(true);
@@ -9,7 +10,7 @@ const TermsCondition = () => {
             <div className="md:w-2/3 w-full bg-white h-[90vh] rounded-lg p-5">
                     <h3 className='text-4xl font-bold mb-3'>Privacy Policy:</h3>
                 <div className="h-[65vh] overflow-auto">
-                    <p className='text-justify'>1. Welcome to LegalCO Limited!</p>
+                    <p className='text-justify'>LegalCO লিমিটেডে স্বাগতম!</p>
                     <p className='text-justify'>As we won't be meeting in person, it's crucial to outline the agreement terms beforehand. If you have any questions about LegalCO, please feel free to reach out.Within this agreement, we've referred to our service as the 'service,' you as the 'user,'and this agreement as the 'agreement.'</p>
                     <p className='text-justify'>If you plan to use our 'Common Needs' feature, you confirm that you're over 18 years old, fully capable of abiding by the terms, obligations, and warranties related to document creation, and are well-informed about these. Don't hesitate to call us for further assistance.</p>
                     <p className='text-justify'>2. LEGALCO ONLY PROVIDES A MEDIUM FOR INTERACTION</p>
